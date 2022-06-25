@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Blank</name>
+            <texture>Liveries-300/white.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>BOE</aircraft-operator>
+    <aircraft-registration>B-FGFS</aircraft-registration>
+    <aircraft-SELCAL>FG-ES</aircraft-SELCAL>
+</sim>
+</PropertyList>

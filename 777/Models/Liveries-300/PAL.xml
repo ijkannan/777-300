@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">PAL Philippine Airlines</name>
+            <texture>Liveries-300/PAL.png</texture>
+        </livery>
+    </model>
+	<aircraft-class>gate</aircraft-class>
+	<aircraft-operator>PAL</aircraft-operator>
+    <aircraft-registration>RP-C7782</aircraft-registration>
+    <aircraft-SELCAL>DS-AF</aircraft-SELCAL>
+</sim>
+</PropertyList>

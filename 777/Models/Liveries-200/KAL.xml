@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">KAL Korean Air</name>
+            <texture>Liveries-200/KAL.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>KAL</aircraft-operator>
+    <aircraft-registration>HL7531</aircraft-registration>
+    <aircraft-SELCAL>PR-BF</aircraft-SELCAL>
+</sim>
+</PropertyList>

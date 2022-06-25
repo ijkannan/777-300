@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">KLM (old livery)</name>
+            <texture>Liveries-300/KLM.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>KLM</aircraft-operator>
+    <aircraft-registration>PH-BVO</aircraft-registration>
+    <aircraft-SELCAL>DS-BR</aircraft-SELCAL>
+</sim>
+</PropertyList>

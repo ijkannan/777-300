@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <!-- Livery by FGPRC -->
+            <name type="string">CCA Air China</name>
+            <texture>Liveries-300/CCA.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>CCA</aircraft-operator>
+    <aircraft-registration>B-2033</aircraft-registration>
+    <aircraft-SELCAL>EJ-AC</aircraft-SELCAL>
+</sim>
+</PropertyList>

@@ -1,0 +1,481 @@
+<?xml version="1.0"?>
+<!-- 777 tutorial, (c) 2011 Thorsten Brehm -->
+
+<PropertyList>
+	<name>Introduction: PFD</name>
+	<description>Welcome aboard your 777 aircraft!
+
+This tutorial shows the features of the cockpit's main instrument: the primary flight display (PFD).
+</description>
+
+	<init>
+		<set>
+			<property>controls/electric/battery-switch</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>instrumentation/mk-viii/inputs/arinc429/decision-height</property>
+			<value>250</value>
+		</set>
+		<set>
+			<property>instrumentation/altimeter/setting-inhg</property>
+			<value>29.92</value>
+		</set>
+	</init>
+
+<step>
+	<message>Here's the most important cockpit instrument: the primary flight display (PFD).</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8417000000000003</x-m>
+		<y-m>-0.5500</y-m>
+		<z-m>0.4042</z-m>
+		<scale>9.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The attitude indicator shows the aircraft's pitch and roll.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8399999999999999</x-m>
+		<y-m>-0.5558</y-m>
+		<z-m>0.3925</z-m>
+		<scale>5.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The bank pointer displays the aircraft's roll angle.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	
+	<marker>
+		<x-m>-1.8399999999999999</x-m>
+		<y-m>-0.5558</y-m>
+		<z-m>0.4284</z-m>
+		<scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The DME indicator shows the dstance to the selected VOR or ILS.
+    It is only shown when station provides a DME signal.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	
+	<interval>15</interval>
+
+	<marker>
+		<x-m>-1.8500000000000005</x-m>
+		<y-m>-0.5775</y-m>
+		<z-m>0.4435</z-m>
+		<scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>ILS localizer indicator.
+    A magenta diamond shows the aircraft position relative to localizer signal (left/centered/right).
+    Displayed when NAV1 is tuned to a localizer or ILS beacon.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+
+	<interval>15</interval>
+
+	<marker>
+	    <x-m>-1.835</x-m>
+	    <y-m>-0.5558</y-m>
+	    <z-m>0.3392</z-m>
+	    <scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>ILS glideslope indicator.
+    A magenta diamond shows aircraft position relative to glideslope (above/centered/below).
+    Displayed when NAV1 is tuned to an ILS.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+
+	<interval>15</interval>
+
+	<marker>
+	    <x-m>-1.8392</x-m>
+	    <y-m>-0.5058</y-m>
+	    <z-m>0.3916</z-m>
+	    <scale>1.0000</scale>
+	</marker>
+</step>
+
+
+
+<step>
+	<message>The airspeed indicator displays calibrated airspeed in knots.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	
+	<marker>
+		<x-m>-1.8399999999999999</x-m>
+		<y-m>-0.6250</y-m>
+		<z-m>0.3900</z-m>
+		<scale>1.2314</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The speed tape also shows speed. It also shows speed trend as a green arrow (10-second look-ahead)
+	and red/black stripes indicating the allowed speed range.
+	</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	
+	<interval>14</interval>
+
+	<marker>
+		<x-m>-1.8399999999999999</x-m>
+		<y-m>-0.6109</y-m>
+		<z-m>0.4125</z-m>
+		<scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Groundspeed in knots. In the air, it shows the Mach number.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	
+	<marker>
+		<x-m>-1.8266999999999998</x-m>
+		<y-m>-0.6175</y-m>
+		<z-m>0.3217</z-m>
+		<scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The barometric altimeter shows your altitude (based on air pressure).</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	
+	<marker>
+		<x-m>-1.8399999999999999</x-m>
+		<y-m>-0.4784</y-m>
+		<z-m>0.3925</z-m>
+		<scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Altitude tape (based on air pressure).</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	
+	<marker>
+		<x-m>-1.8399999999999999</x-m>
+		<y-m>-0.4825</y-m>
+		<z-m>0.4125</z-m>
+		<scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Barometric correction reference (QNH/QFE) to calibrate pressure-based altimeter.
+    Standard pressure of 29.92 inHg is displayed as "STD".</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+
+	<interval>15</interval>
+
+	<marker>
+		<x-m>-1.8308</x-m>
+		<y-m>-0.4875</y-m>
+		<z-m>0.3184</z-m>
+		<scale>1.5</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The vertical speed indicator shows climb/sink rate in units of 1000ft/min.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	
+	<marker>
+		<x-m>-1.8399999999999999</x-m>
+		<y-m>-0.4559</y-m>
+		<z-m>0.3900</z-m>
+		<scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The radar altimeter shows an accurate altitude above ground level up to 2000ft.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	
+	<marker>
+		<x-m>-1.8366999999999996</x-m>
+		<y-m>-0.5558</y-m>
+		<z-m>0.3492</z-m>
+		<scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Autopilot mode indicators. Shows selected speed, pitch and roll mode.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	
+	<marker>
+		<x-m>-1.8475000000000001</x-m>
+		<y-m>-0.5558</y-m>
+		<z-m>0.4650</z-m>
+		<scale>1.9491</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The heading indicator (compass) shows aircraft magnetic heading and optionally true heading.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+	
+	<marker>
+		<x-m>-1.8274999999999997</x-m>
+		<y-m>-0.5558</y-m>
+		<z-m>0.3225</z-m>
+		<scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Minimum descent altitude - the altitude of final landing/go-around decision.
+	Triggers a voice reminder "Minimums!" before landing.</message>
+	<view>
+		<heading-offset-deg>358.3</heading-offset-deg>
+		<pitch-offset-deg>-28.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>33.8</field-of-view>
+	</view>
+
+	<interval>14</interval>
+
+	<marker>
+		<x-m>-1.8274999999999997</x-m>
+		<y-m>-0.5225</y-m>
+		<z-m>0.3284</z-m>
+		<scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Minimums altitude selector. Adjust decision height according to weather/visibility.
+	Watch the PFD and change the value to 300ft now (use mouse scroll wheel)!</message>
+	<view>
+		<heading-offset-deg>0.5</heading-offset-deg>
+		<pitch-offset-deg>-24.0</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.5</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>44.1</field-of-view>
+	</view>
+
+	<interval>15</interval>
+
+	<marker>
+		<x-m>-1.8167</x-m>
+		<y-m>-0.4033</y-m>
+		<z-m>0.6025</z-m>
+		<scale>1.2833</scale>
+	</marker>
+	
+	<exit>
+		<condition>
+			<equals>
+				<property>instrumentation/mk-viii/inputs/arinc429/decision-height</property>
+				<value>300</value>
+			</equals>
+		</condition>
+	</exit>
+</step>
+
+<step>
+	<message>Barometric correction selector (QNH/QFE). Pressing "STD" sets standard pressure.</message>
+	<view>
+		<heading-offset-deg>1.0</heading-offset-deg>
+		<pitch-offset-deg>-24.5</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.5</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>44.1</field-of-view>
+	</view>
+
+	<marker>
+		<x-m>-1.8167</x-m>
+		<y-m>-0.3225</y-m>
+		<z-m>0.6025</z-m>
+		<scale>1.2833</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Watch PFD altitude indications while increasing/decreasing reference pressure
+    and set 30.03 INHG now.</message>
+	<view>
+		<heading-offset-deg>0.2</heading-offset-deg>
+		<pitch-offset-deg>-25.5</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.5</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-28.0381</z-offset-m>
+		<field-of-view>44.1</field-of-view>
+	</view>
+
+	<marker>
+		<x-m>-1.8167</x-m>
+		<y-m>-0.3225</y-m>
+		<z-m>0.6025</z-m>
+		<scale>1.2833</scale>
+	</marker>
+
+	<exit>
+		<condition>
+			<and>
+				<less-than-equals>
+					<property>instrumentation/altimeter/setting-inhg</property>
+					<value>30.031</value>
+				</less-than-equals>
+				<greater-than-equals>
+					<property>instrumentation/altimeter/setting-inhg</property>
+					<value>30.029</value>
+				</greater-than-equals>
+			</and>
+		</condition>
+	</exit>
+</step>
+
+<step>
+	<message>That's it. More tutorials are available.</message>
+</step>
+
+<end></end>
+
+</PropertyList>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">UAE Emirates SkyCargo</name>
+            <texture>Liveries-F/UAES.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>UAE</aircraft-operator>
+    <aircraft-registration>A6-EFF</aircraft-registration>
+    <aircraft-SELCAL>FH-LM</aircraft-SELCAL>
+</sim>
+</PropertyList>

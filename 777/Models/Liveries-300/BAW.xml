@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">BAW British Airways</name>
+            <texture>Liveries-300/BAW.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>BAW</aircraft-operator>
+    <aircraft-registration>G-STBA</aircraft-registration>
+    <aircraft-SELCAL>EK-LQ</aircraft-SELCAL>
+</sim>
+</PropertyList>

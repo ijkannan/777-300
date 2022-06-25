@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">DTA TAAG Angola Airlines</name>
+            <texture>Liveries-300/DTA.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>DTA</aircraft-operator>
+    <aircraft-registration>D2-TEG</aircraft-registration>
+    <aircraft-SELCAL>GM-BQ</aircraft-SELCAL>
+</sim>
+</PropertyList>

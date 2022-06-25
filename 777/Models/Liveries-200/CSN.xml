@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">CSN China Southern Airlines</name>
+            <texture>Liveries-200/CSN.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>CSN</aircraft-operator>
+    <aircraft-registration>B-2055</aircraft-registration>
+    <aircraft-SELCAL>FL-ES</aircraft-SELCAL>
+</sim>
+</PropertyList>

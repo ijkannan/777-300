@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">JAL Japan Airlines (OneWorld)</name>
+            <texture>Liveries-200/JAL-one.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>JAL</aircraft-operator>
+    <aircraft-registration>JA708J</aircraft-registration>
+    <aircraft-SELCAL>FQ-MS</aircraft-SELCAL>
+</sim>
+</PropertyList>

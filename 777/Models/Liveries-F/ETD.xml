@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">ETD Etihad Airways Cargo</name>
+            <texture>Liveries-F/ETD.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>ETD</aircraft-operator>
+    <aircraft-registration>A6-DDA</aircraft-registration>
+    <aircraft-SELCAL>GP-AR</aircraft-SELCAL>
+</sim>
+</PropertyList>

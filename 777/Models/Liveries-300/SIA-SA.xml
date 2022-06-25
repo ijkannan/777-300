@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">SIA Singapore Airlines (Star Alliance)</name>
+            <texture>Liveries-300/SIA-SA.png</texture>
+        </livery>
+    </model>
+	<aircraft-class>gate</aircraft-class>
+	<aircraft-operator>SIA</aircraft-operator>
+    <aircraft-registration>9V-SWI</aircraft-registration>
+    <aircraft-SELCAL>BH-DR</aircraft-SELCAL>
+</sim>
+</PropertyList>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">ELY El Al Israel</name>
+            <texture>Liveries-200/ELY.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>ELY</aircraft-operator>
+    <aircraft-registration>4X-ECA</aircraft-registration>
+    <aircraft-SELCAL>JL-BQ</aircraft-SELCAL>
+</sim>
+</PropertyList>

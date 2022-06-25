@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">TSO Transaero Airlines</name>
+            <texture>Liveries-200/TSO.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>TSO</aircraft-operator>
+    <aircraft-registration>EI-UNX</aircraft-registration>
+    <aircraft-SELCAL>BS-CQ</aircraft-SELCAL>
+</sim>
+</PropertyList>

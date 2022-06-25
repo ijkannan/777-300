@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">CPA Cathay Pacific New Livery</name>
+            <texture>Liveries-300/CPA-BKPM.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>CPA</aircraft-operator>
+    <aircraft-registration>B-KPM</aircraft-registration>
+    <aircraft-SELCAL>JR-FQ</aircraft-SELCAL>
+</sim>
+</PropertyList>

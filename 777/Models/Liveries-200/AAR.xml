@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">AAR Asiana Airlines</name>
+            <texture>Liveries-200/AAR.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>AAR</aircraft-operator>
+    <aircraft-registration>HL7732</aircraft-registration>
+    <aircraft-SELCAL>GM-AQ</aircraft-SELCAL>
+</sim>
+</PropertyList>

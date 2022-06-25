@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">THA Thai Airways International</name>
+            <texture>Liveries-300/THA.png</texture>
+        </livery>
+    </model>
+	<aircraft-class>gate</aircraft-class>
+	<aircraft-operator>THA</aircraft-operator>
+    <aircraft-registration>HS-TKE</aircraft-registration>
+    <aircraft-SELCAL>GK-EH</aircraft-SELCAL>
+</sim>
+</PropertyList>

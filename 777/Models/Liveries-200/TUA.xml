@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">TUA Turkmenistan Airlines</name>
+            <texture>Liveries-200/TUA.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>TUA</aircraft-operator>
+    <aircraft-registration>EZ-A777</aircraft-registration>
+    <aircraft-SELCAL>EJ-FK</aircraft-SELCAL>
+</sim>
+</PropertyList>

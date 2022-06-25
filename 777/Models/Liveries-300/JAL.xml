@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">JAL Japan Airlines</name>
+            <texture>Liveries-300/JAL.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>JAL</aircraft-operator>
+	<aircraft-registration>JA8941</aircraft-registration>
+	<aircraft-SELCAL>EP-BG</aircraft-SELCAL>
+</sim>
+</PropertyList>

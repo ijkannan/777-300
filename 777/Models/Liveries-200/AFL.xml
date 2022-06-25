@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">AFL Aeroflot</name>
+            <texture>Liveries-200/AFL.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>AFL</aircraft-operator>
+    <aircraft-registration>VP-BAS</aircraft-registration>
+    <aircraft-SELCAL>QR-GS</aircraft-SELCAL>
+</sim>
+</PropertyList>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<!--Livery by Lars van Hattum (Lars0817/CHT0122)-->
+<!--This livery uses "snow" instead of white, RGB 255 250 250-->
+<sim>
+    <model>
+        <livery>
+            <name type="string">KLM (New livery)</name>
+            <texture>Liveries-300/KLM-New-livery.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>KLM</aircraft-operator>
+    <aircraft-registration>PH-BVN</aircraft-registration>
+    <aircraft-SELCAL>CP-BG</aircraft-SELCAL>
+</sim>
+</PropertyList>

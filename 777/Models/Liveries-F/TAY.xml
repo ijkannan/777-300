@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">TAY TNT Airways</name>
+            <texture>Liveries-F/TAY.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>TAY</aircraft-operator>
+    <aircraft-registration>OO-TSA</aircraft-registration>
+    <aircraft-SELCAL>EQ-KP</aircraft-SELCAL>
+</sim>
+</PropertyList>

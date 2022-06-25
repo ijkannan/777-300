@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <filter>
+        <name>Fuel fraction calculation</name> 
+        <type>gain</type>
+        <update-interval-secs type="double">0.05</update-interval-secs>
+        <gain>1.0</gain>
+        <input>
+            <property>consumables/fuel/total-fuel-norm</property>
+        </input>
+        <output>sim/fuel-fraction</output>
+    </filter>
+    
+    <filter>
+        <name>ZFW calculation</name> 
+        <type>gain</type>
+        <update-interval-secs type="double">0.05</update-interval-secs>
+        <gain>1.0</gain>
+        <input>
+            <expression>
+                <sum>
+                    <property>yasim/gross-weight-lbs</property>
+                    <product>
+                        <value>-1</value>
+                        <property>consumables/fuel/total-fuel-lbs</property>
+                    </product>
+                </sum>
+            </expression>
+        </input>
+        <output>yasim/zero-fuel-weight-lbs</output>
+    </filter>
+
+</PropertyList>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">MAS Malaysia Airlines</name>
+            <texture>Liveries-200/MAS.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>MAS</aircraft-operator>
+    <aircraft-registration>9M-MRK</aircraft-registration>
+    <aircraft-SELCAL>QR-FH</aircraft-SELCAL>
+</sim>
+</PropertyList>

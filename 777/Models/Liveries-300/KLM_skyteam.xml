@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">KLM (Skyteam)</name>
+            <texture>Liveries-300/KLM_skyteam.png</texture>
+        </livery>
+    </model>
+	<aircraft-class>gate</aircraft-class>
+	<aircraft-operator>KLM</aircraft-operator>
+    <aircraft-registration>PH-BVD</aircraft-registration>
+    <aircraft-SELCAL>EK-LR</aircraft-SELCAL>
+</sim>
+</PropertyList>

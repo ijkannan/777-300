@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+
+  <!-- Convert Catering-truck movement to roll speed in meter per second and in a steering angle-->
+  
+  <!-- Truck 0 -->
+
+    <filter> <!-- roll speed -->
+        <name>CatTruck0</name>
+        <type>gain</type>
+        <gain>1</gain>
+        <enable>
+            <condition>
+                <not-equals>
+                    <property>services/catering/truck[0]/direction</property>
+                    <value>0.0</value>
+                </not-equals>
+            </condition>
+        </enable>
+        <input>
+            <expression>
+                <table>
+                    <property>services/catering/truck[0]/position-norm</property>
+                    <entry><ind>0.000</ind><dep>0.00</dep></entry>
+                    <entry><ind>0.001</ind><dep>0.50</dep></entry>
+                    <entry><ind>0.200</ind><dep>0.50</dep></entry>
+                    <entry><ind>0.201</ind><dep>1.80</dep></entry>
+                    <entry><ind>0.888</ind><dep>1.80</dep></entry>
+                    <entry><ind>0.889</ind><dep>0.60</dep></entry>
+                    <entry><ind>0.999</ind><dep>0.60</dep></entry>
+                    <entry><ind>1.000</ind><dep>0.00</dep></entry>
+                </table>
+            </expression>
+        </input>
+        <output>services/catering/truck[0]/rollspeed-mps</output>
+    </filter>
+    
+    <filter> <!-- steering degs -->
+        <name>CatTruck0steer</name>
+        <type>gain</type>
+        <gain>1</gain>
+        <enable>
+            <condition>
+                <not-equals>
+                    <property>services/catering/truck[0]/direction</property>
+                    <value>0.0</value>
+                </not-equals>
+            </condition>
+        </enable>
+        <input>
+            <expression>
+                <table>
+                    <property>services/catering/truck[0]/position-norm</property>
+                    <entry><ind>0.000</ind><dep>  0.00</dep></entry>
+                    <entry><ind>0.495</ind><dep>  0.00</dep></entry>
+                    <entry><ind>0.500</ind><dep>-15.00</dep></entry>
+                    <entry><ind>0.888</ind><dep>-15.00</dep></entry>
+                    <entry><ind>0.895</ind><dep>  0.00</dep></entry>
+                    <entry><ind>1.000</ind><dep>  0.00</dep></entry>
+                </table>
+            </expression>
+        </input>
+        <output>services/catering/truck[0]/steering-deg</output>
+    </filter>
+    
+    <!-- Truck 1 -->
+
+    <filter> <!-- roll speed -->
+        <name>CatTruck1</name>
+        <type>gain</type>
+        <gain>1</gain>
+        <enable>
+            <condition>
+                <not-equals>
+                    <property>services/catering/truck[1]/direction</property>
+                    <value>0.0</value>
+                </not-equals>
+            </condition>
+        </enable>
+        <input>
+            <expression>
+                <table>
+                    <property>services/catering/truck[1]/position-norm</property>
+                    <entry><ind>0.000</ind><dep>0.00</dep></entry>
+                    <entry><ind>0.001</ind><dep>0.50</dep></entry>
+                    <entry><ind>0.160</ind><dep>0.50</dep></entry>
+                    <entry><ind>0.161</ind><dep>1.80</dep></entry>
+                    <entry><ind>0.831</ind><dep>1.80</dep></entry>
+                    <entry><ind>0.832</ind><dep>0.50</dep></entry>
+                    <entry><ind>0.999</ind><dep>0.50</dep></entry>
+                    <entry><ind>1.000</ind><dep>0.00</dep></entry>
+                </table>
+            </expression>
+        </input>
+        <output>services/catering/truck[1]/rollspeed-mps</output>
+    </filter>
+    
+    <filter> <!-- steering degs -->
+        <name>CatTruck1steer</name>
+        <type>gain</type>
+        <gain>1</gain>
+        <enable>
+            <condition>
+                <not-equals>
+                    <property>services/catering/truck[1]/direction</property>
+                    <value>0.0</value>
+                </not-equals>
+            </condition>
+        </enable>
+        <input>
+            <expression>
+                <table>
+                    <property>services/catering/truck[1]/position-norm</property>
+                    <entry><ind>0.000</ind><dep>  0.00</dep></entry>
+                    <entry><ind>0.355</ind><dep>  0.00</dep></entry>
+                    <entry><ind>0.365</ind><dep>-15.00</dep></entry>
+                    <entry><ind>0.626</ind><dep>-15.00</dep></entry>
+                    <entry><ind>0.636</ind><dep>  0.00</dep></entry>
+                    <entry><ind>1.000</ind><dep>  0.00</dep></entry>
+                </table>
+            </expression>
+        </input>
+        <output>services/catering/truck[1]/steering-deg</output>
+    </filter>
+    
+    <!-- Truck 2 -->
+
+    <filter> <!-- roll speed -->
+        <name>CatTruck2</name>
+        <type>gain</type>
+        <gain>1</gain>
+        <enable>
+            <condition>
+                <not-equals>
+                    <property>services/catering/truck[2]/direction</property>
+                    <value>0.0</value>
+                </not-equals>
+            </condition>
+        </enable>
+        <input>
+            <expression>
+                <table>
+                    <property>services/catering/truck[2]/position-norm</property>
+                    <entry><ind>0.000</ind><dep>0.00</dep></entry>
+                    <entry><ind>0.001</ind><dep>0.50</dep></entry>
+                    <entry><ind>0.045</ind><dep>0.50</dep></entry>
+                    <entry><ind>0.046</ind><dep>0.70</dep></entry>
+                    <entry><ind>0.220</ind><dep>0.70</dep></entry>
+                    <entry><ind>0.221</ind><dep>1.40</dep></entry>
+                    <entry><ind>0.584</ind><dep>1.40</dep></entry>
+                    <entry><ind>0.585</ind><dep>1.70</dep></entry>
+                    <entry><ind>0.910</ind><dep>1.70</dep></entry>
+                    <entry><ind>0.911</ind><dep>0.50</dep></entry>
+                    <entry><ind>0.999</ind><dep>0.50</dep></entry>
+                    <entry><ind>1.000</ind><dep>0.00</dep></entry>
+                </table>
+            </expression>
+        </input>
+        <output>services/catering/truck[2]/rollspeed-mps</output>
+    </filter>
+    
+    <filter> <!-- steering degs -->
+        <name>CatTruck2steer</name>
+        <type>gain</type>
+        <gain>1</gain>
+        <enable>
+            <condition>
+                <not-equals>
+                    <property>services/catering/truck[2]/direction</property>
+                    <value>0.0</value>
+                </not-equals>
+            </condition>
+        </enable>
+        <input>
+            <expression>
+                <table>
+                    <property>services/catering/truck[2]/position-norm</property>
+                    <entry><ind>0.000</ind><dep>  0.00</dep></entry>
+                    <entry><ind>0.040</ind><dep>  0.00</dep></entry>
+                    <entry><ind>0.050</ind><dep> 30.00</dep></entry>
+                    <entry><ind>0.215</ind><dep> 30.00</dep></entry>
+                    <entry><ind>0.225</ind><dep>  0.00</dep></entry>
+                    <entry><ind>0.579</ind><dep>  0.00</dep></entry>
+                    <entry><ind>0.589</ind><dep>-20.00</dep></entry>
+                    <entry><ind>0.691</ind><dep>-20.00</dep></entry>
+                    <entry><ind>0.701</ind><dep>  0.00</dep></entry>
+                    <entry><ind>1.000</ind><dep>  0.00</dep></entry>
+                </table>
+            </expression>
+        </input>
+        <output>services/catering/truck[2]/steering-deg</output>
+    </filter>
+    
+    <!-- Truck 3 -->
+
+    <filter> <!-- roll speed -->
+        <name>CatTruck3</name>
+        <type>gain</type>
+        <gain>1</gain>
+        <enable>
+            <condition>
+                <not-equals>
+                    <property>services/catering/truck[3]/direction</property>
+                    <value>0.0</value>
+                </not-equals>
+            </condition>
+        </enable>
+        <input>
+            <expression>
+                <table>
+                    <property>services/catering/truck[3]/position-norm</property>
+                    <entry><ind>0.000</ind><dep>0.00</dep></entry>
+                    <entry><ind>0.001</ind><dep>0.50</dep></entry>
+                    <entry><ind>0.100</ind><dep>0.50</dep></entry>
+                    <entry><ind>0.101</ind><dep>0.70</dep></entry>
+                    <entry><ind>0.108</ind><dep>0.70</dep></entry>
+                    <entry><ind>0.109</ind><dep>1.80</dep></entry>
+                    <entry><ind>0.923</ind><dep>1.80</dep></entry>
+                    <entry><ind>0.924</ind><dep>0.50</dep></entry>
+                    <entry><ind>0.999</ind><dep>0.50</dep></entry>
+                    <entry><ind>1.000</ind><dep>0.00</dep></entry>
+                </table>
+            </expression>
+        </input>
+        <output>services/catering/truck[3]/rollspeed-mps</output>
+    </filter>
+    
+    <filter> <!-- steering degs -->
+        <name>CatTruck3steer</name>
+        <type>gain</type>
+        <gain>1</gain>
+        <enable>
+            <condition>
+                <not-equals>
+                    <property>services/catering/truck[3]/direction</property>
+                    <value>0.0</value>
+                </not-equals>
+            </condition>
+        </enable>
+        <input>
+            <expression>
+                <table>
+                    <property>services/catering/truck[3]/position-norm</property>
+                    <entry><ind>0.000</ind><dep>  0.00</dep></entry>
+                    <entry><ind>0.091</ind><dep>  0.00</dep></entry>
+                    <entry><ind>0.101</ind><dep>-13.00</dep></entry>
+                    <entry><ind>0.107</ind><dep>-13.00</dep></entry>
+                    <entry><ind>0.117</ind><dep>  0.00</dep></entry>
+                    <entry><ind>1.000</ind><dep>  0.00</dep></entry>
+                </table>
+            </expression>
+        </input>
+        <output>services/catering/truck[3]/steering-deg</output>
+    </filter>
+    
+</PropertyList>

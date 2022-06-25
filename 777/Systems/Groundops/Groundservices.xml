@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+
+  <!-- Disable ASU hoses when ASU not enabled -->
+
+    <logic>
+        <name>ASU1</name>
+        <update-interval-secs type="double">0.05</update-interval-secs>
+        <enable>
+            <condition>
+                <equals>
+                    <property>services/ASU/enable</property>
+                    <value><false/></value>
+                </equals>
+            </condition>
+        </enable>
+        <input><false/></input>
+        <output>
+            <property>services/ASU/hose1-enable</property>
+        </output>
+    </logic>
+    
+    <logic>
+        <name>ASU2</name>
+        <update-interval-secs type="double">0.05</update-interval-secs>
+        <enable>
+            <condition>
+                <equals>
+                    <property>services/ASU/enable</property>
+                    <value><false/></value>
+                </equals>
+            </condition>
+        </enable>
+        <input><false/></input>
+        <output>
+            <property>services/ASU/hose2-enable</property>
+        </output>
+    </logic>
+    
+</PropertyList>

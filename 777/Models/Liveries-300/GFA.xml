@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">GFA Gulf Air</name>
+            <texture>Liveries-300/GFA.png</texture>
+        </livery>
+    </model>
+	<aircraft-class>gate</aircraft-class>
+	<aircraft-operator>GFA</aircraft-operator>
+    <aircraft-registration>VT-JEJ</aircraft-registration>
+    <aircraft-SELCAL>CM-JR</aircraft-SELCAL>
+</sim>
+</PropertyList>

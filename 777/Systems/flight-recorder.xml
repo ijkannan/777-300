@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 777-200ER custom flight recorder configuration
+     Thorsten Brehm, September 2011
+-->
+
+<PropertyList>
+
+    <!-- selected active flight recorder configuration for replay system -->
+    <replay-config type="int">0</replay-config>
+
+<!--
+    <config n="0" include="Aircraft/Generic/flightrecorder/generic-jet.xml"/>
+ -->
+
+    <config n="0">
+        <name>B777 Flight Recorder</name>
+
+        <!-- include generic stuff -->
+        <signals include="Aircraft/Generic/flightrecorder/components/position.xml" />
+        <signals include="Aircraft/Generic/flightrecorder/components/controls.xml" />
+        <signals include="Aircraft/Generic/flightrecorder/components/surfaces.xml"/>
+        <signals include="Aircraft/Generic/flightrecorder/components/engine-jet.xml">
+            <count type="int">2</count>
+        </signals>
+        <signals include="Aircraft/Generic/flightrecorder/components/gear-retractable.xml">
+            <count type="int">3</count>
+        </signals>
+        <signals include="Aircraft/Generic/flightrecorder/components/tanks.xml">
+            <count type="int">3</count>
+        </signals>
+
+        <signals>  <!-- now the custom properties -->
+
+            <signals>
+                <!--  engine related signals -->
+                <count type="int">2</count>
+                <signal>
+                    <type>bool</type><property>controls/engines/engine[%i]/cutoff</property>
+                </signal>
+                <signal>
+                    <type>bool</type><property>controls/electric/engine[%i]/generator</property>
+                </signal>
+                <signal>
+                    <type>bool</type><property>controls/electric/engine[%i]/bus-tie</property>
+                </signal>
+                <signal>
+                    <type>bool</type><property>engines/engine[%i]/run</property>
+                </signal>
+                <signal>
+                    <type>bool</type><property>controls/hydraulics/system[0]/LENG_switch</property>
+                </signal>
+                <signal>
+                    <type>bool</type><property>controls/hydraulics/system[2]/RENG_switch</property>
+                </signal>
+                <signal>
+                    <type>bool</type><property>controls/engines/engine[%i]/reverser</property>
+                </signal>
+                <signal>
+                    <type>int8</type><property>controls/engines/engine[%i]/reverser-act</property>
+                </signal>
+            </signals>
+
+            <signal>
+                <type>bool</type><property>controls/electric/APU-generator</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>systems/electrical/outputs/avionics</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/electric/battery-switch</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/electric/inverter-switch</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/instruments-norm</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/nav-lights</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/beacon</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/strobe</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/wing-lights</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/taxi-lights</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/logo-lights</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/cabin-lights</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/landing-light[0]</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/landing-light[1]</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/landing-light[2]</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>instrumentation/afds/inputs/AP</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>instrumentation/afds/inputs/loc-armed</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>instrumentation/afds/inputs/gs-armed</property>
+            </signal>
+            <signal>
+                <type>int8</type><property>instrumentation/afds/inputs/vertical-index</property>
+            </signal>
+            <signal>
+                <type>int8</type><property>instrumentation/afds/inputs/lateral-index</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>instrumentation/afds/inputs/at-armed[0]</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>instrumentation/afds/inputs/at-armed[1]</property>
+            </signal>
+            <signal>
+                <type>int8</type><property>controls/flight/speedbrake-lever</property>
+            </signal>
+            <signal>
+                <type>int8</type><property>autopilot/autobrake/step</property>
+            </signal>
+            <signal>
+                <type>int8</type><property>instrumentation/afds/inputs/autothrottle-index</property>
+            </signal>
+            <signal>
+                <type>int16</type><property>autopilot/settings/target-speed-kt</property>
+            </signal>
+            <signal>
+                <type>float</type><property>instrumentation/pfd/stallspeed-diff</property>
+            </signal>
+            <signal>
+                <type>int</type><property>autopilot/settings/actual-target-altitude-ft</property>
+            </signal>
+            <signal>
+                <type>int16</type><property>autopilot/settings/heading-bug-deg</property>
+            </signal>
+
+            <signal>
+                <type>float</type><property>gear/brake-thermal-energy</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>gear/gear[0]/compression-m</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>gear/gear[1]/compression-m</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>gear/gear[2]/compression-m</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>gear/gear[3]/compression-m</property> <!-- "virtual gear", contact point for left axle -->
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>gear/gear[4]/compression-m</property> <!-- "virtual gear", contact point for right axle -->
+            </signal>
+
+            <signal>
+                <type>float</type><property>controls/gear/nosegear-steering-cmd</property>
+            </signal>
+            <signal>
+                <type>float</type><property>controls/gear/maingear-steering-cmd</property>
+            </signal>
+
+            <signal>
+                <type>float</type>
+                <property>velocities/groundspeed-kt</property>
+            </signal>
+            <signal>
+                <type>float</type><property>position/gear-agl-ft</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>surface-positions/reverser-norm[0]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>surface-positions/reverser-norm[1]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/left-out-aileron/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/left-in-aileron/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/right-in-aileron/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/right-out-aileron/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/left-elevator/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/right-elevator/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/stabilizer/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/rudder/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/spoilers/left-out-final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/spoilers/left-in-final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/spoilers/right-in-final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/spoilers/right-out-final-deg</property>
+            </signal>
+        </signals>
+
+    </config>
+
+</PropertyList>

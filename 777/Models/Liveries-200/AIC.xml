@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">AIC Air India</name>
+            <texture>Liveries-200/AIC.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>AIC</aircraft-operator>
+    <aircraft-registration>VT-ALC</aircraft-registration>
+    <aircraft-SELCAL>AR-JQ</aircraft-SELCAL>
+</sim>
+</PropertyList>

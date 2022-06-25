@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">KAC Kuwait Airways</name>
+            <texture>Liveries-200/KAC.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>KAC</aircraft-operator>
+    <aircraft-registration>9K-AOA</aircraft-registration>
+    <aircraft-SELCAL>DQ-GP</aircraft-SELCAL>
+</sim>
+</PropertyList>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">VOZ Virgin Australia</name>
+            <texture>Liveries-300/VOZ.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>VOZ</aircraft-operator>
+    <aircraft-registration>VH-VPH</aircraft-registration>
+    <aircraft-SELCAL>AQ-GM</aircraft-SELCAL>
+</sim>
+</PropertyList>

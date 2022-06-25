@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">SCO Scoot</name>
+            <texture>Liveries-200/SCO.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>SCO</aircraft-operator>
+    <aircraft-registration>9V-OTA</aircraft-registration>
+    <aircraft-SELCAL>QS-FH</aircraft-SELCAL>
+</sim>
+</PropertyList>

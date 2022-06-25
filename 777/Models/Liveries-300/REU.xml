@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">REU Air Austral</name>
+            <texture>Liveries-300/REU.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>REU</aircraft-operator>
+    <aircraft-registration>F-OREU</aircraft-registration>
+    <aircraft-SELCAL>CG-ES</aircraft-SELCAL>
+</sim>
+</PropertyList>

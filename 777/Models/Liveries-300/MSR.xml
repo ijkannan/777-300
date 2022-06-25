@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">MSR Egyptair</name>
+            <texture>Liveries-300/MSR.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>MSR</aircraft-operator>
+    <aircraft-registration>SU-GDM</aircraft-registration>
+    <aircraft-SELCAL>FS-DP</aircraft-SELCAL>
+</sim>
+</PropertyList>

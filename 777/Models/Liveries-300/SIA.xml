@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+			<name type="string">SIA Singapore Airlines</name>
+            <texture>Liveries-300/SIA.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>SIA</aircraft-operator>
+    <aircraft-registration>9V-SWO</aircraft-registration>
+    <aircraft-SELCAL>BP-JR</aircraft-SELCAL>
+</sim>
+</PropertyList>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">CPA Cathay Pacific</name>
+            <texture>Liveries-300/CPA.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>CPA</aircraft-operator>
+    <aircraft-registration>B-KPA</aircraft-registration>
+    <aircraft-SELCAL>HP-JK</aircraft-SELCAL>
+</sim>
+</PropertyList>

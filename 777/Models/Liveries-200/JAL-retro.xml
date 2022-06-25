@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">JAL Japan Airlines (retro)</name>
+            <texture>Liveries-200/JAL-retro.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>JAL</aircraft-operator>
+    <aircraft-registration>JA8983</aircraft-registration>
+    <aircraft-SELCAL>GR-JS</aircraft-SELCAL>
+</sim>
+</PropertyList>

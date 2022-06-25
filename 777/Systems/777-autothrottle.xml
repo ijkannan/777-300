@@ -1,0 +1,542 @@
+<?xml version="1.0"?>
+
+<!--
+ auto-thrust modes:
+ mode     /instrumentation/afds/inputs/autothrottle-index
+ OFF      0
+ THR      1
+ THR REF  2
+ HOLD     3
+ IDLE     4
+ SPD      5
+ -->
+ 
+<!-- Tweaked by Josh Davidson (Octal450) for new autopilot -->
+
+<PropertyList>
+	
+	<logic>
+		<input>
+			<or>
+				<property>instrumentation/afds/inputs/at-armed[0]</property>
+				<property>instrumentation/afds/inputs/at-armed[1]</property>
+			</or>
+		</input>
+		<output>/autopilot/internal/athr-armed</output>
+	</logic>
+	
+	<logic>
+		<input>
+			<and>
+				<property>/autopilot/internal/athr-armed</property>
+				<not><property>autopilot/locks/takeoff-mode</property></not>
+				<or>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>4</value>
+					</equals>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>3</value>
+					</equals>
+				</or>
+			</and>
+		</input>
+		<output>/autopilot/internal/athr-static-active</output>
+	</logic>
+	
+	<logic>
+		<input>
+			<and>
+				<property>/autopilot/internal/athr-armed</property>
+				<equals>
+					<property>instrumentation/afds/inputs/autothrottle-index</property>
+					<value>5</value>
+				</equals>
+			</and>
+		</input>
+		<output>/autopilot/internal/athr-speed-active</output>
+	</logic>
+	
+	<filter>
+		<name>IAS speed limit</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<greater-than>
+					<property>controls/flight/flaps</property>
+					<value>0.0</value>
+				</greater-than>
+			</condition>
+			<expression>
+				<table>
+					<property>controls/flight/flaps</property>
+					<entry><ind>0.033</ind><dep>255</dep></entry>
+					<entry><ind>0.166</ind><dep>235</dep></entry>
+					<entry><ind>0.5</ind><dep>215</dep></entry>
+					<entry><ind>0.666</ind><dep>200</dep></entry>
+					<entry><ind>0.833</ind><dep>190</dep></entry>
+					<entry><ind>1.0</ind><dep>180</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<input>
+			<condition>
+				<greater-than>
+					<property>gear/gear/position-norm</property>
+					<value>0.0</value>
+				</greater-than>
+			</condition>
+			<value>270</value>
+		</input>
+		<input>
+			<!-- basic IAS limit based upon diagram 7771003, Sec1.Page4 in the
+			  continental manual -->
+			<expression>
+				<table>
+					<property>instrumentation/altimeter/indicated-altitude-ft</property>
+					<entry><ind>0</ind><dep>330</dep></entry> <!-- clean Vmo -->
+					<entry><ind>30000</ind><dep>330</dep></entry>
+					<entry><ind>43000</ind><dep>248</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>instrumentation/afds/max-airspeed-kts</output>
+	</filter>
+
+	<filter>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<min>
+					<property>autopilot/settings/target-speed-kt</property>
+					<property>instrumentation/afds/max-airspeed-kts</property>
+				</min>
+			</expression>
+		</input>
+		<output>instrumentation/afds/ias-target-kt</output>
+	</filter>
+	
+	<!-- Reworked Autothrottle by Josh Davidson (Octal450) -->
+	<filter>
+		<name>A/THR Knots Input Gain</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<equals>
+					<property>instrumentation/afds/ap-modes/pitch-mode</property>
+					<value>VNAV PATH</value>
+				</equals>
+			</condition>
+			<property>autopilot/fmc/target_speed</property>
+		</input>
+		<input>/instrumentation/afds/ias-target-kt</input>
+		<output>/autopilot/internal/athr-kts-cmd</output>
+		<min>
+			<expression>
+				<difference>
+					<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+					<value>35</value>
+				</difference>
+			</expression>
+		</min>
+		<max>
+			<expression>
+				<sum>
+					<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+					<value>35</value>
+				</sum>
+			</expression>
+		</max>
+	</filter>
+	
+	<filter>
+		<name>A/THR Knots Input Filter</name>
+		<type>noise-spike</type>
+		<initialize-to>output</initialize-to>
+		<input>/autopilot/internal/athr-kts-cmd</input>
+		<output>/autopilot/internal/athr-kts</output>
+		<max-rate-of-change>
+			<condition>
+				<and>
+					<property>/autopilot/internal/athr-speed-active</property>
+					<equals>
+						<property>/instrumentation/afds/inputs/ias-mach-selected</property>
+						<value>0</value>
+					</equals>
+					<equals>
+						<property>/gear/gear[1]/wow</property>
+						<value>0</value>
+					</equals>
+					<equals>
+						<property>/gear/gear[2]/wow</property>
+						<value>0</value>
+					</equals>
+				</and>
+			</condition>
+			<value>10</value>
+		</max-rate-of-change>
+		<max-rate-of-change>200</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>A/THR Mach Input Gain</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<equals>
+					<property>instrumentation/afds/ap-modes/pitch-mode</property>
+					<value>VNAV PATH</value>
+				</equals>
+			</condition>
+			<property>autopilot/fmc/target_mach</property>
+		</input>
+		<input>/autopilot/settings/target-speed-mach</input>
+		<output>/autopilot/internal/athr-mach-cmd</output>
+		<min>
+			<expression>
+				<difference>
+					<property>/instrumentation/airspeed-indicator/indicated-mach</property>
+					<value>0.055</value>
+				</difference>
+			</expression>
+		</min>
+		<max>
+			<expression>
+				<sum>
+					<property>/instrumentation/airspeed-indicator/indicated-mach</property>
+					<value>0.055</value>
+				</sum>
+			</expression>
+		</max>
+	</filter>
+	
+	<filter>
+		<name>A/THR Mach Input Filter</name>
+		<type>noise-spike</type>
+		<feedback-if-disabled>true</feedback-if-disabled>
+		<initialize-to>output</initialize-to>
+		<input>/autopilot/internal/athr-mach-cmd</input>
+		<output>/autopilot/internal/athr-mach</output>
+		<max-rate-of-change>
+			<condition>
+				<and>
+					<property>/autopilot/internal/athr-speed-active</property>
+					<equals>
+						<property>/autopilot/output/thr-mode</property>
+						<value>0</value>
+					</equals>
+					<equals>
+						<property>/instrumentation/afds/inputs/ias-mach-selected</property>
+						<value>1</value>
+					</equals>
+					<equals>
+						<property>/gear/gear[1]/wow</property>
+						<value>0</value>
+					</equals>
+					<equals>
+						<property>/gear/gear[2]/wow</property>
+						<value>0</value>
+					</equals>
+				</and>
+			</condition>
+			<value>0.08</value>
+		</max-rate-of-change>
+		<max-rate-of-change>2</max-rate-of-change>
+	</filter>
+	
+	<pid-controller>
+		<name>IT-CONTROLLER: Knots</name>
+		<enable>
+			<condition>
+				<and>
+					<property>/autopilot/internal/athr-speed-active</property>
+					<equals>
+						<property>/instrumentation/afds/inputs/ias-mach-selected</property>
+						<value>0</value>
+					</equals>
+				</and>
+			</condition>
+		</enable>
+		<input>/instrumentation/airspeed-indicator/indicated-speed-kt</input>
+		<reference>/autopilot/internal/athr-kts</reference>
+		<output>/autopilot/internal/throttle-cmd-pid</output>
+		<config>
+			<Kp>0.05</Kp>
+			<Ti>9.0</Ti>
+			<Td>0.00001</Td> 
+			<u_min>
+				<condition>
+					<equals>
+						<property>instrumentation/afds/ap-modes/pitch-mode</property>
+						<value>G/S</value>
+					</equals>
+				</condition>
+				<value>0.03</value>
+			</u_min>
+			<u_min>0.06</u_min>
+			<u_max>/autopilot/settings/thrust-lmt</u_max>
+		</config>
+	</pid-controller>
+	
+	<pid-controller>
+		<name>IT-CONTROLLER: Mach</name>
+		<enable>
+			<condition>
+				<and>
+					<property>/autopilot/internal/athr-speed-active</property>
+					<equals>
+						<property>/instrumentation/afds/inputs/ias-mach-selected</property>
+						<value>1</value>
+					</equals>
+				</and>
+			</condition>
+		</enable>
+		<input>
+			<property>/instrumentation/airspeed-indicator/indicated-mach</property>
+			<scale>1000</scale>
+		</input>
+		<reference>
+			<property>/autopilot/internal/athr-mach</property>
+			<scale>1000</scale>
+		</reference>
+		<output>/autopilot/internal/throttle-cmd-pid</output>
+		<config>
+			<Kp>0.05</Kp>
+			<Ti>9.0</Ti>
+			<Td>0.00001</Td>
+			<u_min>
+				<condition>
+					<equals>
+						<property>instrumentation/afds/ap-modes/pitch-mode</property>
+						<value>G/S</value>
+					</equals>
+				</condition>
+				<value>0.03</value>
+			</u_min>
+			<u_min>0.06</u_min>
+			<u_max>/autopilot/settings/thrust-lmt</u_max>
+		</config>
+	</pid-controller>
+	
+	<filter>
+		<name>IT-CONTROLLER: Static Thrust</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<enable>
+			<condition>
+				<property>/autopilot/internal/athr-static-active</property>
+			</condition>
+		</enable>
+		<input>
+			<condition>
+				<and>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>4</value>
+					</equals>
+					<less-than>
+						<property>position/gear-agl-ft</property>
+						<value>50</value>
+					</less-than>
+				</and>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>/autopilot/settings/flight-idle</input>
+		<output>/autopilot/internal/throttle-cmd-pid</output>
+	</filter>
+	
+	<filter>
+		<name>System Command: Throttle Backdrive</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<enable>
+			<condition>
+				<or>
+					<not><property>/autopilot/internal/athr-armed</property></not>
+					<and>
+						<not><property>/autopilot/internal/athr-static-active</property></not>
+						<not><property>/autopilot/internal/athr-speed-active</property></not>
+					</and>
+				</or>
+			</condition>
+		</enable>
+		<input>
+			<expression>
+				<max>
+					<property>/controls/engines/engine[0]/throttle</property>
+					<property>/controls/engines/engine[1]/throttle</property>
+				</max>
+			</expression>
+		</input>
+		<output>/autopilot/internal/throttle-cmd-pid</output>
+	</filter>
+	
+	<filter>
+		<name>System Command: Throttle 1</name>
+		<type>noise-spike</type>
+		<initialize-to>output</initialize-to>
+		<enable>
+			<condition>
+				<and>
+					<property>instrumentation/afds/inputs/at-armed[0]</property>
+					<or>
+						<property>/autopilot/internal/athr-static-active</property>
+						<property>/autopilot/internal/athr-speed-active</property>
+					</or>
+				</and>
+			</condition>
+		</enable>
+		<input>/autopilot/internal/throttle-cmd-pid</input>
+		<output>/controls/engines/engine[0]/throttle</output>
+		<max-rate-of-change>
+			<condition>
+				<or>
+					<and>
+						<and>
+							<equals>
+								<property>instrumentation/afds/inputs/autothrottle-index</property>
+								<value>4</value>
+							</equals>
+							<less-than>
+								<property>position/gear-agl-ft</property>
+								<value>50</value>
+							</less-than>
+						</and>
+						<or>
+							<equals>
+								<property>/gear/gear[1]/wow</property>
+								<value>1</value>
+							</equals>
+							<equals>
+								<property>/gear/gear[2]/wow</property>
+								<value>1</value>
+							</equals>
+						</or>
+					</and>
+					<equals> <!-- Don't slow throttle in T/O or G/A -->
+						<property>/instrumentation/afds/ap-modes/pitch-mode</property>
+						<value>TO/GA</value>
+					</equals>
+				</or>
+			</condition>
+			<value>0.3</value>
+		</max-rate-of-change>
+		<max-rate-of-change>
+			<condition>
+				<or>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>4</value>
+					</equals>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>3</value>
+					</equals>
+				</or>
+			</condition>
+			<value>0.05</value>
+		</max-rate-of-change>
+		<max-rate-of-change>0.3</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>System Command: Throttle 2</name>
+		<type>noise-spike</type>
+		<initialize-to>output</initialize-to>
+		<enable>
+			<condition>
+				<and>
+					<property>instrumentation/afds/inputs/at-armed[1]</property>
+					<or>
+						<property>/autopilot/internal/athr-static-active</property>
+						<property>/autopilot/internal/athr-speed-active</property>
+					</or>
+				</and>
+			</condition>
+		</enable>
+		<input>/autopilot/internal/throttle-cmd-pid</input>
+		<output>/controls/engines/engine[1]/throttle</output>
+		<max-rate-of-change>
+			<condition>
+				<or>
+					<and>
+						<and>
+							<equals>
+								<property>instrumentation/afds/inputs/autothrottle-index</property>
+								<value>4</value>
+							</equals>
+							<less-than>
+								<property>position/gear-agl-ft</property>
+								<value>50</value>
+							</less-than>
+						</and>
+						<or>
+							<equals>
+								<property>/gear/gear[1]/wow</property>
+								<value>1</value>
+							</equals>
+							<equals>
+								<property>/gear/gear[2]/wow</property>
+								<value>1</value>
+							</equals>
+						</or>
+					</and>
+					<equals> <!-- Don't slow throttle in T/O or G/A -->
+						<property>/instrumentation/afds/ap-modes/pitch-mode</property>
+						<value>TO/GA</value>
+					</equals>
+				</or>
+			</condition>
+			<value>0.3</value>
+		</max-rate-of-change>
+		<max-rate-of-change>
+			<condition>
+				<or>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>4</value>
+					</equals>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>3</value>
+					</equals>
+				</or>
+			</condition>
+			<value>0.05</value>
+		</max-rate-of-change>
+		<max-rate-of-change>0.3</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>SERVO-DRIVER:throttle lever1</name>
+		<debug>false</debug>
+		<feedback-if-disabled>true</feedback-if-disabled>
+		<input>/controls/engines/engine[0]/throttle</input>
+		<output>
+			<property>controls/engines/engine[0]/throttle-act</property>
+			<property>controls/engines/engine[0]/throttle-lever</property>
+		</output>
+		<type>noise-spike</type>
+		<max-rate-of-change>1</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>SERVO-DRIVER:throttle lever2</name>
+		<debug>false</debug>
+		<feedback-if-disabled>true</feedback-if-disabled>
+		<input>/controls/engines/engine[1]/throttle</input>
+		<output>
+			<property>controls/engines/engine[1]/throttle-act</property>
+			<property>controls/engines/engine[1]/throttle-lever</property>
+		</output>
+		<type>noise-spike</type>
+		<max-rate-of-change>1</max-rate-of-change>
+	</filter>
+
+</PropertyList>

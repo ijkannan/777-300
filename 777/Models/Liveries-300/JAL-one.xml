@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">JAL Japan Airlines (One World)</name>
+            <texture>Liveries-300/JAL-one.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>JAL</aircraft-operator>
+    <aircraft-registration>JA732J</aircraft-registration>
+    <aircraft-SELCAL>DR-EG</aircraft-SELCAL>
+</sim>
+</PropertyList>

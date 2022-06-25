@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <!-- Livery by FGPRC-->
+            <name type="string">CAO Air China Cargo(B-2096)</name>
+            <texture>Liveries-F/CAO.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>CAO</aircraft-operator>
+</sim>
+</PropertyList>

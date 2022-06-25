@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <name>cabinlightstoggle</name>
+    <layout>vbox</layout>
+
+    <text>
+        <label>Cabin Lights</label>
+    </text>
+
+    <hrule />
+     
+    <group>
+    <layout>table</layout>
+        <checkbox>
+            <row>0</row>
+            <col>0</col>
+            <label>On</label>
+            <halign>left</halign>
+            <property>controls/lighting/cabin-lights</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+    </group>
+
+    <hrule />
+    
+    <group>
+    <layout>hbox</layout>
+
+        <button>
+            <legend>Close</legend>
+            <default>true</default>
+            <key>Esc</key>
+        <padding>5</padding>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+        
+    </group>
+
+</PropertyList>

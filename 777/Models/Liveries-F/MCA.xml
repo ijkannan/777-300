@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Merlion Cargo</name>
+            <texture>Liveries-F/MCA.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>MIA</aircraft-operator>
+    <aircraft-registration>FG-MIA</aircraft-registration>
+    <aircraft-SELCAL>BT-JP</aircraft-SELCAL>
+</sim>
+</PropertyList>

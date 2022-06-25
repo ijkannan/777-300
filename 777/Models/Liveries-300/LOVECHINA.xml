@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">CCA AIR CHINA "LOVE CHINA"</name>
+            <texture>Liveries-300/LOVECHINA.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>CCA</aircraft-operator>
+    <aircraft-registration>B-2006</aircraft-registration>
+    <aircraft-SELCAL>MQ-AR</aircraft-SELCAL>
+</sim>
+</PropertyList>

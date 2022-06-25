@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">ETD Etihad Airways (Abu Dhabi Grand Prix)</name>
+            <texture>Liveries-300/ETD.png</texture>
+        </livery>
+    </model>
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator>ETD</aircraft-operator>
+    <aircraft-registration>A6-ETK</aircraft-registration>
+    <aircraft-SELCAL>GL-FS</aircraft-SELCAL>
+</sim>
+</PropertyList>
