@@ -4,4 +4,5 @@
 # Before
 # ![FlightGear 24_06_2022 9_50_41 PM](https://user-images.githubusercontent.com/103198166/175770179-727df947-592f-4682-8148-a61c7b9750ed.png)
 # After  
-# ![FlightGear 26_06_2022 3_02_27 PM](https://user-images.githubusercontent.com/103198166/175812430-5c8d1b94-dad1-400b-a39e-d4c256fe55d4.png)
+# 
+![FlightGear 26_06_2022 2_16_39 PM](https://user-images.githubusercontent.com/103198166/175812494-d122e753-4501-4dca-b16a-3a364d151c45.png)
