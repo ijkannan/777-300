@@ -5,7 +5,7 @@ Syd Adams
 -->
 <PropertyList>
 
-    <path>Aircraft/777/Models/777-300.ac</path>
+    <path>Aircraft/777/Models/777-300ER.ac</path>
 
     <nasal>
     <load>
@@ -57,8 +57,10 @@ Syd Adams
         <object-name>RHelevator</object-name>
         <object-name>Lramdoor</object-name>
         <object-name>Rramdoor</object-name>
-        <object-name>Rslat</object-name>
-        <object-name>Lslat</object-name>
+        <object-name>Lslat1</object-name>
+        <object-name>Lslat1.001</object-name>
+        <object-name>Rslat1</object-name>
+        <object-name>Rslat1.001</object-name>
         <object-name>Wheaters</object-name>
         <object-name>hinge1</object-name>
         <object-name>hinge2</object-name>
@@ -95,24 +97,23 @@ Syd Adams
         <object-name>Rlockbrace.1</object-name>
         <object-name>Raileron_0</object-name>
         <object-name>Laileron_0</object-name>
-        <object-name>Laileron_0</object-name>
         <object-name>Lhinge2</object-name>
         <object-name>Lhinge3</object-name>
         <object-name>Rhinge2</object-name>
         <object-name>Rhinge3</object-name>
         <object-name>FUdamper</object-name>
         <object-name>FLdamper</object-name>
+        <object-name>rlightext</object-name>
+        <object-name>windowfus</object-name>
         <object-name>Engines_0</object-name>
-        <object-name>Laileron</object-name>
         <object-name>cabinlighting</object-name>
         <object-name>Lfan</object-name>
         <object-name>Rfan</object-name>
-        <object-name>windowfus</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-300/JAL.png</texture>
     </animation>
-
+    
     <animation>
     <type>select</type>
         <object-name>Fuselage</object-name>
@@ -151,8 +152,10 @@ Syd Adams
         <object-name>RHelevator</object-name>
         <object-name>Lramdoor</object-name>
         <object-name>Rramdoor</object-name>
-        <object-name>Rslat</object-name>
-        <object-name>Lslat</object-name>
+        <object-name>Lslat1</object-name>
+        <object-name>Lslat1.001</object-name>
+        <object-name>Rslat1</object-name>
+        <object-name>Rslat1.001</object-name>
         <object-name>Wheaters</object-name>
         <object-name>hinge1</object-name>
         <object-name>hinge2</object-name>
@@ -189,19 +192,18 @@ Syd Adams
         <object-name>Rlockbrace.1</object-name>
         <object-name>Raileron_0</object-name>
         <object-name>Laileron_0</object-name>
-        <object-name>Laileron_0</object-name>
         <object-name>Lhinge2</object-name>
         <object-name>Lhinge3</object-name>
         <object-name>Rhinge2</object-name>
         <object-name>Rhinge3</object-name>
         <object-name>FUdamper</object-name>
         <object-name>FLdamper</object-name>
+        <object-name>rlightext</object-name>
+        <object-name>windowfus</object-name>
         <object-name>Engines_0</object-name>
-        <object-name>Laileron</object-name>
         <object-name>cabinlighting</object-name>
         <object-name>Lfan</object-name>
         <object-name>Rfan</object-name>
-        <object-name>windowfus</object-name>
         <condition>
             <equals>
                 <property>sim/current-view/internal</property>
@@ -230,7 +232,7 @@ Syd Adams
         <object-name>rednav</object-name>
         <object-name>rlight</object-name>
     </animation>
- 
+    
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect</inherits-from>
         <object-name>Fuselage</object-name>
@@ -272,8 +274,10 @@ Syd Adams
         <object-name>Lwing.geardoor</object-name>
         <object-name>Lramdoor</object-name>
         <object-name>Rramdoor</object-name>
-        <object-name>Rslat</object-name>
-        <object-name>Lslat</object-name>
+        <object-name>Lslat1</object-name>
+        <object-name>Lslat1.001</object-name>
+        <object-name>Rslat1</object-name>
+        <object-name>Rslat1.001</object-name>
         <object-name>Wheaters</object-name>
         <object-name>hinge1</object-name>
         <object-name>hinge2</object-name>
@@ -310,21 +314,20 @@ Syd Adams
         <object-name>Rlockbrace.1</object-name>
         <object-name>Raileron_0</object-name>
         <object-name>Laileron_0</object-name>
-        <object-name>Laileron_0</object-name>
         <object-name>Lhinge2</object-name>
         <object-name>Lhinge3</object-name>
         <object-name>Rhinge2</object-name>
         <object-name>Rhinge3</object-name>
         <object-name>FUdamper</object-name>
         <object-name>FLdamper</object-name>
+        <object-name>rlightext</object-name>
+        <object-name>windowfus</object-name>
         <object-name>Engines_0</object-name>
-        <object-name>Laileron</object-name>
         <object-name>Rstrut</object-name>
         <object-name>Lstrut</object-name>
         <object-name>FrtStrut</object-name>
         <object-name>LandingLights</object-name>
         <object-name>taxiL-off</object-name>
-        <object-name>windowfus</object-name>
     </effect>
 
    <!-- Transparent Surfaces for Rembrandt rendering -->
@@ -336,7 +339,7 @@ Syd Adams
 
     <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-        <object-name>redlight</object-name>
+    <object-name>redlight</object-name>
     <object-name>redflash</object-name>
     <object-name>whiteflash</object-name>
     <object-name>greenflash</object-name>
@@ -360,12 +363,12 @@ Syd Adams
         <usage>interior</usage>
         <path>Aircraft/777/Models/flightdeck-300.xml</path>
     </model>
-    
+
     <model>
         <name>interior</name>
         <path>Aircraft/777/Models/interior.xml</path>
     </model>
-
+    
     <model>
         <name>LandingLights</name>
         <path>Aircraft/777/Models/Lights/light-coneLR.xml</path>
@@ -395,8 +398,8 @@ Syd Adams
     <object-name>FrtStrut</object-name>
     <object-name>Lstrut</object-name>
     <object-name>Rstrut</object-name>
-    <object-name>Rslat</object-name>
-    <object-name>Lslat</object-name>
+    <object-name>Rslat1.001</object-name>
+    <object-name>Lslat1.001</object-name>
     <object-name>Wheaters</object-name>
     <object-name>LandingLights</object-name>
     <object-name>taxiL-off</object-name>
@@ -784,20 +787,20 @@ Syd Adams
     </animation>
 
     <animation>
-    <type>rotate</type>
-    <object-name>Lflap2</object-name>
-    <property>surface-positions/flap-pos-norm</property>
-    <factor>31.6</factor>
-    <center>
-        <x-m>8.8</x-m>
-        <y-m>-14.203</y-m>
-        <z-m>-0.3</z-m>
-    </center>
-    <axis>
-        <x>0.0</x>
-        <y>0.992</y>
-        <z>-0.130</z>
-    </axis>
+        <type>rotate</type>
+        <object-name>Lflap2</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <factor>31.6</factor>
+        <center>
+            <x-m>8.8</x-m>
+            <y-m>-14.203</y-m>
+            <z-m>-0.3</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>0.992</y>
+            <z>-0.130</z>
+        </axis>
     </animation>
 
     <animation>
@@ -864,8 +867,8 @@ Syd Adams
         <factor>12</factor>
         <axis>
             <x1-m>10.45134</x1-m>
-            <y1-m>-19.67941</y1-m>
-            <z1-m>-0.37221</z1-m>
+            <y1-m>-19.67974</y1-m>
+            <z1-m>-0.37220</z1-m>
             <x2-m>10.45134</x2-m>
             <y2-m>-19.55624</y2-m>
             <z2-m>-0.38815</z2-m>
@@ -1011,8 +1014,10 @@ Syd Adams
 
     <animation>
     <type>translate</type>
-    <object-name>Rslat</object-name>
-    <object-name>Lslat</object-name>
+    <object-name>Rslat1</object-name>
+    <object-name>Lslat1</object-name>
+    <object-name>Rslat1.001</object-name>
+    <object-name>Lslat1.001</object-name>
     <property>surface-positions/slats</property>
     <factor>0.4</factor>
     <axis>
@@ -1061,19 +1066,19 @@ Syd Adams
 <!-- FX / Lights -->
 
     <animation>
-        <type>select</type>
-        <object-name>navlights</object-name>
-        <object-name>redflash</object-name>
-        <object-name>whiteflash</object-name>
-        <object-name>greenflash</object-name>
-        <object-name>greennav</object-name>
-        <object-name>rednav</object-name>
-        <condition>
-            <greater-than>
-            <property>sim/multiplay/generic/int[7]</property>
-            <value>5</value>
-            </greater-than>
-        </condition>
+    <type>select</type>
+    <object-name>navlights</object-name>
+    <object-name>redflash</object-name>
+    <object-name>whiteflash</object-name>
+    <object-name>greenflash</object-name>
+    <object-name>greennav</object-name>
+    <object-name>rednav</object-name>
+    <condition>
+        <greater-than>
+        <property>sim/multiplay/generic/int[7]</property>
+        <value>5</value>
+        </greater-than>
+    </condition>
     </animation>
 
     <animation>
@@ -1225,7 +1230,6 @@ Syd Adams
         </condition>
     </animation>
 
-
     <animation>
         <type>select</type>
         <object-name>CTRLND.spot</object-name>
@@ -1268,11 +1272,11 @@ Syd Adams
     <animation>
     <type>translate</type>
     <object-name>redflash</object-name>
-    <offset-m>34.02</offset-m>
+       <offset-m>34.78</offset-m>
     <axis>
-        <x>0.449</x>
-        <y>-0.892</y>
-        <z>0.046</z>
+        <x>0.607</x>
+        <y>-1.21</y>
+        <z>0.0637</z>
     </axis>
     </animation>
 
@@ -1284,11 +1288,11 @@ Syd Adams
     <animation>
     <type>translate</type>
     <object-name>greenflash</object-name>
-    <offset-m>34.02</offset-m>
+    <offset-m>34.78</offset-m>
     <axis>
-        <x>0.449</x>
-        <y>0.892</y>
-        <z>0.046</z>
+        <x>0.607</x>
+        <y>1.21</y>
+        <z>0.0637</z>
     </axis>
     </animation>
 
@@ -1311,11 +1315,11 @@ Syd Adams
     <animation>
     <type>translate</type>
     <object-name>Strobe01</object-name>
-    <offset-m>34.26</offset-m>
+    <offset-m>35.2</offset-m>
     <axis>
-        <x>0.455</x>
-        <y>-0.889</y>
-        <z>0.046</z>
+        <x>0.607</x>
+        <y>-1.21</y>
+        <z>0.0637</z>
     </axis>
     </animation>
 
@@ -1347,11 +1351,11 @@ Syd Adams
     <animation>
     <type>translate</type>
     <object-name>Strobe02</object-name>
-    <offset-m>34.26</offset-m>
+    <offset-m>35.2</offset-m>
     <axis>
-        <x>0.455</x>
-        <y>0.889</y>
-        <z>0.046</z>
+        <x>0.607</x>
+        <y>1.21</y>
+        <z>0.0637</z>
     </axis>
     </animation>
 
@@ -1423,7 +1427,7 @@ Syd Adams
     <axis>
         <x>-0.886</x>
         <y>0</y>
-        <z>0.463</z>
+        <z>0.461</z>
     </axis>
     </animation>
 
@@ -1459,7 +1463,7 @@ Syd Adams
     <axis>
         <x>-0.047</x>
         <y>0</y>
-        <z>-0.999</z>
+        <z>-0.997</z>
     </axis>
     </animation>
 
@@ -1539,7 +1543,7 @@ Syd Adams
     <min>1</min>
     <max>5</max>
     </animation>
-    
+
     <animation>
     <type>flash</type>
     <object-name>Taxi.flare1</object-name>
@@ -1602,7 +1606,7 @@ Syd Adams
     <condition>
         <less-than>
         <property>engines/engine[0]/rpm</property>
-        <value>30</value>
+        <value>8000</value>
         </less-than>
     </condition>
     </animation>
@@ -1613,7 +1617,7 @@ Syd Adams
     <condition>
         <less-than>
         <property>engines/engine[1]/rpm</property>
-        <value>30</value>
+        <value>8000</value>
         </less-than>
     </condition>
     </animation>
@@ -2606,7 +2610,7 @@ Syd Adams
         <property>controls/fuel/tank[0]/jettisoning</property>
     </condition>
     <offsets>
-        <x-m>13.96705</x-m>
+        <x-m>13.97163</x-m>
         <y-m>-20.95284</y-m>
         <z-m>0.57081</z-m>
     </offsets>
@@ -2619,11 +2623,12 @@ Syd Adams
         <property>controls/fuel/tank[2]/jettisoning</property>
     </condition>
     <offsets>
-        <x-m>13.96705</x-m>
+        <x-m>13.97163</x-m>
         <y-m>20.95284</y-m>
         <z-m>0.57081</z-m>
     </offsets>
 </model>
+
 
 <!-- Pushback -->
 
@@ -2890,7 +2895,7 @@ Syd Adams
     <and>
         <property>sim/animation/fire-services</property>
         <less-than>
-        <property>velocities/airspeed-kt</property>
+        <property>velocities/groundspeed-kt</property>
         <value>40</value>
         </less-than>
     </and>

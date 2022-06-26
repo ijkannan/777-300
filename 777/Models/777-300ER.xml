@@ -1606,7 +1606,7 @@ Syd Adams
     <condition>
         <less-than>
         <property>engines/engine[0]/rpm</property>
-        <value>30</value>
+        <value>8000</value>
         </less-than>
     </condition>
     </animation>
@@ -1617,7 +1617,7 @@ Syd Adams
     <condition>
         <less-than>
         <property>engines/engine[1]/rpm</property>
-        <value>30</value>
+        <value>8000</value>
         </less-than>
     </condition>
     </animation>
