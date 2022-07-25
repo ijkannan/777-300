@@ -322,3 +322,9 @@ setlistener("sim/signals/exit", func {
 setlistener("sim/signals/reinit", func {
     save_state();
 });
+
+var nocrash = setlistener("/sim/crashed", func {
+    if (getprop("/sim/crashed") == 1) {
+        setprop("/sim/crashed", 0);
+    }
+}, 0, 0);
