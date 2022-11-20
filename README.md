@@ -10,3 +10,4 @@ thank you !
 - made changes to cockpit dashboard and color corrections
 - made progress for realistic spoiler speed brakes
 - fixed Yasim fdm which freezes on collisions, from now on the model will just bounce on collisions
+- removed the annoying 3D meshes that was on the windshield edges
