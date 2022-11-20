@@ -9,7 +9,7 @@ thank you !
 
 1. Download the zip file by pressing code -> Download ZIP
 2. Unzip the file into your aircraft folder and make sure the aircraft folder directory is added in FlightGear's Add-ons menu
-3. Remove the -main from the folder name
+3. Remove the "-main" from the aircraft folder 
 
 ## Installation - Git
 
