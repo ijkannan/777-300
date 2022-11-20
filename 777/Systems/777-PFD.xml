@@ -1,28 +1,28 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-  <!-- =============================================================== -->
-  <!--                        PFD display preprocessors                -->
-  <!-- =============================================================== -->
+	<!-- =============================================================== -->
+	<!--                        PFD display preprocessors                -->
+	<!-- =============================================================== -->
 
 	<filter>
-    	<name>Altitude cursor icon positioning</name> 
-      <type>gain</type>
-      <update-interval-secs type="double">0.05</update-interval-secs>
-      <gain>1.0</gain>
-      <input>
-        <property>autopilot/settings/actual-target-altitude-ft</property>
-      </input>
-      <reference>
-		<property>instrumentation/altimeter/indicated-altitude-ft</property>
-      </reference>
-      <output>instrumentation/pfd/target-altitude-diff</output>
-      <min>-430</min>
-      <max>430</max>
-  </filter>
+		<name>Altitude cursor icon positioning</name>
+		<type>gain</type>
+		<update-interval-secs type="double">0.05</update-interval-secs>
+		<gain>1.0</gain>
+		<input>
+			<property>autopilot/settings/actual-target-altitude-ft</property>
+		</input>
+		<reference>
+			<property>instrumentation/altimeter/indicated-altitude-ft</property>
+		</reference>
+		<output>instrumentation/pfd/target-altitude-diff</output>
+		<min>-430</min>
+		<max>430</max>
+	</filter>
 
 	<filter>
-		<name>Landing runway reference</name> 
+		<name>Landing runway reference</name>
 		<type>gain</type>
 		<update-interval-secs type="double">0.05</update-interval-secs>
 		<gain>1.0</gain>
@@ -38,7 +38,7 @@
 	</filter>
 
 	<filter>
-		<name>Baro altitude Minimum</name> 
+		<name>Baro altitude Minimum</name>
 		<type>gain</type>
 		<update-interval-secs type="double">0.05</update-interval-secs>
 		<gain>1.0</gain>
@@ -54,89 +54,89 @@
 	</filter>
 
 	<filter>
-    	<name>Target Speed icon positioning</name> 
-      <type>gain</type>
-      <update-interval-secs type="double">0.05</update-interval-secs>
-      <gain>1.0</gain>
-      <input>
-        <property>autopilot/settings/target-speed-kt</property>
-      </input>
-      <reference>
-		<property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
-      </reference>
-      <output>instrumentation/pfd/target-speed-diff</output>
-      <min>-60</min>
-      <max>60</max>
-  </filter>
-
-  <filter>
-      <name>Stall speed margin computer</name> 
-      <type>gain</type>
-      <update-interval-secs type="double">0.05</update-interval-secs>
-      <gain>1.0</gain>
-      <input>
-          <property>instrumentation/weu/state/stall-speed</property>
-      </input>
-      <reference>
-          <property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
-          <offset>70</offset>
-      </reference>
-      <output>instrumentation/pfd/stallspeed-diff</output>
-      <min>-205</min>
-      <max>10</max>
-  </filter>
-
-  <filter>
-      <name>Over speed margin computer</name> 
-      <type>gain</type>
-      <update-interval-secs type="double">0.05</update-interval-secs>
-      <gain>-1.0</gain>
-      <input>
-          <property>instrumentation/afds/max-airspeed-kts</property>
-      </input>
-      <reference>
-          <property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
-          <offset>-65</offset>
-      </reference>
-      <output>instrumentation/pfd/overspeed-diff</output>
-      <min>-200</min>
-      <max>-10</max>
-  </filter>
-
- 	<filter>
-    	<name>VREF marker positioning</name> 
-      <type>gain</type>
-      <update-interval-secs type="double">0.05</update-interval-secs>
-      <gain>1.0</gain>
-      <input>
-        <property>instrumentation/weu/state/vref</property>
-      </input>
-      <reference>
-		<property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
-      </reference>
-      <output>instrumentation/pfd/vref-diff</output>
-      <min>-62</min>
-      <max>60</max>
-  </filter>
-
- 	<filter>
-    	<name>VREF text positioning</name> 
-      <type>gain</type>
-      <update-interval-secs type="double">0.05</update-interval-secs>
-      <gain>1.0</gain>
-      <input>
-        <property>instrumentation/weu/state/vref</property>
-      </input>
-      <reference>
-		<property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
-      </reference>
-      <output>instrumentation/pfd/vref-text-diff</output>
-      <min>-55</min>
-      <max>63</max>
-  </filter>
+		<name>Target Speed icon positioning</name>
+		<type>gain</type>
+		<update-interval-secs type="double">0.05</update-interval-secs>
+		<gain>1.0</gain>
+		<input>
+			<property>autopilot/settings/target-speed-kt</property>
+		</input>
+		<reference>
+			<property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+		</reference>
+		<output>instrumentation/pfd/target-speed-diff</output>
+		<min>-60</min>
+		<max>60</max>
+	</filter>
 
 	<filter>
-    	<name>FBW marker positioning</name> 
+		<name>Stall speed margin computer</name>
+		<type>gain</type>
+		<update-interval-secs type="double">0.05</update-interval-secs>
+		<gain>1.0</gain>
+		<input>
+			<property>instrumentation/weu/state/stall-speed</property>
+		</input>
+		<reference>
+			<property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
+			<offset>70</offset>
+		</reference>
+		<output>instrumentation/pfd/stallspeed-diff</output>
+		<min>-205</min>
+		<max>10</max>
+	</filter>
+
+	<filter>
+		<name>Over speed margin computer</name>
+		<type>gain</type>
+		<update-interval-secs type="double">0.05</update-interval-secs>
+		<gain>-1.0</gain>
+		<input>
+			<property>instrumentation/afds/max-airspeed-kts</property>
+		</input>
+		<reference>
+			<property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
+			<offset>-65</offset>
+		</reference>
+		<output>instrumentation/pfd/overspeed-diff</output>
+		<min>-200</min>
+		<max>-10</max>
+	</filter>
+
+	<filter>
+		<name>VREF marker positioning</name>
+		<type>gain</type>
+		<update-interval-secs type="double">0.05</update-interval-secs>
+		<gain>1.0</gain>
+		<input>
+			<property>instrumentation/weu/state/vref</property>
+		</input>
+		<reference>
+			<property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+		</reference>
+		<output>instrumentation/pfd/vref-diff</output>
+		<min>-62</min>
+		<max>60</max>
+	</filter>
+
+	<filter>
+		<name>VREF text positioning</name>
+		<type>gain</type>
+		<update-interval-secs type="double">0.05</update-interval-secs>
+		<gain>1.0</gain>
+		<input>
+			<property>instrumentation/weu/state/vref</property>
+		</input>
+		<reference>
+			<property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+		</reference>
+		<output>instrumentation/pfd/vref-text-diff</output>
+		<min>-55</min>
+		<max>63</max>
+	</filter>
+
+	<filter>
+		<name>FBW marker positioning</name>
 		<type>gain</type>
 		<update-interval-secs type="double">0.05</update-interval-secs>
 		<gain>1.0</gain>
@@ -148,7 +148,7 @@
 	</filter>
 
 	<filter>
-    	<name>V1 marker positioning</name> 
+		<name>V1 marker positioning</name>
 		<type>gain</type>
 		<update-interval-secs type="double">0.05</update-interval-secs>
 		<gain>1.0</gain>
@@ -164,7 +164,7 @@
 	</filter>
 
 	<filter>
-    	<name>VR marker positioning</name> 
+		<name>VR marker positioning</name>
 		<type>gain</type>
 		<update-interval-secs type="double">0.05</update-interval-secs>
 		<gain>1.0</gain>
@@ -180,7 +180,7 @@
 	</filter>
 
 	<filter>
-    	<name>V2 marker positioning</name> 
+		<name>V2 marker positioning</name>
 		<type>gain</type>
 		<update-interval-secs type="double">0.05</update-interval-secs>
 		<gain>1.0</gain>
@@ -196,7 +196,7 @@
 	</filter>
 
 	<filter>
-    	<name>Flap UP marker positioning</name> 
+		<name>Flap UP marker positioning</name>
 		<type>gain</type>
 		<update-interval-secs type="double">0.05</update-interval-secs>
 		<gain>1.0</gain>
@@ -212,7 +212,7 @@
 	</filter>
 
 	<filter>
-    	<name>Flap 1 marker positioning</name> 
+		<name>Flap 1 marker positioning</name>
 		<type>gain</type>
 		<update-interval-secs type="double">0.05</update-interval-secs>
 		<gain>1.0</gain>
@@ -228,7 +228,7 @@
 	</filter>
 
 	<filter>
-    	<name>Flap 5 marker positioning</name> 
+		<name>Flap 5 marker positioning</name>
 		<type>gain</type>
 		<update-interval-secs type="double">0.05</update-interval-secs>
 		<gain>1.0</gain>
@@ -244,7 +244,7 @@
 	</filter>
 
 	<filter>
-    	<name>Flap 15 marker positioning</name> 
+		<name>Flap 15 marker positioning</name>
 		<type>gain</type>
 		<update-interval-secs type="double">0.05</update-interval-secs>
 		<gain>1.0</gain>
@@ -259,52 +259,52 @@
 		<max>60</max>
 	</filter>
 
-<!-- =============================================================== -->
-  <!--                 speed trend vector processing                   -->
-  <!-- =============================================================== -->
+	<!-- =============================================================== -->
+	<!--                 speed trend vector processing                   -->
+	<!-- =============================================================== -->
 
-  <predict-simple>
-    <name>speed predictor (smoothed)</name>
-    <update-interval-secs type="double">0.1</update-interval-secs>
-    <input>instrumentation/airspeed-indicator/indicator-speed-kt</input>
-    <output>instrumentation/pfd/speed-lookahead</output>
-    <seconds>10.0</seconds>
-    <filter-gain>0.05</filter-gain>
-  </predict-simple>
+	<predict-simple>
+		<name>speed predictor (smoothed)</name>
+		<update-interval-secs type="double">0.1</update-interval-secs>
+		<input>instrumentation/airspeed-indicator/indicator-speed-kt</input>
+		<output>instrumentation/pfd/speed-lookahead</output>
+		<seconds>10.0</seconds>
+		<filter-gain>0.05</filter-gain>
+	</predict-simple>
 
-  <filter>
-    <name>PFD preprocessor (spd trend up)</name>
-    <type>gain</type>
-    <update-interval-secs type="double">0.1</update-interval-secs>
-    <input>
-      <property>instrumentation/pfd/speed-lookahead</property>
-    </input>
-    <reference>
-      <property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
-      <offset>90</offset>
-    </reference>
-    <gain>-0.002667</gain>
-    <output>instrumentation/pfd/speed-trend-up</output>
-    <max>0.24</max>
-    <min>0</min>
-  </filter>
+	<filter>
+		<name>PFD preprocessor (spd trend up)</name>
+		<type>gain</type>
+		<update-interval-secs type="double">0.1</update-interval-secs>
+		<input>
+			<property>instrumentation/pfd/speed-lookahead</property>
+		</input>
+		<reference>
+			<property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
+			<offset>90</offset>
+		</reference>
+		<gain>-0.002667</gain>
+		<output>instrumentation/pfd/speed-trend-up</output>
+		<max>0.24</max>
+		<min>0</min>
+	</filter>
 
-  <filter>
-    <name>PFD preprocessor (spd trend down)</name>
-    <type>gain</type>
-    <update-interval-secs type="double">0.1</update-interval-secs>
-    <input>
-      <property>instrumentation/pfd/speed-lookahead</property>
-      <min>0</min>
-    </input>
-    <reference>
-      <property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
-      <offset>-90</offset>
-    </reference>
-    <gain>-0.002667</gain>
-    <output>instrumentation/pfd/speed-trend-down</output>
-    <min>-0.24</min>
-    <max>0</max>
-  </filter>
+	<filter>
+		<name>PFD preprocessor (spd trend down)</name>
+		<type>gain</type>
+		<update-interval-secs type="double">0.1</update-interval-secs>
+		<input>
+			<property>instrumentation/pfd/speed-lookahead</property>
+			<min>0</min>
+		</input>
+		<reference>
+			<property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
+			<offset>-90</offset>
+		</reference>
+		<gain>-0.002667</gain>
+		<output>instrumentation/pfd/speed-trend-down</output>
+		<min>-0.24</min>
+		<max>0</max>
+	</filter>
 
 </PropertyList>

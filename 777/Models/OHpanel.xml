@@ -5,7 +5,7 @@ Syd Adams
 
 <PropertyList>
 
-<path>OHpanel.ac</path>
+    <path>OHpanel.ac</path>
 
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
@@ -85,10 +85,10 @@ Syd Adams
                 <property>/sim/time/sun-angle-rad</property>
                 <value>1.70</value>
             </greater-than>
-             <greater-than>
+            <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+            </greater-than>
         </condition>
         <emission>
             <red>0.5</red>
@@ -105,10 +105,10 @@ Syd Adams
                 <property>/sim/time/sun-angle-rad</property>
                 <value>1.70</value>
             </greater-than>
-             <greater-than>
+            <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+            </greater-than>
         </condition>
         <emission>
             <red>0.2</red>
@@ -182,37 +182,37 @@ Syd Adams
         </action>
     </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>P_OFV_L_Switch</object-name>
-    <property>controls/air/ofvfwd</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>P_OFV_L_Switch</object-name>
+        <property>controls/air/ofvfwd</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>P_OFV_L_AcryFace</object-name>
-   <object-name>P_OFV_L_Switch</object-name>
-   <object-name>P_OFV_L_Shutter.Top</object-name>
-   <object-name>P_OFV_L_Shutter.Bottom</object-name>
-   <property>controls/switches/OFVFWDSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>P_OFV_L_AcryFace</object-name>
+        <object-name>P_OFV_L_Switch</object-name>
+        <object-name>P_OFV_L_Shutter.Top</object-name>
+        <object-name>P_OFV_L_Shutter.Bottom</object-name>
+        <property>controls/switches/OFVFWDSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>P_OFV_L_Shutter.Top</object-name>
-   <property>controls/switches/OFVFWDSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>P_OFV_L_Shutter.Top</object-name>
+        <property>controls/switches/OFVFWDSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -224,12 +224,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>P_OFV_L_Shutter.Bottom</object-name>
-   <property>controls/switches/OFVFWDSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>P_OFV_L_Shutter.Bottom</object-name>
+        <property>controls/switches/OFVFWDSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -241,39 +241,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>P_OFV_R_Switch</object-name>
-    <property>controls/air/ofvaft</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>P_OFV_R_Switch</object-name>
+        <property>controls/air/ofvaft</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>P_OFV_R_AcryFace</object-name>
-   <object-name>P_OFV_R_Switch</object-name>
-   <object-name>P_OFV_R_Shutter.Top</object-name>
-   <object-name>P_OFV_R_Shutter.Bottom</object-name>
-   <property>controls/switches/OFVAFTSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>P_OFV_R_AcryFace</object-name>
+        <object-name>P_OFV_R_Switch</object-name>
+        <object-name>P_OFV_R_Shutter.Top</object-name>
+        <object-name>P_OFV_R_Shutter.Bottom</object-name>
+        <property>controls/switches/OFVAFTSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>P_OFV_R_Shutter.Top</object-name>
-   <property>controls/switches/OFVAFTSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>P_OFV_R_Shutter.Top</object-name>
+        <property>controls/switches/OFVAFTSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -285,12 +285,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>P_OFV_R_Shutter.Bottom</object-name>
-   <property>controls/switches/OFVAFTSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>P_OFV_R_Shutter.Bottom</object-name>
+        <property>controls/switches/OFVAFTSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -302,39 +302,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
-  <animation>
-   <type>textranslate</type>
-   <object-name>LPCK_Switch</object-name>
-    <property>controls/air/lpack</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>LPCK_Switch</object-name>
+        <property>controls/air/lpack</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>LPCK_AcryFace</object-name>
-   <object-name>LPCK_Switch</object-name>
-   <object-name>LPCK_Shutter.Top</object-name>
-   <object-name>LPCK_Shutter.Bottom</object-name>
-   <property>controls/switches/LPACKSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>LPCK_AcryFace</object-name>
+        <object-name>LPCK_Switch</object-name>
+        <object-name>LPCK_Shutter.Top</object-name>
+        <object-name>LPCK_Shutter.Bottom</object-name>
+        <property>controls/switches/LPACKSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LPCK_Shutter.Top</object-name>
-   <property>controls/switches/LPACKSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LPCK_Shutter.Top</object-name>
+        <property>controls/switches/LPACKSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -346,12 +346,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LPCK_Shutter.Bottom</object-name>
-   <property>controls/switches/LPACKSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LPCK_Shutter.Bottom</object-name>
+        <property>controls/switches/LPACKSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -363,39 +363,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>RPCK_Switch</object-name>
-    <property>controls/air/rpack</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>RPCK_Switch</object-name>
+        <property>controls/air/rpack</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>RPCK_AcryFace</object-name>
-   <object-name>RPCK_Switch</object-name>
-   <object-name>RPCK_Shutter.Top</object-name>
-   <object-name>RPCK_Shutter.Bottom</object-name>
-   <property>controls/switches/RPACKSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>RPCK_AcryFace</object-name>
+        <object-name>RPCK_Switch</object-name>
+        <object-name>RPCK_Shutter.Top</object-name>
+        <object-name>RPCK_Shutter.Bottom</object-name>
+        <property>controls/switches/RPACKSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RPCK_Shutter.Top</object-name>
-   <property>controls/switches/RPACKSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RPCK_Shutter.Top</object-name>
+        <property>controls/switches/RPACKSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -407,12 +407,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RPCK_Shutter.Bottom</object-name>
-   <property>controls/switches/RPACKSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RPCK_Shutter.Bottom</object-name>
+        <property>controls/switches/RPACKSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -424,39 +424,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>LTRAIR_Switch</object-name>
-    <property>controls/air/ltrim</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>LTRAIR_Switch</object-name>
+        <property>controls/air/ltrim</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>LTRAIR_AcryFace</object-name>
-   <object-name>LTRAIR_Switch</object-name>
-   <object-name>LTRAIR_Shutter.Top</object-name>
-   <object-name>LTRAIR_Shutter.Bottom</object-name>
-   <property>controls/switches/LTRIMSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>LTRAIR_AcryFace</object-name>
+        <object-name>LTRAIR_Switch</object-name>
+        <object-name>LTRAIR_Shutter.Top</object-name>
+        <object-name>LTRAIR_Shutter.Bottom</object-name>
+        <property>controls/switches/LTRIMSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LTRAIR_Shutter.Top</object-name>
-   <property>controls/switches/LTRIMSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LTRAIR_Shutter.Top</object-name>
+        <property>controls/switches/LTRIMSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -468,12 +468,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LTRAIR_Shutter.Bottom</object-name>
-   <property>controls/switches/LTRIMSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LTRAIR_Shutter.Bottom</object-name>
+        <property>controls/switches/LTRIMSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -485,39 +485,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>RTRAIR_Switch</object-name>
-    <property>controls/air/rtrim</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>RTRAIR_Switch</object-name>
+        <property>controls/air/rtrim</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>RTRAIR_AcryFace</object-name>
-   <object-name>RTRAIR_Switch</object-name>
-   <object-name>RTRAIR_Shutter.Top</object-name>
-   <object-name>RTRAIR_Shutter.Bottom</object-name>
-   <property>controls/switches/RTRIMSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>RTRAIR_AcryFace</object-name>
+        <object-name>RTRAIR_Switch</object-name>
+        <object-name>RTRAIR_Shutter.Top</object-name>
+        <object-name>RTRAIR_Shutter.Bottom</object-name>
+        <property>controls/switches/RTRIMSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RTRAIR_Shutter.Top</object-name>
-   <property>controls/switches/RTRIMSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RTRAIR_Shutter.Top</object-name>
+        <property>controls/switches/RTRIMSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -529,12 +529,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RTRAIR_Shutter.Bottom</object-name>
-   <property>controls/switches/RTRIMSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RTRAIR_Shutter.Bottom</object-name>
+        <property>controls/switches/RTRIMSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -546,39 +546,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>BLD_ISLN_L_Switch</object-name>
-    <property>controls/air/islationl</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>BLD_ISLN_L_Switch</object-name>
+        <property>controls/air/islationl</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>BLD_ISLN_L_AcryFace</object-name>
-   <object-name>BLD_ISLN_L_Switch</object-name>
-   <object-name>BLD_ISLN_L_Shutter.Top</object-name>
-   <object-name>BLD_ISLN_L_Shutter.Bottom</object-name>
-   <property>controls/switches/ISLNLSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>BLD_ISLN_L_AcryFace</object-name>
+        <object-name>BLD_ISLN_L_Switch</object-name>
+        <object-name>BLD_ISLN_L_Shutter.Top</object-name>
+        <object-name>BLD_ISLN_L_Shutter.Bottom</object-name>
+        <property>controls/switches/ISLNLSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_ISLN_L_Shutter.Top</object-name>
-   <property>controls/switches/ISLNLSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_ISLN_L_Shutter.Top</object-name>
+        <property>controls/switches/ISLNLSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -590,12 +590,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_ISLN_L_Shutter.Bottom</object-name>
-   <property>controls/switches/ISLNLSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_ISLN_L_Shutter.Bottom</object-name>
+        <property>controls/switches/ISLNLSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -607,39 +607,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>BLD_ISLN_C_Switch</object-name>
-    <property>controls/air/islationc</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>BLD_ISLN_C_Switch</object-name>
+        <property>controls/air/islationc</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>BLD_ISLN_C_AcryFace</object-name>
-   <object-name>BLD_ISLN_C_Switch</object-name>
-   <object-name>BLD_ISLN_C_Shutter.Top</object-name>
-   <object-name>BLD_ISLN_C_Shutter.Bottom</object-name>
-   <property>controls/switches/ISLNCSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>BLD_ISLN_C_AcryFace</object-name>
+        <object-name>BLD_ISLN_C_Switch</object-name>
+        <object-name>BLD_ISLN_C_Shutter.Top</object-name>
+        <object-name>BLD_ISLN_C_Shutter.Bottom</object-name>
+        <property>controls/switches/ISLNCSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_ISLN_C_Shutter.Top</object-name>
-   <property>controls/switches/ISLNCSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_ISLN_C_Shutter.Top</object-name>
+        <property>controls/switches/ISLNCSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -651,12 +651,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_ISLN_C_Shutter.Bottom</object-name>
-   <property>controls/switches/ISLNCSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_ISLN_C_Shutter.Bottom</object-name>
+        <property>controls/switches/ISLNCSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -668,39 +668,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>BLD_ISLN_R_Switch</object-name>
-    <property>controls/air/islationr</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>BLD_ISLN_R_Switch</object-name>
+        <property>controls/air/islationr</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>BLD_ISLN_R_AcryFace</object-name>
-   <object-name>BLD_ISLN_R_Switch</object-name>
-   <object-name>BLD_ISLN_R_Shutter.Top</object-name>
-   <object-name>BLD_ISLN_R_Shutter.Bottom</object-name>
-   <property>controls/switches/ISLNRSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>BLD_ISLN_R_AcryFace</object-name>
+        <object-name>BLD_ISLN_R_Switch</object-name>
+        <object-name>BLD_ISLN_R_Shutter.Top</object-name>
+        <object-name>BLD_ISLN_R_Shutter.Bottom</object-name>
+        <property>controls/switches/ISLNRSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_ISLN_R_Shutter.Top</object-name>
-   <property>controls/switches/ISLNRSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_ISLN_R_Shutter.Top</object-name>
+        <property>controls/switches/ISLNRSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -712,12 +712,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_ISLN_R_Shutter.Bottom</object-name>
-   <property>controls/switches/ISLNRSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_ISLN_R_Shutter.Bottom</object-name>
+        <property>controls/switches/ISLNRSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -729,39 +729,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>BLD_APU_Switch</object-name>
-    <property>controls/air/bleedapu</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>BLD_APU_Switch</object-name>
+        <property>controls/air/bleedapu</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>BLD_APU_AcryFace</object-name>
-   <object-name>BLD_APU_Switch</object-name>
-   <object-name>BLD_APU_Shutter.Top</object-name>
-   <object-name>BLD_APU_Shutter.Bottom</object-name>
-   <property>controls/switches/BLDAPUSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>BLD_APU_AcryFace</object-name>
+        <object-name>BLD_APU_Switch</object-name>
+        <object-name>BLD_APU_Shutter.Top</object-name>
+        <object-name>BLD_APU_Shutter.Bottom</object-name>
+        <property>controls/switches/BLDAPUSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_APU_Shutter.Top</object-name>
-   <property>controls/switches/BLDAPUSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_APU_Shutter.Top</object-name>
+        <property>controls/switches/BLDAPUSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -773,12 +773,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_APU_Shutter.Bottom</object-name>
-   <property>controls/switches/BLDAPUSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_APU_Shutter.Bottom</object-name>
+        <property>controls/switches/BLDAPUSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -790,39 +790,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>BLD_ENG_L_Switch</object-name>
-    <property>controls/air/bleedengl</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>BLD_ENG_L_Switch</object-name>
+        <property>controls/air/bleedengl</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>BLD_ENG_L_AcryFace</object-name>
-   <object-name>BLD_ENG_L_Switch</object-name>
-   <object-name>BLD_ENG_L_Shutter.Top</object-name>
-   <object-name>BLD_ENG_L_Shutter.Bottom</object-name>
-   <property>controls/switches/BLDENGLSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>BLD_ENG_L_AcryFace</object-name>
+        <object-name>BLD_ENG_L_Switch</object-name>
+        <object-name>BLD_ENG_L_Shutter.Top</object-name>
+        <object-name>BLD_ENG_L_Shutter.Bottom</object-name>
+        <property>controls/switches/BLDENGLSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_ENG_L_Shutter.Top</object-name>
-   <property>controls/switches/BLDENGLSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_ENG_L_Shutter.Top</object-name>
+        <property>controls/switches/BLDENGLSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -834,12 +834,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_ENG_L_Shutter.Bottom</object-name>
-   <property>controls/switches/BLDENGLSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_ENG_L_Shutter.Bottom</object-name>
+        <property>controls/switches/BLDENGLSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -851,39 +851,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>BLD_ENG_R_Switch</object-name>
-    <property>controls/air/bleedengr</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>BLD_ENG_R_Switch</object-name>
+        <property>controls/air/bleedengr</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>BLD_ENG_R_AcryFace</object-name>
-   <object-name>BLD_ENG_R_Switch</object-name>
-   <object-name>BLD_ENG_R_Shutter.Top</object-name>
-   <object-name>BLD_ENG_R_Shutter.Bottom</object-name>
-   <property>controls/switches/BLDENGRSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>BLD_ENG_R_AcryFace</object-name>
+        <object-name>BLD_ENG_R_Switch</object-name>
+        <object-name>BLD_ENG_R_Shutter.Top</object-name>
+        <object-name>BLD_ENG_R_Shutter.Bottom</object-name>
+        <property>controls/switches/BLDENGRSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_ENG_R_Shutter.Top</object-name>
-   <property>controls/switches/BLDENGRSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_ENG_R_Shutter.Top</object-name>
+        <property>controls/switches/BLDENGRSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -895,12 +895,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BLD_ENG_R_Shutter.Bottom</object-name>
-   <property>controls/switches/BLDENGRSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BLD_ENG_R_Shutter.Bottom</object-name>
+        <property>controls/switches/BLDENGRSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -912,99 +912,99 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>Lelec.fault</object-name>
-   <property>systems/hydraulics/LACMP-NORMAL</property>
-   <factor>0.1562</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>Lelec.fault</object-name>
+        <property>systems/hydraulics/LACMP-NORMAL</property>
+        <factor>0.1562</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>C1.fault</object-name>
-   <property>systems/hydraulics/C1ADP-NORMAL</property>
-   <factor>0.1562</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>C1.fault</object-name>
+        <property>systems/hydraulics/C1ADP-NORMAL</property>
+        <factor>0.1562</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
-<animation>
-   <type>textranslate</type>
-   <object-name>C2.fault</object-name>
-   <property>systems/hydraulics/C2ADP-NORMAL</property>
-   <factor>0.1562</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>C2.fault</object-name>
+        <property>systems/hydraulics/C2ADP-NORMAL</property>
+        <factor>0.1562</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>Relec.fault</object-name>
-   <property>systems/hydraulics/RACMP-NORMAL</property>
-   <factor>0.1562</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>Relec.fault</object-name>
+        <property>systems/hydraulics/RACMP-NORMAL</property>
+        <factor>0.1562</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>APU_DISCH.fault</object-name>
-   <property>controls/switches/fire/apu-discharged</property>
-   <factor>0.05</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>APU_DISCH.fault</object-name>
+        <property>controls/switches/fire/apu-discharged</property>
+        <factor>0.05</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>FIRE-ARM_FWD_Switch</object-name>
-    <property>controls/switches/fire/cargo-fwd</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>FIRE-ARM_FWD_Switch</object-name>
+        <property>controls/switches/fire/cargo-fwd</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>FIRE-ARM_FWD_AcryFace</object-name>
-   <object-name>FIRE-ARM_FWD_Switch</object-name>
-   <object-name>FIRE-ARM_FWD_Shutter.Top</object-name>
-   <object-name>FIRE-ARM_FWD_Shutter.Bottom</object-name>
-   <property>controls/switches/FIREARMCARGOFWDSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>FIRE-ARM_FWD_AcryFace</object-name>
+        <object-name>FIRE-ARM_FWD_Switch</object-name>
+        <object-name>FIRE-ARM_FWD_Shutter.Top</object-name>
+        <object-name>FIRE-ARM_FWD_Shutter.Bottom</object-name>
+        <property>controls/switches/FIREARMCARGOFWDSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>FIRE-ARM_FWD_Shutter.Top</object-name>
-   <property>controls/switches/FIREARMCARGOFWDSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>FIRE-ARM_FWD_Shutter.Top</object-name>
+        <property>controls/switches/FIREARMCARGOFWDSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1016,12 +1016,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>FIRE-ARM_FWD_Shutter.Bottom</object-name>
-   <property>controls/switches/FIREARMCARGOFWDSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>FIRE-ARM_FWD_Shutter.Bottom</object-name>
+        <property>controls/switches/FIREARMCARGOFWDSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1033,39 +1033,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>FIRE-ARM_AFT_Switch</object-name>
-    <property>controls/switches/fire/cargo-aft</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>FIRE-ARM_AFT_Switch</object-name>
+        <property>controls/switches/fire/cargo-aft</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>FIRE-ARM_AFT_AcryFace</object-name>
-   <object-name>FIRE-ARM_AFT_Switch</object-name>
-   <object-name>FIRE-ARM_AFT_Shutter.Top</object-name>
-   <object-name>FIRE-ARM_AFT_Shutter.Bottom</object-name>
-   <property>controls/switches/FIREARMCARGOAFTSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>FIRE-ARM_AFT_AcryFace</object-name>
+        <object-name>FIRE-ARM_AFT_Switch</object-name>
+        <object-name>FIRE-ARM_AFT_Shutter.Top</object-name>
+        <object-name>FIRE-ARM_AFT_Shutter.Bottom</object-name>
+        <property>controls/switches/FIREARMCARGOAFTSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>FIRE-ARM_AFT_Shutter.Top</object-name>
-   <property>controls/switches/FIREARMCARGOAFTSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>FIRE-ARM_AFT_Shutter.Top</object-name>
+        <property>controls/switches/FIREARMCARGOAFTSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1077,12 +1077,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>FIRE-ARM_AFT_Shutter.Bottom</object-name>
-   <property>controls/switches/FIREARMCARGOAFTSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>FIRE-ARM_AFT_Shutter.Bottom</object-name>
+        <property>controls/switches/FIREARMCARGOAFTSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1094,7 +1094,7 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -1113,37 +1113,37 @@ Syd Adams
         </axis>
     </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>AUTOSTART_Switch</object-name>
-    <property>controls/engines/b-autostart</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>AUTOSTART_Switch</object-name>
+        <property>controls/engines/b-autostart</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>AUTOSTART_AcryFace</object-name>
-   <object-name>AUTOSTART_Switch</object-name>
-   <object-name>AUTOSTART_Shutter.Top</object-name>
-   <object-name>AUTOSTART_Shutter.Bottom</object-name>
-   <property>controls/switches/AUTOSTARTSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>AUTOSTART_AcryFace</object-name>
+        <object-name>AUTOSTART_Switch</object-name>
+        <object-name>AUTOSTART_Shutter.Top</object-name>
+        <object-name>AUTOSTART_Shutter.Bottom</object-name>
+        <property>controls/switches/AUTOSTARTSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>AUTOSTART_Shutter.Top</object-name>
-   <property>controls/switches/AUTOSTARTSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>AUTOSTART_Shutter.Top</object-name>
+        <property>controls/switches/AUTOSTARTSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1155,12 +1155,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>AUTOSTART_Shutter.Bottom</object-name>
-   <property>controls/switches/AUTOSTARTSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>AUTOSTART_Shutter.Bottom</object-name>
+        <property>controls/switches/AUTOSTARTSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1172,7 +1172,7 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -1191,37 +1191,37 @@ Syd Adams
         </axis>
     </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>LENG_EEC_Switch</object-name>
-    <property>controls/engines/engine/b-eec-switch</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>LENG_EEC_Switch</object-name>
+        <property>controls/engines/engine/b-eec-switch</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>LENG_EEC_AcryFace</object-name>
-   <object-name>LENG_EEC_Switch</object-name>
-   <object-name>LENG_EEC_Shutter.Top</object-name>
-   <object-name>LENG_EEC_Shutter.Bottom</object-name>
-   <property>controls/switches/LENG_EECSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>LENG_EEC_AcryFace</object-name>
+        <object-name>LENG_EEC_Switch</object-name>
+        <object-name>LENG_EEC_Shutter.Top</object-name>
+        <object-name>LENG_EEC_Shutter.Bottom</object-name>
+        <property>controls/switches/LENG_EECSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LENG_EEC_Shutter.Top</object-name>
-   <property>controls/switches/LENG_EECSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LENG_EEC_Shutter.Top</object-name>
+        <property>controls/switches/LENG_EECSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1233,12 +1233,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LENG_EEC_Shutter.Bottom</object-name>
-   <property>controls/switches/LENG_EECSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LENG_EEC_Shutter.Bottom</object-name>
+        <property>controls/switches/LENG_EECSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1250,7 +1250,7 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -1269,37 +1269,37 @@ Syd Adams
         </axis>
     </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>RENG_EEC_Switch</object-name>
-    <property>controls/engines/engine[1]/b-eec-switch</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>RENG_EEC_Switch</object-name>
+        <property>controls/engines/engine[1]/b-eec-switch</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>RENG_EEC_AcryFace</object-name>
-   <object-name>RENG_EEC_Switch</object-name>
-   <object-name>RENG_EEC_Shutter.Top</object-name>
-   <object-name>RENG_EEC_Shutter.Bottom</object-name>
-   <property>controls/switches/RENG_EECSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>RENG_EEC_AcryFace</object-name>
+        <object-name>RENG_EEC_Switch</object-name>
+        <object-name>RENG_EEC_Shutter.Top</object-name>
+        <object-name>RENG_EEC_Shutter.Bottom</object-name>
+        <property>controls/switches/RENG_EECSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RENG_EEC_Shutter.Top</object-name>
-   <property>controls/switches/RENG_EECSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RENG_EEC_Shutter.Top</object-name>
+        <property>controls/switches/RENG_EECSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1311,12 +1311,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RENG_EEC_Shutter.Bottom</object-name>
-   <property>controls/switches/RENG_EECSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RENG_EEC_Shutter.Bottom</object-name>
+        <property>controls/switches/RENG_EECSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1328,39 +1328,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>ASYM_ThComp_Switch</object-name>
-    <property>controls/flight/thrust-asym</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>ASYM_ThComp_Switch</object-name>
+        <property>controls/flight/thrust-asym</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>ASYM_ThComp_AcryFace</object-name>
-   <object-name>ASYM_ThComp_Switch</object-name>
-   <object-name>ASYM_ThComp_Shutter.Top</object-name>
-   <object-name>ASYM_ThComp_Shutter.Bottom</object-name>
-   <property>controls/switches/THASYMSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>ASYM_ThComp_AcryFace</object-name>
+        <object-name>ASYM_ThComp_Switch</object-name>
+        <object-name>ASYM_ThComp_Shutter.Top</object-name>
+        <object-name>ASYM_ThComp_Shutter.Bottom</object-name>
+        <property>controls/switches/THASYMSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>ASYM_ThComp_Shutter.Top</object-name>
-   <property>controls/switches/THASYMSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>ASYM_ThComp_Shutter.Top</object-name>
+        <property>controls/switches/THASYMSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1372,12 +1372,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>ASYM_ThComp_Shutter.Bottom</object-name>
-   <property>controls/switches/THASYMSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>ASYM_ThComp_Shutter.Bottom</object-name>
+        <property>controls/switches/THASYMSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1389,39 +1389,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>ADIRU_Switch</object-name>
-    <property>controls/flight/adiru</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>ADIRU_Switch</object-name>
+        <property>controls/flight/adiru</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>ADIRU_AcryFace</object-name>
-   <object-name>ADIRU_Switch</object-name>
-   <object-name>ADIRU_Shutter.Top</object-name>
-   <object-name>ADIRU_Shutter.Bottom</object-name>
-   <property>controls/switches/ADIRUSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>ADIRU_AcryFace</object-name>
+        <object-name>ADIRU_Switch</object-name>
+        <object-name>ADIRU_Shutter.Top</object-name>
+        <object-name>ADIRU_Shutter.Bottom</object-name>
+        <property>controls/switches/ADIRUSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>ADIRU_Shutter.Top</object-name>
-   <property>controls/switches/ADIRUSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>ADIRU_Shutter.Top</object-name>
+        <property>controls/switches/ADIRUSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1433,12 +1433,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>ADIRU_Shutter.Bottom</object-name>
-   <property>controls/switches/ADIRUSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>ADIRU_Shutter.Bottom</object-name>
+        <property>controls/switches/ADIRUSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1450,39 +1450,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>AIR-EQCOOL_Switch</object-name>
-    <property>controls/air/equip-cool</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>AIR-EQCOOL_Switch</object-name>
+        <property>controls/air/equip-cool</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>AIR-EQCOOL_AcryFace</object-name>
-   <object-name>AIR-EQCOOL_Switch</object-name>
-   <object-name>AIR-EQCOOL_Shutter.Top</object-name>
-   <object-name>AIR-EQCOOL_Shutter.Bottom</object-name>
-   <property>controls/switches/EQIPCOOLSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>AIR-EQCOOL_AcryFace</object-name>
+        <object-name>AIR-EQCOOL_Switch</object-name>
+        <object-name>AIR-EQCOOL_Shutter.Top</object-name>
+        <object-name>AIR-EQCOOL_Shutter.Bottom</object-name>
+        <property>controls/switches/EQIPCOOLSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>AIR-EQCOOL_Shutter.Top</object-name>
-   <property>controls/switches/EQIPCOOLSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>AIR-EQCOOL_Shutter.Top</object-name>
+        <property>controls/switches/EQIPCOOLSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1494,12 +1494,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>AIR-EQCOOL_Shutter.Bottom</object-name>
-   <property>controls/switches/EQIPCOOLSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>AIR-EQCOOL_Shutter.Bottom</object-name>
+        <property>controls/switches/EQIPCOOLSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1511,27 +1511,27 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>AIR-GASPER_AcryFace</object-name>
-   <object-name>AIR-GASPER_Switch</object-name>
-   <object-name>AIR-GASPER_Shutter.Top</object-name>
-   <object-name>AIR-GASPER_Shutter.Bottom</object-name>
-   <property>controls/switches/GASPERSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>AIR-GASPER_AcryFace</object-name>
+        <object-name>AIR-GASPER_Switch</object-name>
+        <object-name>AIR-GASPER_Shutter.Top</object-name>
+        <object-name>AIR-GASPER_Shutter.Bottom</object-name>
+        <property>controls/switches/GASPERSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>AIR-GASPER_Shutter.Top</object-name>
-   <property>controls/switches/GASPERSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>AIR-GASPER_Shutter.Top</object-name>
+        <property>controls/switches/GASPERSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1543,12 +1543,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>AIR-GASPER_Shutter.Bottom</object-name>
-   <property>controls/switches/GASPERSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>AIR-GASPER_Shutter.Bottom</object-name>
+        <property>controls/switches/GASPERSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1560,27 +1560,27 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>AIR-RCRC_UP_AcryFace</object-name>
-   <object-name>AIR-RCRC_UP_Switch</object-name>
-   <object-name>AIR-RCRC_UP_Shutter.Top</object-name>
-   <object-name>AIR-RCRC_UP_Shutter.Bottom</object-name>
-   <property>controls/switches/RECIRCUPSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>AIR-RCRC_UP_AcryFace</object-name>
+        <object-name>AIR-RCRC_UP_Switch</object-name>
+        <object-name>AIR-RCRC_UP_Shutter.Top</object-name>
+        <object-name>AIR-RCRC_UP_Shutter.Bottom</object-name>
+        <property>controls/switches/RECIRCUPSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>AIR-RCRC_UP_Shutter.Top</object-name>
-   <property>controls/switches/RECIRCUPSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>AIR-RCRC_UP_Shutter.Top</object-name>
+        <property>controls/switches/RECIRCUPSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1592,12 +1592,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>AIR-RCRC_UP_Shutter.Bottom</object-name>
-   <property>controls/switches/RECIRCUPSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>AIR-RCRC_UP_Shutter.Bottom</object-name>
+        <property>controls/switches/RECIRCUPSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1609,27 +1609,27 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>AIR-RCRC_LW_AcryFace</object-name>
-   <object-name>AIR-RCRC_LW_Switch</object-name>
-   <object-name>AIR-RCRC_LW_Shutter.Top</object-name>
-   <object-name>AIR-RCRC_LW_Shutter.Bottom</object-name>
-   <property>controls/switches/RECIRCLOSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>AIR-RCRC_LW_AcryFace</object-name>
+        <object-name>AIR-RCRC_LW_Switch</object-name>
+        <object-name>AIR-RCRC_LW_Shutter.Top</object-name>
+        <object-name>AIR-RCRC_LW_Shutter.Bottom</object-name>
+        <property>controls/switches/RECIRCLOSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>AIR-RCRC_LW_Shutter.Top</object-name>
-   <property>controls/switches/RECIRCLOSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>AIR-RCRC_LW_Shutter.Top</object-name>
+        <property>controls/switches/RECIRCLOSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1641,12 +1641,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>AIR-RCRC_LW_Shutter.Bottom</object-name>
-   <property>controls/switches/RECIRCLOSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>AIR-RCRC_LW_Shutter.Bottom</object-name>
+        <property>controls/switches/RECIRCLOSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -1658,7 +1658,7 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -1690,10 +1690,10 @@ Syd Adams
         </axis>
     </animation>
 
-<animation>
-   <type>rotate</type>
-   <object-name>OVHD.knob</object-name>
-    <property>controls/lighting/overhead-intencity</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>OVHD.knob</object-name>
+        <property>controls/lighting/overhead-intencity</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
@@ -1708,22 +1708,22 @@ Syd Adams
                 <dep>165.0</dep>
             </entry>
         </interpolation>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
-   <center>
-   <x-m>0.02044</x-m>
-   <y-m>-0.14656</y-m>
-   <z-m>-0.45415</z-m>
-  </center>
- </animation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.02044</x-m>
+            <y-m>-0.14656</y-m>
+            <z-m>-0.45415</z-m>
+        </center>
+    </animation>
 
-<animation>
-   <type>rotate</type>
-   <object-name>CB.knob</object-name>
-    <property>controls/lighting/CB-intencity</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>CB.knob</object-name>
+        <property>controls/lighting/CB-intencity</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
@@ -1738,17 +1738,17 @@ Syd Adams
                 <dep>165.0</dep>
             </entry>
         </interpolation>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
-   <center>
-   <x-m>0.02044</x-m>
-   <y-m>-0.14656</y-m>
-   <z-m>-0.45415</z-m>
-  </center>
- </animation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.02044</x-m>
+            <y-m>-0.14656</y-m>
+            <z-m>-0.45415</z-m>
+        </center>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -1768,22 +1768,22 @@ Syd Adams
                 <dep>165.0</dep>
             </entry>
         </interpolation>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
-   <center>
-   <x-m>0.02050</x-m>
-   <y-m>-0.10671</y-m>
-   <z-m>-0.45631</z-m>
-  </center>
- </animation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.02050</x-m>
+            <y-m>-0.10671</y-m>
+            <z-m>-0.45631</z-m>
+        </center>
+    </animation>
 
-<animation>
-   <type>rotate</type>
-   <object-name>MSTRBright.knob</object-name>
-    <property>controls/lighting/master-bright</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>MSTRBright.knob</object-name>
+        <property>controls/lighting/master-bright</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
@@ -1798,22 +1798,22 @@ Syd Adams
                 <dep>165.0</dep>
             </entry>
         </interpolation>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
-   <center>
-   <x-m>0.02675</x-m>
-   <y-m>-0.03114</y-m>
-   <z-m>-0.45365</z-m>
-  </center>
- </animation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.02675</x-m>
+            <y-m>-0.03114</y-m>
+            <z-m>-0.45365</z-m>
+        </center>
+    </animation>
 
-<animation>
-   <type>rotate</type>
-   <object-name>GLRSPanel.knob</object-name>
-    <property>controls/lighting/panel-flood-intencity</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>GLRSPanel.knob</object-name>
+        <property>controls/lighting/panel-flood-intencity</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
@@ -1828,22 +1828,22 @@ Syd Adams
                 <dep>165.0</dep>
             </entry>
         </interpolation>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
-   <center>
-   <x-m>0.01765</x-m>
-   <y-m>-0.14656</y-m>
-   <z-m>-0.49904</z-m>
-  </center>
- </animation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.01765</x-m>
+            <y-m>-0.14656</y-m>
+            <z-m>-0.49904</z-m>
+        </center>
+    </animation>
 
-<animation>
-   <type>rotate</type>
-   <object-name>GLRSFlood.knob</object-name>
-    <property>controls/lighting/GLRSFlood</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>GLRSFlood.knob</object-name>
+        <property>controls/lighting/GLRSFlood</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
@@ -1858,103 +1858,103 @@ Syd Adams
                 <dep>165.0</dep>
             </entry>
         </interpolation>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
-   <center>
-   <x-m>0.01765</x-m>
-   <y-m>-0.14656</y-m>
-   <z-m>-0.49904</z-m>
-  </center>
- </animation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.01765</x-m>
+            <y-m>-0.14656</y-m>
+            <z-m>-0.49904</z-m>
+        </center>
+    </animation>
 
-<animation>
-    <type>rotate</type>
-    <object-name>FTR.knob</object-name>
-    <property>controls/fuel/b-FuelToRemain-knob</property>
-    <factor>120</factor>
-    <axis>
-        <x>-1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
-    <center>
-        <x-m>0.02480</x-m>
-        <y-m>0.12528</y-m>
-        <z-m>-0.09050</z-m>
-    </center>
-</animation>
- 
- <animation>
-    <type>translate</type>
-    <object-name>FTR.knob</object-name>
-    <property>controls/switches/JTSNMANSwitchTimer/position-norm</property>
-    <factor>0.002</factor>
-    <offset-m>-0.002</offset-m>
-    <axis>
-        <x>1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
-    <center>
-        <x-m>0.02480</x-m>
-        <y-m>0.12528</y-m>
-        <z-m>-0.09050</z-m>
-    </center>
- </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>FTR.knob</object-name>
+        <property>controls/fuel/b-FuelToRemain-knob</property>
+        <factor>120</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.02480</x-m>
+            <y-m>0.12528</y-m>
+            <z-m>-0.09050</z-m>
+        </center>
+    </animation>
 
-  <animation>
-   <type>rotate</type>
-   <object-name>FLTDECK_Temp.knob</object-name>
-   <property>controls/air/fltdeck_temp</property>
-   <factor>270</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
-   <center>
-   <x-m>0.01439</x-m>
-   <y-m>0.24962</y-m>
-   <z-m>0.07473</z-m>
-  </center>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>FTR.knob</object-name>
+        <property>controls/switches/JTSNMANSwitchTimer/position-norm</property>
+        <factor>0.002</factor>
+        <offset-m>-0.002</offset-m>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.02480</x-m>
+            <y-m>0.12528</y-m>
+            <z-m>-0.09050</z-m>
+        </center>
+    </animation>
 
-<animation>
-   <type>rotate</type>
-   <object-name>CABIN_Temp.knob</object-name>
-   <property>controls/air/cabin_temp</property>
-   <factor>270</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
-   <center>
-   <x-m>0.01439</x-m>
-   <y-m>0.33713</y-m>
-   <z-m>0.07473</z-m>
-  </center>
- </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>FLTDECK_Temp.knob</object-name>
+        <property>controls/air/fltdeck_temp</property>
+        <factor>270</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.01439</x-m>
+            <y-m>0.24962</y-m>
+            <z-m>0.07473</z-m>
+        </center>
+    </animation>
 
-<animation>
-   <type>rotate</type>
-   <object-name>LDG_ALT.knob</object-name>
-    <property>controls/oh/PD3/LdgAlt</property>
-   <factor>180</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
-   <center>
-   <x-m>0.02480</x-m>
-   <y-m>0.33951</y-m>
-   <z-m>-0.26387</z-m>
-  </center>
- </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>CABIN_Temp.knob</object-name>
+        <property>controls/air/cabin_temp</property>
+        <factor>270</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.01439</x-m>
+            <y-m>0.33713</y-m>
+            <z-m>0.07473</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>LDG_ALT.knob</object-name>
+        <property>controls/oh/PD3/LdgAlt</property>
+        <factor>180</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0.02480</x-m>
+            <y-m>0.33951</y-m>
+            <z-m>-0.26387</z-m>
+        </center>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -1990,37 +1990,37 @@ Syd Adams
         </axis>
     </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>WH_LS_Switch</object-name>
-    <property>controls/anti-ice/window-heat-ls</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>WH_LS_Switch</object-name>
+        <property>controls/anti-ice/window-heat-ls</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>WH_LS_AcryFace</object-name>
-   <object-name>WH_LS_Switch</object-name>
-   <object-name>WH_LS_Shutter.Top</object-name>
-   <object-name>WH_LS_Shutter.Bottom</object-name>
-   <property>controls/switches/WHLSSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>WH_LS_AcryFace</object-name>
+        <object-name>WH_LS_Switch</object-name>
+        <object-name>WH_LS_Shutter.Top</object-name>
+        <object-name>WH_LS_Shutter.Bottom</object-name>
+        <property>controls/switches/WHLSSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>WH_LS_Shutter.Top</object-name>
-   <property>controls/switches/WHLSSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>WH_LS_Shutter.Top</object-name>
+        <property>controls/switches/WHLSSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2032,12 +2032,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>WH_LS_Shutter.Bottom</object-name>
-   <property>controls/switches/WHLSSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>WH_LS_Shutter.Bottom</object-name>
+        <property>controls/switches/WHLSSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2049,39 +2049,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>WH_LF_Switch</object-name>
-    <property>controls/anti-ice/window-heat-lf</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>WH_LF_Switch</object-name>
+        <property>controls/anti-ice/window-heat-lf</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>WH_LF_AcryFace</object-name>
-   <object-name>WH_LF_Switch</object-name>
-   <object-name>WH_LF_Shutter.Top</object-name>
-   <object-name>WH_LF_Shutter.Bottom</object-name>
-   <property>controls/switches/WHLFSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>WH_LF_AcryFace</object-name>
+        <object-name>WH_LF_Switch</object-name>
+        <object-name>WH_LF_Shutter.Top</object-name>
+        <object-name>WH_LF_Shutter.Bottom</object-name>
+        <property>controls/switches/WHLFSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>WH_LF_Shutter.Top</object-name>
-   <property>controls/switches/WHLFSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>WH_LF_Shutter.Top</object-name>
+        <property>controls/switches/WHLFSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2093,12 +2093,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>WH_LF_Shutter.Bottom</object-name>
-   <property>controls/switches/WHLFSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>WH_LF_Shutter.Bottom</object-name>
+        <property>controls/switches/WHLFSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2110,39 +2110,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>WH_RF_Switch</object-name>
-    <property>controls/anti-ice/window-heat-rf</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>WH_RF_Switch</object-name>
+        <property>controls/anti-ice/window-heat-rf</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>WH_RF_AcryFace</object-name>
-   <object-name>WH_RF_Switch</object-name>
-   <object-name>WH_RF_Shutter.Top</object-name>
-   <object-name>WH_RF_Shutter.Bottom</object-name>
-   <property>controls/switches/WHRFSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>WH_RF_AcryFace</object-name>
+        <object-name>WH_RF_Switch</object-name>
+        <object-name>WH_RF_Shutter.Top</object-name>
+        <object-name>WH_RF_Shutter.Bottom</object-name>
+        <property>controls/switches/WHRFSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>WH_RF_Shutter.Top</object-name>
-   <property>controls/switches/WHRFSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>WH_RF_Shutter.Top</object-name>
+        <property>controls/switches/WHRFSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2154,12 +2154,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>WH_RF_Shutter.Bottom</object-name>
-   <property>controls/switches/WHRFSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>WH_RF_Shutter.Bottom</object-name>
+        <property>controls/switches/WHRFSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2171,39 +2171,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>WH_RS_Switch</object-name>
-    <property>controls/anti-ice/window-heat-rs</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>WH_RS_Switch</object-name>
+        <property>controls/anti-ice/window-heat-rs</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>WH_RS_AcryFace</object-name>
-   <object-name>WH_RS_Switch</object-name>
-   <object-name>WH_RS_Shutter.Top</object-name>
-   <object-name>WH_RS_Shutter.Bottom</object-name>
-   <property>controls/switches/WHRSSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>WH_RS_AcryFace</object-name>
+        <object-name>WH_RS_Switch</object-name>
+        <object-name>WH_RS_Shutter.Top</object-name>
+        <object-name>WH_RS_Shutter.Bottom</object-name>
+        <property>controls/switches/WHRSSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>WH_RS_Shutter.Top</object-name>
-   <property>controls/switches/WHRSSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>WH_RS_Shutter.Top</object-name>
+        <property>controls/switches/WHRSSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2215,12 +2215,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>WH_RS_Shutter.Bottom</object-name>
-   <property>controls/switches/WHRSSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>WH_RS_Shutter.Bottom</object-name>
+        <property>controls/switches/WHRSSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2232,7 +2232,7 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -2319,37 +2319,37 @@ Syd Adams
         </axis>
     </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>NOZZLE_L_Switch</object-name>
-    <property>controls/fuel/tank[0]/b-nozzle</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>NOZZLE_L_Switch</object-name>
+        <property>controls/fuel/tank[0]/b-nozzle</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>NOZZLE_L_AcryFace</object-name>
-   <object-name>NOZZLE_L_Switch</object-name>
-   <object-name>NOZZLE_L_Shutter.Top</object-name>
-   <object-name>NOZZLE_L_Shutter.Bottom</object-name>
-   <property>controls/switches/NOZZLELSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>NOZZLE_L_AcryFace</object-name>
+        <object-name>NOZZLE_L_Switch</object-name>
+        <object-name>NOZZLE_L_Shutter.Top</object-name>
+        <object-name>NOZZLE_L_Shutter.Bottom</object-name>
+        <property>controls/switches/NOZZLELSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>NOZZLE_L_Shutter.Top</object-name>
-   <property>controls/switches/NOZZLELSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>NOZZLE_L_Shutter.Top</object-name>
+        <property>controls/switches/NOZZLELSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2361,12 +2361,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>NOZZLE_L_Shutter.Bottom</object-name>
-   <property>controls/switches/NOZZLELSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>NOZZLE_L_Shutter.Bottom</object-name>
+        <property>controls/switches/NOZZLELSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2378,7 +2378,7 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -2397,37 +2397,37 @@ Syd Adams
         </axis>
     </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>NOZZLE_R_Switch</object-name>
-    <property>controls/fuel/tank[2]/b-nozzle</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>NOZZLE_R_Switch</object-name>
+        <property>controls/fuel/tank[2]/b-nozzle</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>NOZZLE_R_AcryFace</object-name>
-   <object-name>NOZZLE_R_Switch</object-name>
-   <object-name>NOZZLE_R_Shutter.Top</object-name>
-   <object-name>NOZZLE_R_Shutter.Bottom</object-name>
-   <property>controls/switches/NOZZLERSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>NOZZLE_R_AcryFace</object-name>
+        <object-name>NOZZLE_R_Switch</object-name>
+        <object-name>NOZZLE_R_Shutter.Top</object-name>
+        <object-name>NOZZLE_R_Shutter.Bottom</object-name>
+        <property>controls/switches/NOZZLERSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>NOZZLE_R_Shutter.Top</object-name>
-   <property>controls/switches/NOZZLERSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>NOZZLE_R_Shutter.Top</object-name>
+        <property>controls/switches/NOZZLERSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2439,12 +2439,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>NOZZLE_R_Shutter.Bottom</object-name>
-   <property>controls/switches/NOZZLERSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>NOZZLE_R_Shutter.Bottom</object-name>
+        <property>controls/switches/NOZZLERSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2456,7 +2456,7 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -2680,7 +2680,7 @@ Syd Adams
         </axis>
     </animation>
 
-<animation>
+    <animation>
         <type>rotate</type>
         <object-name>WING_Ice.knob</object-name>
         <property>controls/anti-ice/wing-antiice-knob</property>
@@ -2710,7 +2710,7 @@ Syd Adams
         </axis>
     </animation>
 
-<animation>
+    <animation>
         <type>rotate</type>
         <object-name>RENG_Ice.knob</object-name>
         <property>controls/anti-ice/engin[1]/antiice-knob</property>
@@ -2740,7 +2740,7 @@ Syd Adams
         </axis>
     </animation>
 
-<animation>
+    <animation>
         <type>rotate</type>
         <object-name>LENG_Ice.knob</object-name>
         <property>controls/anti-ice/engin/antiice-knob</property>
@@ -2804,49 +2804,49 @@ Syd Adams
         </axis>
     </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>FJ_ARM_Switch</object-name>
-   <property>controls/jettison</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>-1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>FJ_ARM_Switch</object-name>
+        <property>controls/jettison</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>FJ_ARM_Switch</object-name>
-    <property>controls/fuel/b-jtsnarm</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>FJ_ARM_Switch</object-name>
+        <property>controls/fuel/b-jtsnarm</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>FJ_ARM_AcryFace</object-name>
-   <object-name>FJ_ARM_Switch</object-name>
-   <object-name>FJ_ARM_Shutter.Top</object-name>
-   <object-name>FJ_ARM_Shutter.Bottom</object-name>
-   <property>controls/switches/JTSNARMSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>FJ_ARM_AcryFace</object-name>
+        <object-name>FJ_ARM_Switch</object-name>
+        <object-name>FJ_ARM_Shutter.Top</object-name>
+        <object-name>FJ_ARM_Shutter.Bottom</object-name>
+        <property>controls/switches/JTSNARMSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>FJ_ARM_Shutter.Top</object-name>
-   <property>controls/switches/JTSNARMSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>FJ_ARM_Shutter.Top</object-name>
+        <property>controls/switches/JTSNARMSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2858,12 +2858,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>FJ_ARM_Shutter.Bottom</object-name>
-   <property>controls/switches/JTSNARMSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>FJ_ARM_Shutter.Bottom</object-name>
+        <property>controls/switches/JTSNARMSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -2875,7 +2875,7 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
     <animation>
         <type>pick</type>
         <object-name>OVHD.knob</object-name>
@@ -2915,7 +2915,7 @@ Syd Adams
                 <max>1</max>
                 <wrap>false</wrap>
             </binding>
-             <binding>
+            <binding>
                 <command>nasal</command>
                 <script>
                 controls.click(2);
@@ -3018,7 +3018,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>MSTRBright.knob</object-name>
         <action>
@@ -3112,7 +3112,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>GLRSFlood.knob</object-name>
         <action>
@@ -3158,7 +3158,7 @@ Syd Adams
         </action>
     </animation>
 
-    <animation> 
+    <animation>
         <type>knob</type>
         <object-name>FTR.knob</object-name>
         <property>controls/fuel/FuelToRemain-knob</property>
@@ -3167,8 +3167,13 @@ Syd Adams
             <y-m>0.12528</y-m>
             <z-m>-0.09050</z-m>
         </center>
-        <axis><x>-0.05</x><y>0</y><z>0</z></axis>
-        <action> <!-- scroll up, left click-->
+        <axis>
+            <x>-0.05</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <action>
+            <!-- scroll up, left click-->
             <binding>
                 <condition>
                     <and>
@@ -3335,7 +3340,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>CABIN_Temp.knob</object-name>
         <action>
@@ -3358,7 +3363,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>CABIN_Temp.knob</object-name>
         <action>
@@ -3381,7 +3386,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>LDG_ALT.knob</object-name>
         <action>
@@ -3404,7 +3409,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>LDG_ALT.knob</object-name>
         <action>
@@ -3430,7 +3435,7 @@ Syd Adams
     <animation>
         <type>pick</type>
         <object-name>EngineL.START</object-name>
-         <action>
+        <action>
             <button>0</button>
             <button>3</button>
             <repeatable>false</repeatable>
@@ -3499,7 +3504,7 @@ Syd Adams
         </action>
     </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
         <object-name>EngineR.START</object-name>
         <action>
@@ -3523,37 +3528,37 @@ Syd Adams
         </action>
     </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>STRM_Switch</object-name>
+    <animation>
+        <type>textranslate</type>
+        <object-name>STRM_Switch</object-name>
         <property>controls/lighting/cockpit</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>STRM_AcryFace</object-name>
-   <object-name>STRM_Switch</object-name>
-   <object-name>STRM_Shutter.Top</object-name>
-   <object-name>STRM_Shutter.Bottom</object-name>
-   <property>controls/switches/STRMSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>STRM_AcryFace</object-name>
+        <object-name>STRM_Switch</object-name>
+        <object-name>STRM_Shutter.Top</object-name>
+        <object-name>STRM_Shutter.Bottom</object-name>
+        <property>controls/switches/STRMSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>STRM_Shutter.Top</object-name>
-   <property>controls/switches/STRMSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>STRM_Shutter.Top</object-name>
+        <property>controls/switches/STRMSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -3565,12 +3570,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>STRM_Shutter.Bottom</object-name>
-   <property>controls/switches/STRMSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>STRM_Shutter.Bottom</object-name>
+        <property>controls/switches/STRMSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -3582,222 +3587,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>Hydr_LENG_Switch</object-name>
-    <property>systems/hydraulics/LEDP-NORMAL</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>translate</type>
-   <object-name>Hydr_LENG_AcryFace</object-name>
-   <object-name>Hydr_LENG_Switch</object-name>
-   <object-name>Hydr_LENG_Shutter.Top</object-name>
-   <object-name>Hydr_LENG_Shutter.Bottom</object-name>
-   <property>controls/switches/LENGSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>rotate</type>
-   <object-name>Hydr_LENG_Shutter.Top</object-name>
-   <property>controls/switches/LENGSwitchTimer/position-norm</property>
-        <factor>-92</factor>
-        <center>
-            <x-m>0.0134</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.168</z-m>
-        </center>
+    <animation>
+        <type>textranslate</type>
+        <object-name>Hydr_LENG_Switch</object-name>
+        <property>systems/hydraulics/LEDP-NORMAL</property>
+        <factor>0.0781</factor>
         <axis>
             <x>0</x>
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>Hydr_LENG_Shutter.Bottom</object-name>
-   <property>controls/switches/LENGSwitchTimer/position-norm</property>
-        <factor>92</factor>
-        <center>
-            <x-m>0.0134</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.168</z-m>
-        </center>
+    <animation>
+        <type>translate</type>
+        <object-name>Hydr_LENG_AcryFace</object-name>
+        <object-name>Hydr_LENG_Switch</object-name>
+        <object-name>Hydr_LENG_Shutter.Top</object-name>
+        <object-name>Hydr_LENG_Shutter.Bottom</object-name>
+        <property>controls/switches/LENGSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
         <axis>
-            <x>0</x>
-            <y>1</y>
+            <x>-1</x>
+            <y>0</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>ELEC_C1_Switch</object-name>
-    <property>systems/hydraulics/C1ACMP-NORMAL</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>translate</type>
-   <object-name>ELEC_C1_AcryFace</object-name>
-   <object-name>ELEC_C1_Switch</object-name>
-   <object-name>ELEC_C1_Shutter.Top</object-name>
-   <object-name>ELEC_C1_Shutter.Bottom</object-name>
-   <property>controls/switches/C1ELECSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>rotate</type>
-   <object-name>ELEC_C1_Shutter.Top</object-name>
-   <property>controls/switches/C1ELECSwitchTimer/position-norm</property>
-        <factor>-92</factor>
-        <center>
-            <x-m>0.0134</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.164</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
- </animation>
-
- <animation>
-   <type>rotate</type>
-   <object-name>ELEC_C1_Shutter.Bottom</object-name>
-   <property>controls/switches/C1ELECSwitchTimer/position-norm</property>
-        <factor>92</factor>
-        <center>
-            <x-m>0.0134</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.164</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
- </animation>
-
- <animation>
-   <type>textranslate</type>
-   <object-name>ELEC_C2_Switch</object-name>
-    <property>systems/hydraulics/C2ACMP-NORMAL</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>translate</type>
-   <object-name>ELEC_C2_AcryFace</object-name>
-   <object-name>ELEC_C2_Switch</object-name>
-   <object-name>ELEC_C2_Shutter.Top</object-name>
-   <object-name>ELEC_C2_Shutter.Bottom</object-name>
-   <property>controls/switches/C2ELECSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>rotate</type>
-   <object-name>ELEC_C2_Shutter.Top</object-name>
-   <property>controls/switches/C2ELECSwitchTimer/position-norm</property>
-        <factor>-92</factor>
-        <center>
-            <x-m>0.0134</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.164</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
- </animation>
-
- <animation>
-   <type>rotate</type>
-   <object-name>ELEC_C2_Shutter.Bottom</object-name>
-   <property>controls/switches/C2ELECSwitchTimer/position-norm</property>
-        <factor>92</factor>
-        <center>
-            <x-m>0.0134</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.164</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
- </animation>
-
- <animation>
-   <type>textranslate</type>
-   <object-name>Hydr_RENG_Switch</object-name>
-    <property>systems/hydraulics/REDP-NORMAL</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>translate</type>
-   <object-name>Hydr_RENG_AcryFace</object-name>
-   <object-name>Hydr_RENG_Switch</object-name>
-   <object-name>Hydr_RENG_Shutter.Top</object-name>
-   <object-name>Hydr_RENG_Shutter.Bottom</object-name>
-   <property>controls/switches/RENGSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>rotate</type>
-   <object-name>Hydr_RENG_Shutter.Top</object-name>
-   <property>controls/switches/RENGSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>Hydr_LENG_Shutter.Top</object-name>
+        <property>controls/switches/LENGSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -3809,12 +3631,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>Hydr_RENG_Shutter.Bottom</object-name>
-   <property>controls/switches/RENGSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>Hydr_LENG_Shutter.Bottom</object-name>
+        <property>controls/switches/LENGSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -3826,27 +3648,210 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>BCN_AcryFace</object-name>
-   <object-name>BCN_Switch</object-name>
-   <object-name>BCN_Shutter.Top</object-name>
-   <object-name>BCN_Shutter.Bottom</object-name>
-   <property>controls/switches/BCNSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>ELEC_C1_Switch</object-name>
+        <property>systems/hydraulics/C1ACMP-NORMAL</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BCN_Shutter.Top</object-name>
-   <property>controls/switches/BCNSwitchTimer/position-norm</property>
+    <animation>
+        <type>translate</type>
+        <object-name>ELEC_C1_AcryFace</object-name>
+        <object-name>ELEC_C1_Switch</object-name>
+        <object-name>ELEC_C1_Shutter.Top</object-name>
+        <object-name>ELEC_C1_Shutter.Bottom</object-name>
+        <property>controls/switches/C1ELECSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>ELEC_C1_Shutter.Top</object-name>
+        <property>controls/switches/C1ELECSwitchTimer/position-norm</property>
+        <factor>-92</factor>
+        <center>
+            <x-m>0.0134</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.164</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>ELEC_C1_Shutter.Bottom</object-name>
+        <property>controls/switches/C1ELECSwitchTimer/position-norm</property>
+        <factor>92</factor>
+        <center>
+            <x-m>0.0134</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.164</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>ELEC_C2_Switch</object-name>
+        <property>systems/hydraulics/C2ACMP-NORMAL</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>ELEC_C2_AcryFace</object-name>
+        <object-name>ELEC_C2_Switch</object-name>
+        <object-name>ELEC_C2_Shutter.Top</object-name>
+        <object-name>ELEC_C2_Shutter.Bottom</object-name>
+        <property>controls/switches/C2ELECSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>ELEC_C2_Shutter.Top</object-name>
+        <property>controls/switches/C2ELECSwitchTimer/position-norm</property>
+        <factor>-92</factor>
+        <center>
+            <x-m>0.0134</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.164</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>ELEC_C2_Shutter.Bottom</object-name>
+        <property>controls/switches/C2ELECSwitchTimer/position-norm</property>
+        <factor>92</factor>
+        <center>
+            <x-m>0.0134</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.164</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Hydr_RENG_Switch</object-name>
+        <property>systems/hydraulics/REDP-NORMAL</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Hydr_RENG_AcryFace</object-name>
+        <object-name>Hydr_RENG_Switch</object-name>
+        <object-name>Hydr_RENG_Shutter.Top</object-name>
+        <object-name>Hydr_RENG_Shutter.Bottom</object-name>
+        <property>controls/switches/RENGSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Hydr_RENG_Shutter.Top</object-name>
+        <property>controls/switches/RENGSwitchTimer/position-norm</property>
+        <factor>-92</factor>
+        <center>
+            <x-m>0.0134</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.168</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Hydr_RENG_Shutter.Bottom</object-name>
+        <property>controls/switches/RENGSwitchTimer/position-norm</property>
+        <factor>92</factor>
+        <center>
+            <x-m>0.0134</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.168</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>BCN_AcryFace</object-name>
+        <object-name>BCN_Switch</object-name>
+        <object-name>BCN_Shutter.Top</object-name>
+        <object-name>BCN_Shutter.Bottom</object-name>
+        <property>controls/switches/BCNSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>BCN_Shutter.Top</object-name>
+        <property>controls/switches/BCNSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -3858,12 +3863,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BCN_Shutter.Bottom</object-name>
-   <property>controls/switches/BCNSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BCN_Shutter.Bottom</object-name>
+        <property>controls/switches/BCNSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -3875,27 +3880,27 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>NAV_AcryFace</object-name>
-   <object-name>NAV_Switch</object-name>
-   <object-name>NAV_Shutter.Top</object-name>
-   <object-name>NAV_Shutter.Bottom</object-name>
-   <property>controls/switches/NAVSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>NAV_AcryFace</object-name>
+        <object-name>NAV_Switch</object-name>
+        <object-name>NAV_Shutter.Top</object-name>
+        <object-name>NAV_Shutter.Bottom</object-name>
+        <property>controls/switches/NAVSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>NAV_Shutter.Top</object-name>
-   <property>controls/switches/NAVSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>NAV_Shutter.Top</object-name>
+        <property>controls/switches/NAVSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -3907,12 +3912,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>NAV_Shutter.Bottom</object-name>
-   <property>controls/switches/NAVSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>NAV_Shutter.Bottom</object-name>
+        <property>controls/switches/NAVSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -3924,27 +3929,27 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>LOGO_AcryFace</object-name>
-   <object-name>LOGO_Switch</object-name>
-   <object-name>LOGO_Shutter.Top</object-name>
-   <object-name>LOGO_Shutter.Bottom</object-name>
-   <property>controls/switches/LOGOSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>LOGO_AcryFace</object-name>
+        <object-name>LOGO_Switch</object-name>
+        <object-name>LOGO_Shutter.Top</object-name>
+        <object-name>LOGO_Shutter.Bottom</object-name>
+        <property>controls/switches/LOGOSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LOGO_Shutter.Top</object-name>
-   <property>controls/switches/LOGOSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LOGO_Shutter.Top</object-name>
+        <property>controls/switches/LOGOSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -3956,12 +3961,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LOGO_Shutter.Bottom</object-name>
-   <property>controls/switches/LOGOSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LOGO_Shutter.Bottom</object-name>
+        <property>controls/switches/LOGOSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -3973,27 +3978,27 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>WING_AcryFace</object-name>
-   <object-name>WING_Switch</object-name>
-   <object-name>WING_Shutter.Top</object-name>
-   <object-name>WING_Shutter.Bottom</object-name>
-   <property>controls/switches/WINGSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>WING_AcryFace</object-name>
+        <object-name>WING_Switch</object-name>
+        <object-name>WING_Shutter.Top</object-name>
+        <object-name>WING_Shutter.Bottom</object-name>
+        <property>controls/switches/WINGSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>WING_Shutter.Top</object-name>
-   <property>controls/switches/WINGSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>WING_Shutter.Top</object-name>
+        <property>controls/switches/WINGSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4005,12 +4010,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>WING_Shutter.Bottom</object-name>
-   <property>controls/switches/WINGSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>WING_Shutter.Bottom</object-name>
+        <property>controls/switches/WINGSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4022,39 +4027,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>BATT_Switch</object-name>
-    <property>controls/electric/b_batt</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>BATT_Switch</object-name>
+        <property>controls/electric/b_batt</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>BATT_AcryFace</object-name>
-   <object-name>BATT_Switch</object-name>
-   <object-name>BATT_Shutter.Top</object-name>
-   <object-name>BATT_Shutter.Bottom</object-name>
-   <property>controls/switches/BATTSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>BATT_AcryFace</object-name>
+        <object-name>BATT_Switch</object-name>
+        <object-name>BATT_Shutter.Top</object-name>
+        <object-name>BATT_Shutter.Bottom</object-name>
+        <property>controls/switches/BATTSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BATT_Shutter.Top</object-name>
-   <property>controls/switches/BATTSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BATT_Shutter.Top</object-name>
+        <property>controls/switches/BATTSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4066,12 +4071,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>BATT_Shutter.Bottom</object-name>
-   <property>controls/switches/BATTSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>BATT_Shutter.Bottom</object-name>
+        <property>controls/switches/BATTSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4083,39 +4088,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>LGEN_Switch</object-name>
-    <property>controls/electric/b-lidg</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>LGEN_Switch</object-name>
+        <property>controls/electric/b-lidg</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>LGEN_AcryFace</object-name>
-   <object-name>LGEN_Switch</object-name>
-   <object-name>LGEN_Shutter.Top</object-name>
-   <object-name>LGEN_Shutter.Bottom</object-name>
-   <property>controls/switches/LGENSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>LGEN_AcryFace</object-name>
+        <object-name>LGEN_Switch</object-name>
+        <object-name>LGEN_Shutter.Top</object-name>
+        <object-name>LGEN_Shutter.Bottom</object-name>
+        <property>controls/switches/LGENSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LGEN_Shutter.Top</object-name>
-   <property>controls/switches/LGENSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LGEN_Shutter.Top</object-name>
+        <property>controls/switches/LGENSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4127,12 +4132,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LGEN_Shutter.Bottom</object-name>
-   <property>controls/switches/LGENSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LGEN_Shutter.Bottom</object-name>
+        <property>controls/switches/LGENSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4144,39 +4149,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>RGEN_Switch</object-name>
-    <property>controls/electric/b-ridg</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>RGEN_Switch</object-name>
+        <property>controls/electric/b-ridg</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>RGEN_AcryFace</object-name>
-   <object-name>RGEN_Switch</object-name>
-   <object-name>RGEN_Shutter.Top</object-name>
-   <object-name>RGEN_Shutter.Bottom</object-name>
-   <property>controls/switches/RGENSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>RGEN_AcryFace</object-name>
+        <object-name>RGEN_Switch</object-name>
+        <object-name>RGEN_Shutter.Top</object-name>
+        <object-name>RGEN_Shutter.Bottom</object-name>
+        <property>controls/switches/RGENSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RGEN_Shutter.Top</object-name>
-   <property>controls/switches/RGENSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RGEN_Shutter.Top</object-name>
+        <property>controls/switches/RGENSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4188,12 +4193,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RGEN_Shutter.Bottom</object-name>
-   <property>controls/switches/RGENSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RGEN_Shutter.Bottom</object-name>
+        <property>controls/switches/RGENSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4205,51 +4210,51 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>LENGDRV_Switch</object-name>
-    <property>controls/electric/b-lidg</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>LENGDRV_Switch</object-name>
+        <property>controls/electric/b-lidg</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>LGEN_BCKUP_Switch</object-name>
-    <property>controls/electric/b-lbugen</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>LGEN_BCKUP_Switch</object-name>
+        <property>controls/electric/b-lbugen</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>LGEN_BCKUP_AcryFace</object-name>
-   <object-name>LGEN_BCKUP_Switch</object-name>
-   <object-name>LGEN_BCKUP_Shutter.Top</object-name>
-   <object-name>LGEN_BCKUP_Shutter.Bottom</object-name>
-   <property>controls/switches/LGENBUSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>LGEN_BCKUP_AcryFace</object-name>
+        <object-name>LGEN_BCKUP_Switch</object-name>
+        <object-name>LGEN_BCKUP_Shutter.Top</object-name>
+        <object-name>LGEN_BCKUP_Shutter.Bottom</object-name>
+        <property>controls/switches/LGENBUSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LGEN_BCKUP_Shutter.Top</object-name>
-   <property>controls/switches/LGENBUSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LGEN_BCKUP_Shutter.Top</object-name>
+        <property>controls/switches/LGENBUSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4261,12 +4266,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LGEN_BCKUP_Shutter.Bottom</object-name>
-   <property>controls/switches/LGENBUSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LGEN_BCKUP_Shutter.Bottom</object-name>
+        <property>controls/switches/LGENBUSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4278,39 +4283,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>RGEN_BCKUP_Switch</object-name>
-    <property>controls/electric/b-rbugen</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>RGEN_BCKUP_Switch</object-name>
+        <property>controls/electric/b-rbugen</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>RGEN_BCKUP_AcryFace</object-name>
-   <object-name>RGEN_BCKUP_Switch</object-name>
-   <object-name>RGEN_BCKUP_Shutter.Top</object-name>
-   <object-name>RGEN_BCKUP_Shutter.Bottom</object-name>
-   <property>controls/switches/RGENBUSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>RGEN_BCKUP_AcryFace</object-name>
+        <object-name>RGEN_BCKUP_Switch</object-name>
+        <object-name>RGEN_BCKUP_Shutter.Top</object-name>
+        <object-name>RGEN_BCKUP_Shutter.Bottom</object-name>
+        <property>controls/switches/RGENBUSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RGEN_BCKUP_Shutter.Top</object-name>
-   <property>controls/switches/RGENBUSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RGEN_BCKUP_Shutter.Top</object-name>
+        <property>controls/switches/RGENBUSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4322,12 +4327,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RGEN_BCKUP_Shutter.Bottom</object-name>
-   <property>controls/switches/RGENBUSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RGEN_BCKUP_Shutter.Bottom</object-name>
+        <property>controls/switches/RGENBUSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4339,63 +4344,63 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>LENGDRV_Switch</object-name>
-    <property>controls/electric/b-lidg</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>LENGDRV_Switch</object-name>
+        <property>controls/electric/b-lidg</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>RENGDRV_Switch</object-name>
-    <property>controls/electric/b-ridg</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>RENGDRV_Switch</object-name>
+        <property>controls/electric/b-ridg</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>APU_Switch</object-name>
-<property>controls/electric/b-apugen</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>APU_Switch</object-name>
+        <property>controls/electric/b-apugen</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>APU_AcryFace</object-name>
-   <object-name>APU_Switch</object-name>
-   <object-name>APU_Shutter.Top</object-name>
-   <object-name>APU_Shutter.Bottom</object-name>
-   <property>controls/switches/APUGSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>APU_AcryFace</object-name>
+        <object-name>APU_Switch</object-name>
+        <object-name>APU_Shutter.Top</object-name>
+        <object-name>APU_Shutter.Bottom</object-name>
+        <property>controls/switches/APUGSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>APU_Shutter.Top</object-name>
-   <property>controls/switches/APUGSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>APU_Shutter.Top</object-name>
+        <property>controls/switches/APUGSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4407,12 +4412,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>APU_Shutter.Bottom</object-name>
-   <property>controls/switches/APUGSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>APU_Shutter.Bottom</object-name>
+        <property>controls/switches/APUGSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4424,39 +4429,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>LBUS_Switch</object-name>
-<property>controls/electric/b-lbus-tie</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>LBUS_Switch</object-name>
+        <property>controls/electric/b-lbus-tie</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>LBUS_AcryFace</object-name>
-   <object-name>LBUS_Switch</object-name>
-   <object-name>LBUS_Shutter.Top</object-name>
-   <object-name>LBUS_Shutter.Bottom</object-name>
-   <property>controls/switches/LBUSSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>LBUS_AcryFace</object-name>
+        <object-name>LBUS_Switch</object-name>
+        <object-name>LBUS_Shutter.Top</object-name>
+        <object-name>LBUS_Shutter.Bottom</object-name>
+        <property>controls/switches/LBUSSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LBUS_Shutter.Top</object-name>
-   <property>controls/switches/LBUSSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LBUS_Shutter.Top</object-name>
+        <property>controls/switches/LBUSSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4468,12 +4473,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LBUS_Shutter.Bottom</object-name>
-   <property>controls/switches/LBUSSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LBUS_Shutter.Bottom</object-name>
+        <property>controls/switches/LBUSSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4485,39 +4490,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>RBUS_Switch</object-name>
-<property>controls/electric/b-rbus-tie</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>RBUS_Switch</object-name>
+        <property>controls/electric/b-rbus-tie</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>RBUS_AcryFace</object-name>
-   <object-name>RBUS_Switch</object-name>
-   <object-name>RBUS_Shutter.Top</object-name>
-   <object-name>RBUS_Shutter.Bottom</object-name>
-   <property>controls/switches/RBUSSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>RBUS_AcryFace</object-name>
+        <object-name>RBUS_Switch</object-name>
+        <object-name>RBUS_Shutter.Top</object-name>
+        <object-name>RBUS_Shutter.Bottom</object-name>
+        <property>controls/switches/RBUSSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RBUS_Shutter.Top</object-name>
-   <property>controls/switches/RBUSSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RBUS_Shutter.Top</object-name>
+        <property>controls/switches/RBUSSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4529,12 +4534,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RBUS_Shutter.Bottom</object-name>
-   <property>controls/switches/RBUSSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RBUS_Shutter.Bottom</object-name>
+        <property>controls/switches/RBUSSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4546,7 +4551,7 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -4701,37 +4706,37 @@ Syd Adams
         </axis>
     </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>LHboost1_Switch</object-name>
-    <property>controls/fuel/tank[0]/b-boost-pump[0]</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>LHboost1_Switch</object-name>
+        <property>controls/fuel/tank[0]/b-boost-pump[0]</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>LHboost1_AcryFace</object-name>
-   <object-name>LHboost1_Switch</object-name>
-   <object-name>LHboost1_Shutter.Top</object-name>
-   <object-name>LHboost1_Shutter.Bottom</object-name>
-   <property>controls/switches/LPUMP1SwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>LHboost1_AcryFace</object-name>
+        <object-name>LHboost1_Switch</object-name>
+        <object-name>LHboost1_Shutter.Top</object-name>
+        <object-name>LHboost1_Shutter.Bottom</object-name>
+        <property>controls/switches/LPUMP1SwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LHboost1_Shutter.Top</object-name>
-   <property>controls/switches/LPUMP1SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LHboost1_Shutter.Top</object-name>
+        <property>controls/switches/LPUMP1SwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4743,12 +4748,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LHboost1_Shutter.Bottom</object-name>
-   <property>controls/switches/LPUMP1SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LHboost1_Shutter.Bottom</object-name>
+        <property>controls/switches/LPUMP1SwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4760,39 +4765,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>LHboost2_Switch</object-name>
-    <property>controls/fuel/tank[0]/b-boost-pump[1]</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>LHboost2_Switch</object-name>
+        <property>controls/fuel/tank[0]/b-boost-pump[1]</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>LHboost2_AcryFace</object-name>
-   <object-name>LHboost2_Switch</object-name>
-   <object-name>LHboost2_Shutter.Top</object-name>
-   <object-name>LHboost2_Shutter.Bottom</object-name>
-   <property>controls/switches/LPUMP2SwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>LHboost2_AcryFace</object-name>
+        <object-name>LHboost2_Switch</object-name>
+        <object-name>LHboost2_Shutter.Top</object-name>
+        <object-name>LHboost2_Shutter.Bottom</object-name>
+        <property>controls/switches/LPUMP2SwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LHboost2_Shutter.Top</object-name>
-   <property>controls/switches/LPUMP2SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LHboost2_Shutter.Top</object-name>
+        <property>controls/switches/LPUMP2SwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4804,12 +4809,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>LHboost2_Shutter.Bottom</object-name>
-   <property>controls/switches/LPUMP2SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>LHboost2_Shutter.Bottom</object-name>
+        <property>controls/switches/LPUMP2SwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4821,39 +4826,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>CTRboost1_Switch</object-name>
-    <property>controls/fuel/tank[1]/b-boost-pump[0]</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>CTRboost1_Switch</object-name>
+        <property>controls/fuel/tank[1]/b-boost-pump[0]</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>CTRboost1_AcryFace</object-name>
-   <object-name>CTRboost1_Switch</object-name>
-   <object-name>CTRboost1_Shutter.Top</object-name>
-   <object-name>CTRboost1_Shutter.Bottom</object-name>
-   <property>controls/switches/CPUMP1SwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>CTRboost1_AcryFace</object-name>
+        <object-name>CTRboost1_Switch</object-name>
+        <object-name>CTRboost1_Shutter.Top</object-name>
+        <object-name>CTRboost1_Shutter.Bottom</object-name>
+        <property>controls/switches/CPUMP1SwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>CTRboost1_Shutter.Top</object-name>
-   <property>controls/switches/CPUMP1SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>CTRboost1_Shutter.Top</object-name>
+        <property>controls/switches/CPUMP1SwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4865,12 +4870,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>CTRboost1_Shutter.Bottom</object-name>
-   <property>controls/switches/CPUMP1SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>CTRboost1_Shutter.Bottom</object-name>
+        <property>controls/switches/CPUMP1SwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4882,39 +4887,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>CTRboost2_Switch</object-name>
-    <property>controls/fuel/tank[1]/b-boost-pump[1]</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>CTRboost2_Switch</object-name>
+        <property>controls/fuel/tank[1]/b-boost-pump[1]</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>CTRboost2_AcryFace</object-name>
-   <object-name>CTRboost2_Switch</object-name>
-   <object-name>CTRboost2_Shutter.Top</object-name>
-   <object-name>CTRboost2_Shutter.Bottom</object-name>
-   <property>controls/switches/CPUMP2SwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>CTRboost2_AcryFace</object-name>
+        <object-name>CTRboost2_Switch</object-name>
+        <object-name>CTRboost2_Shutter.Top</object-name>
+        <object-name>CTRboost2_Shutter.Bottom</object-name>
+        <property>controls/switches/CPUMP2SwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>CTRboost2_Shutter.Top</object-name>
-   <property>controls/switches/CPUMP2SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>CTRboost2_Shutter.Top</object-name>
+        <property>controls/switches/CPUMP2SwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4926,12 +4931,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>CTRboost2_Shutter.Bottom</object-name>
-   <property>controls/switches/CPUMP2SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>CTRboost2_Shutter.Bottom</object-name>
+        <property>controls/switches/CPUMP2SwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4943,39 +4948,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>RHboost1_Switch</object-name>
-    <property>controls/fuel/tank[2]/b-boost-pump[0]</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>RHboost1_Switch</object-name>
+        <property>controls/fuel/tank[2]/b-boost-pump[0]</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>RHboost1_AcryFace</object-name>
-   <object-name>RHboost1_Switch</object-name>
-   <object-name>RHboost1_Shutter.Top</object-name>
-   <object-name>RHboost1_Shutter.Bottom</object-name>
-   <property>controls/switches/RPUMP1SwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>RHboost1_AcryFace</object-name>
+        <object-name>RHboost1_Switch</object-name>
+        <object-name>RHboost1_Shutter.Top</object-name>
+        <object-name>RHboost1_Shutter.Bottom</object-name>
+        <property>controls/switches/RPUMP1SwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RHboost1_Shutter.Top</object-name>
-   <property>controls/switches/RPUMP1SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RHboost1_Shutter.Top</object-name>
+        <property>controls/switches/RPUMP1SwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -4987,12 +4992,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RHboost1_Shutter.Bottom</object-name>
-   <property>controls/switches/RPUMP1SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RHboost1_Shutter.Bottom</object-name>
+        <property>controls/switches/RPUMP1SwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -5004,39 +5009,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>RHboost2_Switch</object-name>
-    <property>controls/fuel/tank[2]/b-boost-pump[1]</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>RHboost2_Switch</object-name>
+        <property>controls/fuel/tank[2]/b-boost-pump[1]</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>RHboost2_AcryFace</object-name>
-   <object-name>RHboost2_Switch</object-name>
-   <object-name>RHboost2_Shutter.Top</object-name>
-   <object-name>RHboost2_Shutter.Bottom</object-name>
-   <property>controls/switches/RPUMP2SwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>RHboost2_AcryFace</object-name>
+        <object-name>RHboost2_Switch</object-name>
+        <object-name>RHboost2_Shutter.Top</object-name>
+        <object-name>RHboost2_Shutter.Bottom</object-name>
+        <property>controls/switches/RPUMP2SwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RHboost2_Shutter.Top</object-name>
-   <property>controls/switches/RPUMP2SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RHboost2_Shutter.Top</object-name>
+        <property>controls/switches/RPUMP2SwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -5048,12 +5053,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>RHboost2_Shutter.Bottom</object-name>
-   <property>controls/switches/RPUMP2SwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>RHboost2_Shutter.Bottom</object-name>
+        <property>controls/switches/RPUMP2SwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -5065,39 +5070,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>XFeedFWD_Switch</object-name>
-    <property>controls/fuel/b-xfdfwd-vlv</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>XFeedFWD_Switch</object-name>
+        <property>controls/fuel/b-xfdfwd-vlv</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>XFeedFWD_AcryFace</object-name>
-   <object-name>XFeedFWD_Switch</object-name>
-   <object-name>XFeedFWD_Shutter.Top</object-name>
-   <object-name>XFeedFWD_Shutter.Bottom</object-name>
-   <property>controls/switches/XFDFWDSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>XFeedFWD_AcryFace</object-name>
+        <object-name>XFeedFWD_Switch</object-name>
+        <object-name>XFeedFWD_Shutter.Top</object-name>
+        <object-name>XFeedFWD_Shutter.Bottom</object-name>
+        <property>controls/switches/XFDFWDSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>XFeedFWD_Shutter.Top</object-name>
-   <property>controls/switches/XFDFWDSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>XFeedFWD_Shutter.Top</object-name>
+        <property>controls/switches/XFDFWDSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -5109,12 +5114,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>XFeedFWD_Shutter.Bottom</object-name>
-   <property>controls/switches/XFDFWDSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>XFeedFWD_Shutter.Bottom</object-name>
+        <property>controls/switches/XFDFWDSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -5126,39 +5131,39 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>textranslate</type>
-   <object-name>XFeedAFT_Switch</object-name>
-    <property>controls/fuel/b-xfdaft-vlv</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>textranslate</type>
+        <object-name>XFeedAFT_Switch</object-name>
+        <property>controls/fuel/b-xfdaft-vlv</property>
+        <factor>0.0781</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>XFeedAFT_AcryFace</object-name>
-   <object-name>XFeedAFT_Switch</object-name>
-   <object-name>XFeedAFT_Shutter.Top</object-name>
-   <object-name>XFeedAFT_Shutter.Bottom</object-name>
-   <property>controls/switches/XFDAFTSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>XFeedAFT_AcryFace</object-name>
+        <object-name>XFeedAFT_Switch</object-name>
+        <object-name>XFeedAFT_Shutter.Top</object-name>
+        <object-name>XFeedAFT_Shutter.Bottom</object-name>
+        <property>controls/switches/XFDAFTSwitchTimer/position-norm</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>XFeedAFT_Shutter.Top</object-name>
-   <property>controls/switches/XFDAFTSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>XFeedAFT_Shutter.Top</object-name>
+        <property>controls/switches/XFDAFTSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -5170,12 +5175,12 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>XFeedAFT_Shutter.Bottom</object-name>
-   <property>controls/switches/XFDAFTSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>XFeedAFT_Shutter.Bottom</object-name>
+        <property>controls/switches/XFDAFTSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
@@ -5187,10 +5192,9 @@ Syd Adams
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
-<!-- OSG hotspots -->
-
+    <!-- OSG hotspots -->
 
 
     <animation>
@@ -5252,7 +5256,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-            <property>controls/engines/engine/eec-cover</property>
+                <property>controls/engines/engine/eec-cover</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -5271,7 +5275,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-            <property>controls/engines/engine[1]/eec-cover</property>
+                <property>controls/engines/engine[1]/eec-cover</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -5746,7 +5750,7 @@ Syd Adams
             </binding>
         </action>
     </animation>
-    
+
     <animation>
         <type>pick</type>
         <object-name>IND.toggle</object-name>
@@ -5764,9 +5768,9 @@ Syd Adams
         </action>
     </animation>
 
-<!--  FUEL CONTROL  -->
+    <!--  FUEL CONTROL  -->
 
-<!--  Tank 0  -->
+    <!--  Tank 0  -->
 
     <animation>
         <type>pick</type>
@@ -5802,7 +5806,7 @@ Syd Adams
         </action>
     </animation>
 
-<!--  Tank 1  -->
+    <!--  Tank 1  -->
 
 
     <animation>
@@ -5839,7 +5843,7 @@ Syd Adams
         </action>
     </animation>
 
-<!--  Tank 2  -->
+    <!--  Tank 2  -->
 
 
     <animation>
@@ -6139,7 +6143,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-            <property>controls/electric/engine/drv-cover</property>
+                <property>controls/electric/engine/drv-cover</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -6158,7 +6162,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-            <property>controls/electric/engine[1]/drv-cover</property>
+                <property>controls/electric/engine[1]/drv-cover</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -6323,9 +6327,9 @@ Syd Adams
             </script>
             </binding>
         </action>
-   </animation>
+    </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
         <object-name>LELEC.knob</object-name>
         <action>
@@ -6369,9 +6373,9 @@ Syd Adams
             </script>
             </binding>
         </action>
-   </animation>
+    </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
         <object-name>C1AIR.knob</object-name>
         <action>
@@ -6415,9 +6419,9 @@ Syd Adams
             </script>
             </binding>
         </action>
-   </animation>
+    </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
         <object-name>C2AIR.knob</object-name>
         <action>
@@ -6440,7 +6444,7 @@ Syd Adams
         </action>
     </animation>
 
- <animation>
+    <animation>
         <type>pick</type>
         <object-name>RELEC.knob</object-name>
         <action>
@@ -6463,7 +6467,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>RELEC.knob</object-name>
         <action>
@@ -6533,7 +6537,7 @@ Syd Adams
         </action>
     </animation>
 
-     <animation>
+    <animation>
         <type>pick</type>
         <object-name>SeatBelt.knob</object-name>
         <action>
@@ -6557,7 +6561,7 @@ Syd Adams
         </action>
     </animation>
 
-     <animation>
+    <animation>
         <type>pick</type>
         <object-name>SeatBelt.knob</object-name>
         <action>
@@ -6581,7 +6585,7 @@ Syd Adams
         </action>
     </animation>
 
- <animation>
+    <animation>
         <type>pick</type>
         <object-name>WING_Ice.knob</object-name>
         <action>
@@ -6604,7 +6608,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>WING_Ice.knob</object-name>
         <action>
@@ -6627,7 +6631,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>LENG_Ice.knob</object-name>
         <action>
@@ -6650,7 +6654,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>LENG_Ice.knob</object-name>
         <action>
@@ -6673,7 +6677,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>RENG_Ice.knob</object-name>
         <action>
@@ -6696,7 +6700,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>RENG_Ice.knob</object-name>
         <action>
@@ -6734,8 +6738,8 @@ Syd Adams
                 <max>3</max>
             </binding>
             <binding>
-            <command>nasal</command>
-            <script>
+                <command>nasal</command>
+                <script>
             setprop("/controls/lwiper/delay-sec", (getprop("/controls/lwiper/speed")*-1) +3);
             controls.click(2);
             </script>
@@ -6758,8 +6762,8 @@ Syd Adams
                 <max>3</max>
             </binding>
             <binding>
-            <command>nasal</command>
-            <script>
+                <command>nasal</command>
+                <script>
             setprop("/controls/rwiper/delay-sec", (getprop("/controls/rwiper/speed")*-1) +3);
             controls.click(2);
             </script>
@@ -6782,8 +6786,8 @@ Syd Adams
                 <max>3</max>
             </binding>
             <binding>
-            <command>nasal</command>
-            <script>
+                <command>nasal</command>
+                <script>
             setprop("/controls/lwiper/delay-sec", (getprop("/controls/lwiper/speed")*-1) +3);
             controls.click(2);
             </script>
@@ -6806,8 +6810,8 @@ Syd Adams
                 <max>3</max>
             </binding>
             <binding>
-            <command>nasal</command>
-            <script>
+                <command>nasal</command>
+                <script>
             setprop("/controls/rwiper/delay-sec", (getprop("/controls/rwiper/speed")*-1) +3);
             controls.click(2);
             </script>
@@ -6821,7 +6825,7 @@ Syd Adams
         <action>
             <button>0</button>
             <button>3</button>
-           <repeatable>false</repeatable>
+            <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
                 <property>controls/APU/off-start-run</property>
@@ -6853,7 +6857,7 @@ Syd Adams
         <type>material</type>
         <!--object-name>OHPanel_FULL_LightUp</object-name-->
         <condition>
-                <property>controls/lighting/cockpit</property>
+            <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
             <red>0.5</red>
@@ -6862,14 +6866,14 @@ Syd Adams
         </emission>
     </animation>
 
-      <animation>
+    <animation>
         <type>material</type>
         <!--object-name>OHPanel_DOME_MSTRBright_LightUp</object-name-->
         <condition>
             <not>
                 <property>controls/lighting/cockpit</property>
             </not>
-                <property>controls/lighting/dome-input</property>
+            <property>controls/lighting/dome-input</property>
         </condition>
         <emission>
             <red>0.5</red>
@@ -7143,7 +7147,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>AIR-RCRC_UP_Switch</object-name>
         <action>
@@ -7162,7 +7166,7 @@ Syd Adams
         </action>
     </animation>
 
-<animation>
+    <animation>
         <type>pick</type>
         <object-name>AIR-RCRC_LW_Switch</object-name>
         <action>
@@ -7203,7 +7207,7 @@ Syd Adams
             </binding>
         </action>
     </animation>
-    
+
     <animation>
         <type>rotate</type>
         <object-name>PFC-Disc_Switch</object-name>
@@ -7220,7 +7224,7 @@ Syd Adams
             <z>0</z>
         </axis>
     </animation>
-    
+
     <animation>
         <type>pick</type>
         <object-name>IND.toggle.007</object-name>
@@ -7269,7 +7273,7 @@ Syd Adams
             </binding>
         </action>
     </animation>
-    
+
     <animation>
         <type>rotate</type>
         <object-name>IND.toggle.007</object-name>
@@ -7287,7 +7291,7 @@ Syd Adams
             <z>0</z>
         </axis>
     </animation>
-    
+
     <animation>
         <type>pick</type>
         <object-name>IND.toggle.008</object-name>
@@ -7304,7 +7308,7 @@ Syd Adams
             </binding>
         </action>
     </animation>
-    
+
     <animation>
         <type>rotate</type>
         <object-name>IND.toggle.008</object-name>

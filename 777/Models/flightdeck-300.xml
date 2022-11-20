@@ -45,10 +45,10 @@
                 <property>/sim/time/sun-angle-rad</property>
                 <value>1.70</value>
             </greater-than>
-             <greater-than>
+            <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+            </greater-than>
         </condition>
         <emission>
             <red>0.5</red>
@@ -159,7 +159,7 @@
         </offsets>
     </model>
 
-     <model>
+    <model>
         <name>CTL1</name>
         <path>Aircraft/777/Models/Instruments/EFIS/efis-ctl1.xml</path>
         <offsets>
@@ -307,9 +307,9 @@
         <path>Aircraft/777/Models/panel.xml</path>
     </model>
 
-<!--  controls -->
+    <!--  controls -->
 
-     <animation>
+    <animation>
         <type>rotate</type>
         <object-name>MC_Ring</object-name>
         <property>instrumentation/magnetic-compass/indicated-heading-deg</property>
@@ -318,11 +318,11 @@
             <y-m>0.0</y-m>
             <z-m>0.919</z-m>
         </center>
-    <axis>
-        <x>0.0</x>
-        <y>0.0</y>
-        <z>1.0</z>
-    </axis>
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </axis>
     </animation>
 
     <animation>
@@ -364,7 +364,7 @@
         <object-name>Yoke_R_TrimBase</object-name>
         <object-name>Yoke_R_TrimL.Switch</object-name>
         <object-name>Yoke_R_TrimR.Switch</object-name>
-      <condition>
+        <condition>
             <property>sim/yokes-visible</property>
         </condition>
     </animation>
@@ -714,7 +714,7 @@
     </animation-->
 
 
-<!--animation>
+    <!--animation>
         <type>pick</type>
         <object-name>Knob.002</object-name>
         <action>

@@ -10,13 +10,13 @@
     </text>
 
     <hrule />
-    
+
     <text>
         <label>External Power</label>
     </text>
-     
+
     <group>
-    <layout>table</layout>
+        <layout>table</layout>
         <checkbox>
             <row>0</row>
             <col>0</col>
@@ -28,7 +28,7 @@
             </binding>
             <live>true</live>
         </checkbox>
-    
+
         <checkbox>
             <row>1</row>
             <col>0</col>
@@ -40,7 +40,7 @@
             </binding>
             <live>true</live>
         </checkbox>
-        
+
         <checkbox>
             <row>2</row>
             <col>0</col>
@@ -52,7 +52,7 @@
             </binding>
             <live>true</live>
         </checkbox>
-        
+
         <checkbox>
             <row>0</row>
             <col>1</col>
@@ -64,7 +64,7 @@
             </binding>
             <live>true</live>
         </checkbox>
-    
+
         <checkbox>
             <row>1</row>
             <col>1</col>
@@ -76,7 +76,7 @@
             </binding>
             <live>true</live>
         </checkbox>
-        
+
         <checkbox>
             <row>2</row>
             <col>1</col>
@@ -90,114 +90,114 @@
         </checkbox>
 
     </group>
-    
+
     <hrule />
-    
+
     <text>
         <label>Landing Gear Chocks</label>
     </text>
-    
+
     <group>
-    <layout>table</layout>
-    
-    <text>
-        <row>0</row>
-        <col>0</col>
-        <label>Left Gear</label>
-    </text>
-    
-    <text>
-        <row>0</row>
-        <col>1</col>
-        <label>Nose Gear</label>
-    </text>
-    
-    <text>
-        <row>0</row>
-        <col>2</col>
-        <label>Right Gear</label>
-    </text>
-    
-    <checkbox>
-        <row>1</row>
-        <col>0</col>
-        <property>services/chocks/left</property>
-        <binding>
-            <command>dialog-apply</command>
-        </binding>
-        <live>true</live>
-    </checkbox>
-    
-    <checkbox>
-        <row>1</row>
-        <col>1</col>
-        <property>services/chocks/nose</property>
-        <binding>
-            <command>dialog-apply</command>
-        </binding>
-        <live>true</live>
-    </checkbox>
-    
-    <checkbox>
-        <row>1</row>
-        <col>2</col>
-        <property>services/chocks/right</property>
-        <binding>
-            <command>dialog-apply</command>
-        </binding>
-        <live>true</live>
-    </checkbox>
-    
-    <button>
-        <row>2</row>
-        <col>1</col>
-        <halign>center</halign>
-        <legend>Toggle chocks</legend>
-        <pref-width>110</pref-width>
-        <pref-height>20</pref-height>
-        <binding>
-            <command>property-toggle</command>
+        <layout>table</layout>
+
+        <text>
+            <row>0</row>
+            <col>0</col>
+            <label>Left Gear</label>
+        </text>
+
+        <text>
+            <row>0</row>
+            <col>1</col>
+            <label>Nose Gear</label>
+        </text>
+
+        <text>
+            <row>0</row>
+            <col>2</col>
+            <label>Right Gear</label>
+        </text>
+
+        <checkbox>
+            <row>1</row>
+            <col>0</col>
             <property>services/chocks/left</property>
-        </binding>
-        <binding>
-            <command>property-toggle</command>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+
+        <checkbox>
+            <row>1</row>
+            <col>1</col>
             <property>services/chocks/nose</property>
-        </binding>
-        <binding>
-            <command>property-toggle</command>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+
+        <checkbox>
+            <row>1</row>
+            <col>2</col>
             <property>services/chocks/right</property>
-        </binding>
-    </button>
-    
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+
+        <button>
+            <row>2</row>
+            <col>1</col>
+            <halign>center</halign>
+            <legend>Toggle chocks</legend>
+            <pref-width>110</pref-width>
+            <pref-height>20</pref-height>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/chocks/left</property>
+            </binding>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/chocks/nose</property>
+            </binding>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/chocks/right</property>
+            </binding>
+        </button>
+
     </group>
 
     <hrule />
-    
+
     <text>
         <label>Safety Cones</label>
     </text>
-    
+
     <group>
         <layout>hbox</layout>
         <checkbox>
-        <label>Safety Cones Left</label>
-        <property>services/cones/cone1-enable</property>
-        <binding>
-            <command>dialog-apply</command>
-        </binding>
-        <live>true</live>
+            <label>Safety Cones Left</label>
+            <property>services/cones/cone1-enable</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
         </checkbox>
-        
+
         <checkbox>
-        <label>Safety Cones Right</label>
-        <property>services/cones/cone2-enable</property>
-        <binding>
-            <command>dialog-apply</command>
-        </binding>
-        <live>true</live>
+            <label>Safety Cones Right</label>
+            <property>services/cones/cone2-enable</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
         </checkbox>
     </group>
-    
+
     <button>
         <halign>center</halign>
         <legend>Toggle cones</legend>
@@ -212,68 +212,68 @@
             <property>services/cones/cone2-enable</property>
         </binding>
     </button>
-    
+
     <hrule />
-    
+
     <text>
         <label>Passenger Services</label>
     </text>
-    
+
     <group>
-    <layout>hbox</layout>
+        <layout>hbox</layout>
         <checkbox>
-        <label>Front Bus</label>
-        <property>services/bus/bus1-enable</property>
-        <binding>
-            <command>dialog-apply</command>
-        </binding>
-        <live>true</live>
+            <label>Front Bus</label>
+            <property>services/bus/bus1-enable</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
         </checkbox>
-        
+
         <checkbox>
-        <label>Rear Bus</label>
-        <property>services/bus/bus2-enable</property>
-        <binding>
-            <command>dialog-apply</command>
-        </binding>
-        <live>true</live>
+            <label>Rear Bus</label>
+            <property>services/bus/bus2-enable</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
         </checkbox>
     </group>
 
     <hrule />
-    
+
     <text>
         <label>De-icing Truck</label>
     </text>
-    
-    <group>
-    <layout>hbox</layout>
 
-    <checkbox>
-        <label>Enable De-icing Trucks</label>
-        <property>services/deicing_truck/enable</property>
-        <binding>
-            <command>dialog-apply</command>
-        </binding>
-        <binding>
-            <command>nasal</command>
-            <script>
+    <group>
+        <layout>hbox</layout>
+
+        <checkbox>
+            <label>Enable De-icing Trucks</label>
+            <property>services/deicing_truck/enable</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
                 if(getprop("services/deicing_truck/enable") == 1) {
                     screen.log.write("De-Icing vehicles ready. Confirm brakes set and treatment required.", 0.5, 0.9, 1.0);
                 } else {
                     screen.log.write("Post de-icing check completed, personnel and equipment clear of aircraft.", 0.5, 0.9, 1.0);
                 }
             </script>
-        </binding>
-        <live>true</live>
-    </checkbox>
+            </binding>
+            <live>true</live>
+        </checkbox>
 
-    <button>
-        <legend>De-ice Aircraft</legend>
-        <padding>5</padding>
-        <binding>
-            <command>nasal</command>
-            <script>
+        <button>
+            <legend>De-ice Aircraft</legend>
+            <padding>5</padding>
+            <binding>
+                <command>nasal</command>
+                <script>
                 if ((getprop("controls/gear/brake-parking") != 1) or (getprop("controls/engines/engine[0]/throttle-lever") != 0) or (getprop("controls/engines/engine[1]/throttle-lever") != 0)) {
                     screen.log.write("Please reduce the engines to idle thrust and set the parking brake before commencing the de-icing process.", 1, 0, 0);
                 } elsif (getprop("services/deicing_truck/enable") == 1) {
@@ -283,20 +283,20 @@
                     screen.log.write("Please Enable the De-icing truck first", 1, 0, 0);
                 }
             </script>
-        </binding>
-    </button>
+            </binding>
+        </button>
     </group>
-    
+
     <hrule />
-    
+
     <group>
-    <layout>hbox</layout>
+        <layout>hbox</layout>
 
         <button>
             <legend>Close</legend>
             <default>true</default>
             <key>Esc</key>
-        <padding>5</padding>
+            <padding>5</padding>
             <binding>
                 <command>dialog-apply</command>
             </binding>
@@ -304,7 +304,7 @@
                 <command>dialog-close</command>
             </binding>
         </button>
-        
+
     </group>
 
 </PropertyList>

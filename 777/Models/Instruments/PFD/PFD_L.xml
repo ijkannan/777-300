@@ -5,7 +5,7 @@ Syd Adams
 
 <PropertyList>
 
- <path>PFD_L.ac</path>
+    <path>PFD_L.ac</path>
 
     <animation>
         <type>select</type>
@@ -111,7 +111,7 @@ Syd Adams
                     <value>-0.92</value>
                 </greater-than>
             </and>
-       </condition>
+        </condition>
     </animation>
 
     <animation>
@@ -132,7 +132,7 @@ Syd Adams
                     </less-than>
                 </or>
             </and>
-       </condition>
+        </condition>
     </animation>
 
     <animation>
@@ -181,7 +181,9 @@ Syd Adams
         </condition>
         <property>instrumentation/nav/gs-needle-deflection-norm</property>
         <condition>
-            <not><property>instrumentation/nav/gs-in-range</property></not>
+            <not>
+                <property>instrumentation/nav/gs-in-range</property>
+            </not>
         </condition>
     </animation>
 
@@ -205,7 +207,7 @@ Syd Adams
         <type>select</type>
         <object-name>Omarker</object-name>
         <condition>
-                <property>instrumentation/marker-beacon/outer</property>
+            <property>instrumentation/marker-beacon/outer</property>
         </condition>
     </animation>
 
@@ -227,7 +229,9 @@ Syd Adams
         <object-name>FDroll</object-name>
         <object-name>FDpitch</object-name>
         <condition>
-            <not><property>sim/rendering/rembrandt/enabled</property></not>
+            <not>
+                <property>sim/rendering/rembrandt/enabled</property>
+            </not>
             <or>
                 <property>instrumentation/afds/inputs/FD</property>
                 <property>instrumentation/afds/settings/auto-pop-up</property>
@@ -235,7 +239,7 @@ Syd Adams
         </condition>
     </animation>
 
-     <animation>
+    <animation>
         <type>translate</type>
         <object-name>FDpitch</object-name>
         <object-name>FDpitch_rembrandt</object-name>
@@ -351,7 +355,9 @@ Syd Adams
         <object-name>fbw-text</object-name>
         <condition>
             <and>
-                <not><property>fcs/fbw/pitch/trim-kts-sync</property></not>
+                <not>
+                    <property>fcs/fbw/pitch/trim-kts-sync</property>
+                </not>
                 <property>fcs/fbw/show-fbw-bug</property>
             </and>
         </condition>
@@ -509,12 +515,30 @@ Syd Adams
         <object-name>VSI.needle</object-name>
         <property>velocities/vertical-speed-fps</property>
         <interpolation>
-            <entry><ind>-100</ind><dep>-0.0385</dep></entry>
-            <entry><ind>-33.3333</ind><dep>-0.0265</dep></entry>
-            <entry><ind>-16.6666</ind><dep>-0.0147</dep></entry>
-            <entry><ind>16.6666</ind><dep>0.0147</dep></entry>
-            <entry><ind>33.3333</ind><dep>0.0265</dep></entry>
-            <entry><ind>100</ind><dep>0.0385</dep></entry>
+            <entry>
+                <ind>-100</ind>
+                <dep>-0.0385</dep>
+            </entry>
+            <entry>
+                <ind>-33.3333</ind>
+                <dep>-0.0265</dep>
+            </entry>
+            <entry>
+                <ind>-16.6666</ind>
+                <dep>-0.0147</dep>
+            </entry>
+            <entry>
+                <ind>16.6666</ind>
+                <dep>0.0147</dep>
+            </entry>
+            <entry>
+                <ind>33.3333</ind>
+                <dep>0.0265</dep>
+            </entry>
+            <entry>
+                <ind>100</ind>
+                <dep>0.0385</dep>
+            </entry>
         </interpolation>
         <axis>
             <x>0</x>
@@ -528,12 +552,30 @@ Syd Adams
         <object-name>VSI.needle</object-name>
         <property>velocities/vertical-speed-fps</property>
         <interpolation>
-            <entry><ind>-100</ind><dep>-60.0</dep></entry>
-            <entry><ind>-33.3333</ind><dep>-50.0</dep></entry>
-            <entry><ind>-16.6666</ind><dep>-34.0</dep></entry>
-            <entry><ind>16.6666</ind><dep>34.0</dep></entry>
-            <entry><ind>33.3333</ind><dep>50.0</dep></entry>
-            <entry><ind>100</ind><dep>60.0</dep></entry>
+            <entry>
+                <ind>-100</ind>
+                <dep>-60.0</dep>
+            </entry>
+            <entry>
+                <ind>-33.3333</ind>
+                <dep>-50.0</dep>
+            </entry>
+            <entry>
+                <ind>-16.6666</ind>
+                <dep>-34.0</dep>
+            </entry>
+            <entry>
+                <ind>16.6666</ind>
+                <dep>34.0</dep>
+            </entry>
+            <entry>
+                <ind>33.3333</ind>
+                <dep>50.0</dep>
+            </entry>
+            <entry>
+                <ind>100</ind>
+                <dep>60.0</dep>
+            </entry>
         </interpolation>
         <center>
             <x-m>0.002</x-m>
@@ -552,9 +594,18 @@ Syd Adams
         <object-name>Heading_mark</object-name>
         <property>autopilot/internal/crab-angle-hdg</property>
         <interpolation>
-            <entry><ind>-54</ind><dep>-54</dep></entry>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>54</ind><dep>54</dep></entry>
+            <entry>
+                <ind>-54</ind>
+                <dep>-54</dep>
+            </entry>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>54</ind>
+                <dep>54</dep>
+            </entry>
         </interpolation>
         <center>
             <x-m>0.002</x-m>
@@ -573,9 +624,18 @@ Syd Adams
         <object-name>hdg-bug</object-name>
         <property>autopilot/internal/heading-bug-error-deg</property>
         <interpolation>
-            <entry><ind>-54</ind><dep>-54</dep></entry>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>54</ind><dep>54</dep></entry>
+            <entry>
+                <ind>-54</ind>
+                <dep>-54</dep>
+            </entry>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>54</ind>
+                <dep>54</dep>
+            </entry>
         </interpolation>
         <center>
             <x-m>0.002</x-m>
@@ -594,9 +654,18 @@ Syd Adams
         <object-name>Track</object-name>
         <property>autopilot/internal/crab-angle-trk</property>
         <interpolation>
-            <entry><ind>-54</ind><dep>-54</dep></entry>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>54</ind><dep>54</dep></entry>
+            <entry>
+                <ind>-54</ind>
+                <dep>-54</dep>
+            </entry>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>54</ind>
+                <dep>54</dep>
+            </entry>
         </interpolation>
         <center>
             <x-m>0.002</x-m>
@@ -686,8 +755,14 @@ Syd Adams
         <object-name>ASI</object-name>
         <property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
         <interpolation>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>560</ind><dep>0.7520</dep></entry>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>560</ind>
+                <dep>0.7520</dep>
+            </entry>
         </interpolation>
         <axis>
             <x>0</x>
@@ -695,7 +770,7 @@ Syd Adams
         </axis>
     </animation>
 
-<!-- ALT tape-->
+    <!-- ALT tape-->
 
     <animation>
         <type>select</type>
@@ -792,9 +867,18 @@ Syd Adams
         <object-name>Alt1</object-name>
         <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <interpolation>
-            <entry><ind>-200</ind><dep>-0.0187</dep></entry>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>9600</ind><dep>0.9035</dep></entry>
+            <entry>
+                <ind>-200</ind>
+                <dep>-0.0187</dep>
+            </entry>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>9600</ind>
+                <dep>0.9035</dep>
+            </entry>
         </interpolation>
         <axis>
             <x>0</x>
@@ -807,8 +891,14 @@ Syd Adams
         <object-name>Alt2</object-name>
         <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <interpolation>
-            <entry><ind>9600</ind><dep>0</dep></entry>
-            <entry><ind>19200</ind><dep>0.9035</dep></entry>
+            <entry>
+                <ind>9600</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>19200</ind>
+                <dep>0.9035</dep>
+            </entry>
         </interpolation>
         <axis>
             <x>0</x>
@@ -821,8 +911,14 @@ Syd Adams
         <object-name>Alt3</object-name>
         <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <interpolation>
-            <entry><ind>19200</ind><dep>0</dep></entry>
-            <entry><ind>28800</ind><dep>0.9035</dep></entry>
+            <entry>
+                <ind>19200</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>28800</ind>
+                <dep>0.9035</dep>
+            </entry>
         </interpolation>
         <axis>
             <x>0</x>
@@ -835,8 +931,14 @@ Syd Adams
         <object-name>Alt4</object-name>
         <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <interpolation>
-            <entry><ind>28800</ind><dep>0</dep></entry>
-            <entry><ind>38400</ind><dep>0.9035</dep></entry>
+            <entry>
+                <ind>28800</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>38400</ind>
+                <dep>0.9035</dep>
+            </entry>
         </interpolation>
         <axis>
             <x>0</x>
@@ -849,8 +951,14 @@ Syd Adams
         <object-name>Alt5</object-name>
         <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <interpolation>
-            <entry><ind>38400</ind><dep>0</dep></entry>
-            <entry><ind>48000</ind><dep>0.9035</dep></entry>
+            <entry>
+                <ind>38400</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>48000</ind>
+                <dep>0.9035</dep>
+            </entry>
         </interpolation>
         <axis>
             <x>0</x>
@@ -863,8 +971,14 @@ Syd Adams
         <object-name>Alt6</object-name>
         <property>instrumentation/altimeter/indicated-altitude-ft</property>
         <interpolation>
-            <entry><ind>48000</ind><dep>0</dep></entry>
-            <entry><ind>57600</ind><dep>0.9035</dep></entry>
+            <entry>
+                <ind>48000</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>57600</ind>
+                <dep>0.9035</dep>
+            </entry>
         </interpolation>
         <axis>
             <x>0</x>
@@ -969,7 +1083,7 @@ Syd Adams
         <factor>0.000142</factor>
     </animation>
 
-<!-- Text -->
+    <!-- Text -->
 
     <text>
         <name>SPD</name>
@@ -1794,7 +1908,7 @@ Syd Adams
     </text>
 
     <animation>
-        <type>material</type><!--green-->
+        <type>material</type> <!--green-->
         <object-name>SPD</object-name>
         <object-name>ROLL</object-name>
         <object-name>PITCH</object-name>
@@ -1837,7 +1951,7 @@ Syd Adams
     </animation>
 
     <animation>
-        <type>material</type><!--white-->
+        <type>material</type> <!--white-->
         <object-name>RALT</object-name>
         <object-name>MACH</object-name>
         <object-name>ASIdigits</object-name>
@@ -1877,7 +1991,7 @@ Syd Adams
     </animation>
 
     <animation>
-        <type>material</type><!--magenta-->
+        <type>material</type> <!--magenta-->
         <object-name>ALT-annunFL</object-name>
         <object-name>ALT-annun100</object-name>
         <object-name>IAS-annun</object-name>
@@ -1907,7 +2021,7 @@ Syd Adams
     </animation>
 
     <animation>
-        <type>material</type><!--yellow-->
+        <type>material</type> <!--yellow-->
         <object-name>INHG-STD-YEL</object-name>
         <object-name>INHG-YEL</object-name>
         <object-name>HPA-YEL</object-name>
@@ -1934,7 +2048,7 @@ Syd Adams
     </animation>
 
     <animation>
-        <type>material</type><!--blue-->
+        <type>material</type> <!--blue-->
         <object-name>UTC-TEXT</object-name>
         <object-name>ET-TEXT</object-name>
         <object-name>fbw-text</object-name>
@@ -1965,7 +2079,7 @@ Syd Adams
         <object-name>VS-POS</object-name>
         <condition>
             <greater-than-equals>
-                 <property>velocities/vertical-speed-fps</property>
+                <property>velocities/vertical-speed-fps</property>
                 <value>6.67</value>
             </greater-than-equals>
         </condition>
@@ -2065,12 +2179,12 @@ Syd Adams
         <object-name>INHG-STD</object-name>
         <condition>
             <and>
-            <property>instrumentation/efis/inputs/setting-std</property>
-            <greater-than>
-                <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                <property>instrumentation/efis/inputs/setting-std</property>
+                <greater-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
                     <property>autopilot/settings/transition-altitude</property>
-            </greater-than>
-        </and>
+                </greater-than>
+            </and>
         </condition>
     </animation>
     <animation>
@@ -2092,7 +2206,9 @@ Syd Adams
         <object-name>INHG-WHT</object-name>
         <condition>
             <and>
-                <not><property>instrumentation/efis/inputs/kpa-mode</property></not>
+                <not>
+                    <property>instrumentation/efis/inputs/kpa-mode</property>
+                </not>
                 <property>instrumentation/efis/inputs/setting-std</property>
                 <less-than-equals>
                     <property>instrumentation/altimeter/indicated-altitude-ft</property>
@@ -2175,7 +2291,9 @@ Syd Adams
         <type>select</type>
         <object-name>MAG-annun</object-name>
         <condition>
-            <not><property>systems/navigation/hdgref/reference</property></not>
+            <not>
+                <property>systems/navigation/hdgref/reference</property>
+            </not>
         </condition>
     </animation>
 
@@ -2228,7 +2346,8 @@ Syd Adams
     <animation>
         <type>material</type>
         <object-name>tcws</object-name>
-        <emission> <!--red-->
+        <emission>
+            <!--red-->
             <red>0.8</red>
             <green>0</green>
             <blue>0</blue>
@@ -2294,8 +2413,8 @@ Syd Adams
         <object-name>vref</object-name>
         <condition>
             <less-than>
-              <property>instrumentation/pfd/vref-diff</property>
-              <value>-55</value>
+                <property>instrumentation/pfd/vref-diff</property>
+                <value>-55</value>
             </less-than>
         </condition>
     </animation>

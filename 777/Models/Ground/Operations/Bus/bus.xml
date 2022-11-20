@@ -3,37 +3,43 @@
 <PropertyList>
 
     <path>bus-ba.ac</path>
-    
-	<animation>
-		<type>select</type>
+
+    <animation>
+        <type>select</type>
         <object-name>Bus_Front</object-name>
-		<condition>
+        <condition>
             <equals>
                 <property>services/bus/bus1-enable</property>
                 <value>1</value>
             </equals>
-		</condition>
-	</animation>
-    
-	<animation>
-		<type>select</type>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
         <object-name>Bus_Back</object-name>
-		<condition>
+        <condition>
             <equals>
                 <property>services/bus/bus2-enable</property>
                 <value>1</value>
             </equals>
-		</condition>
-	</animation>
-  
+        </condition>
+    </animation>
+
     <animation>
         <type>translate</type>
         <object-name>Bus_Front</object-name>
         <object-name>Bus_Back</object-name>
         <property>gear/gear[0]/compression-norm</property>
         <interpolation>
-            <entry><ind>0.18</ind><dep>0</dep></entry>
-            <entry><ind>0.21</ind><dep>0.03</dep></entry>
+            <entry>
+                <ind>0.18</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.21</ind>
+                <dep>0.03</dep>
+            </entry>
         </interpolation>
         <axis>
             <x>0</x>
@@ -41,7 +47,7 @@
             <z>1</z>
         </axis>
     </animation>
-    
+
     <animation>
         <type>pick</type>
         <object-name>Bus_Front</object-name>

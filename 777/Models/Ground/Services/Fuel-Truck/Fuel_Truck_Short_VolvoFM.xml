@@ -3,79 +3,85 @@
 
 	<path>Fuel_Truck_Short_VolvoFM.ac</path>
 
-<animation>
-	<type>select</type>
-	<object-name>fuel_pipe</object-name>
-	<condition>
-		<equals>
-			<property>services/fuel-truck/connect</property>
-			<value>1</value>
-		</equals>
-	</condition>
-</animation>
+	<animation>
+		<type>select</type>
+		<object-name>fuel_pipe</object-name>
+		<condition>
+			<equals>
+				<property>services/fuel-truck/connect</property>
+				<value>1</value>
+			</equals>
+		</condition>
+	</animation>
 
-<animation>
-	<type>select</type>
-	<object-name>fuel_pipe_disconnected</object-name>
-	<condition>
-		<equals>
-			<property>services/fuel-truck/connect</property>
-			<value>0</value>
-		</equals>
-	</condition>
-</animation>
+	<animation>
+		<type>select</type>
+		<object-name>fuel_pipe_disconnected</object-name>
+		<condition>
+			<equals>
+				<property>services/fuel-truck/connect</property>
+				<value>0</value>
+			</equals>
+		</condition>
+	</animation>
 
-<animation>
-	<type>translate</type>
-	<object>fuel_pipe_disconnected</object>
-	<object>fuel_truck</object>
-	<object>handle</object>
-	<property>gear/gear[1]/compression-norm</property>
-	<interpolation>
-		<entry><ind>0.12</ind><dep>-0.13</dep></entry>
-		<entry><ind>0.39</ind><dep>0.09</dep></entry>
-	</interpolation>
-	<axis>
-		<x>0</x>
-		<y>0</y>
-		<z>1</z>
-	</axis>
-</animation>
+	<animation>
+		<type>translate</type>
+		<object>fuel_pipe_disconnected</object>
+		<object>fuel_truck</object>
+		<object>handle</object>
+		<property>gear/gear[1]/compression-norm</property>
+		<interpolation>
+			<entry>
+				<ind>0.12</ind>
+				<dep>-0.13</dep>
+			</entry>
+			<entry>
+				<ind>0.39</ind>
+				<dep>0.09</dep>
+			</entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>fuel_truck</object-name>
-	<action>
-		<button>0</button>
-		<binding>
-			<command>property-toggle</command>
-			<property>services/fuel-truck/enable</property>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>fuel_truck</object-name>
+		<action>
+			<button>0</button>
+			<binding>
+				<command>property-toggle</command>
+				<property>services/fuel-truck/enable</property>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>fuel_pipe</object-name>
-	<action>
-		<button>0</button>
-		<binding>
-			<command>property-toggle</command>
-			<property>services/fuel-truck/connect</property>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>fuel_pipe</object-name>
+		<action>
+			<button>0</button>
+			<binding>
+				<command>property-toggle</command>
+				<property>services/fuel-truck/connect</property>
+			</binding>
+		</action>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>fuel_pipe_disconnected</object-name>
-	<action>
-		<button>0</button>
-		<binding>
-			<command>property-toggle</command>
-			<property>services/fuel-truck/connect</property>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>fuel_pipe_disconnected</object-name>
+		<action>
+			<button>0</button>
+			<binding>
+				<command>property-toggle</command>
+				<property>services/fuel-truck/connect</property>
+			</binding>
+		</action>
+	</animation>
 
 </PropertyList>

@@ -161,7 +161,7 @@ Are you ready for takeoff?
 			<field-of-view>14.8</field-of-view>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Check: auto-brakes RTO (armed for rejected takeoff)</message>
 		<exit>
@@ -201,7 +201,7 @@ Are you ready for takeoff?
 	</step>
 
 	<step>
-		<message>777-heavy, cleared for takeoff. Maintain runway heading. Climb to 4000.</message> 
+		<message>777-heavy, cleared for takeoff. Maintain runway heading. Climb to 4000.</message>
 		<view>
 			<view-number>3</view-number>
 		</view>

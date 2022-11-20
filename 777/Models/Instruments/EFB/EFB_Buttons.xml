@@ -8,8 +8,8 @@ APR 2014
 
 <PropertyList>
 
-<!-- Top Horizontal Buttons -->
-	
+    <!-- Top Horizontal Buttons -->
+
     <animation>
         <type>pick</type>
         <object-name>Btn.menu</object-name>
@@ -18,15 +18,15 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>MENU</value>
+                <value>MENU</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
+
     <animation>
         <type>pick</type>
         <object-name>Btn.pgup</object-name>
@@ -35,16 +35,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>PGUP</value>
+                <value>PGUP</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
-	<animation>
+
+    <animation>
         <type>pick</type>
         <object-name>Btn.pgdn</object-name>
         <action>
@@ -52,16 +52,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>PGDN</value>
+                <value>PGDN</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
 
-<!-- Left Vertical Buttons -->
+    <!-- Left Vertical Buttons -->
 
     <animation>
         <type>pick</type>
@@ -71,15 +71,15 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>l1</value>
+                <value>l1</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
+
     <animation>
         <type>pick</type>
         <object-name>BtnLH.001</object-name>
@@ -88,16 +88,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>l2</value>
+                <value>l2</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
-	    <animation>
+
+    <animation>
         <type>pick</type>
         <object-name>BtnLH.002</object-name>
         <action>
@@ -105,12 +105,12 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>l3</value>
+                <value>l3</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
 
@@ -122,12 +122,12 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>l4</value>
+                <value>l4</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
 
@@ -139,12 +139,12 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>l5</value>
+                <value>l5</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
 
@@ -156,14 +156,14 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>l6</value>
+                <value>l6</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
-    </animation>	
+    </animation>
 
     <animation>
         <type>pick</type>
@@ -173,12 +173,12 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>l7</value>
+                <value>l7</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
 
@@ -190,16 +190,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>l8</value>
+                <value>l8</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
 
-<!-- Right Vertical Buttons -->
+    <!-- Right Vertical Buttons -->
 
     <animation>
         <type>pick</type>
@@ -209,16 +209,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>r1</value>
+                <value>r1</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
-	  <animation>
+
+    <animation>
         <type>pick</type>
         <object-name>BtnRH.001</object-name>
         <action>
@@ -226,16 +226,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>r2</value>
+                <value>r2</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
 
-	<animation>
+    <animation>
         <type>pick</type>
         <object-name>BtnRH.002</object-name>
         <action>
@@ -243,16 +243,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>r3</value>
+                <value>r3</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
 
-	<animation>
+    <animation>
         <type>pick</type>
         <object-name>BtnRH.003</object-name>
         <action>
@@ -260,15 +260,15 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>r4</value>
+                <value>r4</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
+
     <animation>
         <type>pick</type>
         <object-name>BtnRH.004</object-name>
@@ -277,15 +277,15 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>r5</value>
+                <value>r5</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
+
     <animation>
         <type>pick</type>
         <object-name>BtnRH.005</object-name>
@@ -294,16 +294,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>r6</value>
+                <value>r6</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
-    </animation>	
+    </animation>
 
-	<animation>
+    <animation>
         <type>pick</type>
         <object-name>BtnRH.006</object-name>
         <action>
@@ -311,16 +311,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>r7</value>
+                <value>r7</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
-	<animation>
+
+    <animation>
         <type>pick</type>
         <object-name>BtnRH.007</object-name>
         <action>
@@ -328,17 +328,17 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>r8</value>
+                <value>r8</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
-<!-- Bottom Horizontal Buttons -->
-	
+
+    <!-- Bottom Horizontal Buttons -->
+
     <animation>
         <type>pick</type>
         <object-name>Btn.zoomin</object-name>
@@ -347,16 +347,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>Zin</value>
+                <value>Zin</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
-	<animation>
+
+    <animation>
         <type>pick</type>
         <object-name>Btn.zoomout</object-name>
         <action>
@@ -364,16 +364,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>Zout</value>
+                <value>Zout</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
-	 <animation>
+
+    <animation>
         <type>pick</type>
         <object-name>Btn.crsr-dn</object-name>
         <action>
@@ -381,16 +381,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>ScrollDN</value>
+                <value>ScrollDN</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
-	    <animation>
+
+    <animation>
         <type>pick</type>
         <object-name>Btn.crsr-up</object-name>
         <action>
@@ -398,16 +398,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>ScrollUP</value>
+                <value>ScrollUP</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
 
-	 <animation>
+    <animation>
         <type>pick</type>
         <object-name>Btn.crsr-rh</object-name>
         <action>
@@ -415,16 +415,16 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>Move_R</value>
+                <value>Move_R</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
-	<animation>
+
+    <animation>
         <type>pick</type>
         <object-name>Btn.crsr-lh</object-name>
         <action>
@@ -432,13 +432,13 @@ APR 2014
             <binding>
                 <command>property-cycle</command>
                 <property>instrumentation/efb/keypress</property>
-				<value>Move_L</value>
+                <value>Move_L</value>
             </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(9);</script>
-            </binding>			
+            </binding>
         </action>
     </animation>
-	
+
 </PropertyList>

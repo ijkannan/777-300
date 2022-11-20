@@ -197,7 +197,7 @@ Are you ready to take controls?
 			<z-offset-m>-28.0381</z-offset-m>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Check: beacon and navigation lights ON</message>
 		<exit>
@@ -221,7 +221,7 @@ Are you ready to take controls?
 			<z-offset-m>-28.0381</z-offset-m>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Check: left/right/center fuel pumps ON (6 switches)</message>
 		<exit>
@@ -306,10 +306,10 @@ Are you ready to take controls?
 			<x-offset-m>-0.6</x-offset-m>
 			<y-offset-m>0.8</y-offset-m>
 			<z-offset-m>-28.0381</z-offset-m>
-            <field-of-view>68.5</field-of-view>
+			<field-of-view>68.5</field-of-view>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Wait for engine 1 to startup</message>
 		<exit>
@@ -330,7 +330,7 @@ Are you ready to take controls?
 			<field-of-view>65.5</field-of-view>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Set #2(right)Engine start knob to START</message>
 		<exit>
@@ -382,7 +382,7 @@ Are you ready to take controls?
 			<z-offset-m>-28.0381</z-offset-m>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Wait for engine 2 to startup</message>
 		<exit>
@@ -403,7 +403,7 @@ Are you ready to take controls?
 			<field-of-view>65.5</field-of-view>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Phew! Nice work so far!</message>
 		<view>
@@ -439,16 +439,16 @@ Are you ready to take controls?
 			<z-m>1.1575</z-m>
 			<scale>7.0000</scale>
 		</marker>
-        <view>
-            <heading-offset-deg>301.3</heading-offset-deg>
-            <pitch-offset-deg>50.7</pitch-offset-deg>
-            <roll-offset-deg>0.0</roll-offset-deg>
-            <x-offset-m>-0.6</x-offset-m>
-            <y-offset-m>0.8</y-offset-m>
-            <z-offset-m>-28.0381</z-offset-m>
-            <field-of-view>65.5</field-of-view>
-        </view>
-</step>
+		<view>
+			<heading-offset-deg>301.3</heading-offset-deg>
+			<pitch-offset-deg>50.7</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+			<field-of-view>65.5</field-of-view>
+		</view>
+	</step>
 
 	<step>
 		<message>Check: auxiliary power unit (APU) OFF (main engines providing power now)</message>

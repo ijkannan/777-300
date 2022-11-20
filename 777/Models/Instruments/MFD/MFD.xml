@@ -4,41 +4,41 @@
 
 <PropertyList>
 
-<path>mfd.ac</path>
-    <animation>
-        <type>select</type>
-        <object-name>MFD.screenoff</object-name>
-        <condition>
-            <less-than>
-                <property>systems/electrical/outputs/efis</property>
-                <value>15</value>
-            </less-than>
-        </condition>
-    </animation>
+	<path>mfd.ac</path>
+	<animation>
+		<type>select</type>
+		<object-name>MFD.screenoff</object-name>
+		<condition>
+			<less-than>
+				<property>systems/electrical/outputs/efis</property>
+				<value>15</value>
+			</less-than>
+		</condition>
+	</animation>
 
-    <animation>
-        <type>select</type>
-        <object-name>MFD.screen</object-name>
-        <condition>
-            <greater-than>
-                <property>systems/electrical/outputs/efis</property>
-                <value>15</value>
-            </greater-than>
-        </condition>
-    </animation>
+	<animation>
+		<type>select</type>
+		<object-name>MFD.screen</object-name>
+		<condition>
+			<greater-than>
+				<property>systems/electrical/outputs/efis</property>
+				<value>15</value>
+			</greater-than>
+		</condition>
+	</animation>
 
-<animation>
-	<type>pick</type>
-	<object-name>MFD.screen</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>false</repeatable>
-		<binding>
-			<command>nasal</command>
-			<script>b777.mfdTogglePopup();</script>
-		</binding>
-	</action>
-</animation>
+	<animation>
+		<type>pick</type>
+		<object-name>MFD.screen</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>b777.mfdTogglePopup();</script>
+			</binding>
+		</action>
+	</animation>
 
 	<animation>
 		<type>translate</type>
@@ -87,19 +87,19 @@
 			<y>1</y>
 			<z>0</z>
 		</axis>
-		</animation>
- 
-    <animation>
-        <type>pick</type>
+	</animation>
+
+	<animation>
+		<type>pick</type>
 		<object-name>DSPL_CTRL_Switch</object-name>
-        <action>
-            <button>0</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-toggle</command>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>property-toggle</command>
 				<property>controls/switches/c_dspl_switch</property>
-            </binding>
-        </action>
-    </animation>
+			</binding>
+		</action>
+	</animation>
 
 </PropertyList>

@@ -5,7 +5,7 @@
 <!-- Based off IT-AUTOFLIGHT Technology -->
 
 <PropertyList>
-	
+
 	<!-- Misc Logic -->
 	<filter>
 		<name>Tiller Control Filter Nose</name>
@@ -36,7 +36,7 @@
 			<property>/gear/on-ground</property>
 		</output>
 	</logic>
-	
+
 	<!-- Autopilot Helpers/Calculators -->
 	<filter>
 		<name>Heading Input</name>
@@ -54,7 +54,7 @@
 		<input>/orientation/heading-magnetic-deg</input>
 		<output>/autopilot/internal/heading</output>
 	</filter>
-	
+
 	<filter>
 		<name>Track Input</name>
 		<type>gain</type>
@@ -71,7 +71,7 @@
 		<input>/orientation/track-magnetic-deg</input>
 		<output>/autopilot/internal/track</output>
 	</filter>
-	
+
 	<filter>
 		<name>Heading Error Deg</name>
 		<type>gain</type>
@@ -143,7 +143,7 @@
 			<max>180</max>
 		</period>
 	</filter>
-	
+
 	<filter>
 		<name>VOR/LOC Error Deg</name>
 		<type>gain</type>
@@ -161,7 +161,7 @@
 			<max>180</max>
 		</period>
 	</filter>
-	
+
 	<filter>
 		<name>Internal Vertical Speed</name>
 		<type>gain</type>
@@ -169,7 +169,7 @@
 		<input>/instrumentation/gps/indicated-vertical-speed</input>
 		<output>/autopilot/internal/vert-speed-fpm</output>
 	</filter>
-	
+
 	<filter>
 		<name>Knots Rate</name>
 		<type>derivative</type>
@@ -177,7 +177,7 @@
 		<output>/autopilot/internal/kts-rate-raw</output>
 		<filter-time>1.0</filter-time>
 	</filter>
-	
+
 	<filter>
 		<name>Knots Rate Lag</name>
 		<type>exponential</type>
@@ -194,7 +194,7 @@
 		<output>/autopilot/internal/kts-rate</output>
 		<filter-time>0.08</filter-time>
 	</filter>
-	
+
 	<filter>
 		<name>Flch Knots Rate Command</name>
 		<type>gain</type>
@@ -251,7 +251,7 @@
 		<min>-1.5</min>
 		<max>1.5</max>
 	</filter>
-	
+
 	<filter>
 		<name>Flch Knots Rate Filter</name>
 		<type>noise-spike</type>
@@ -290,7 +290,7 @@
 		</max-rate-of-change>
 		<max-rate-of-change>100</max-rate-of-change>
 	</filter>
-	
+
 	<filter>
 		<name>Internal FPA Computer</name>
 		<type>gain</type>
@@ -305,12 +305,13 @@
 		</input>
 		<output>/autopilot/internal/fpa</output>
 	</filter>
-	
+
 	<filter>
 		<name>Nav G/S FPM Calc</name>
 		<type>gain</type>
 		<gain>1.0</gain>
-		<input> <!-- Under 110ft glideslope data starts to become unusable -->
+		<input>
+			<!-- Under 110ft glideslope data starts to become unusable -->
 			<condition>
 				<and>
 					<or>
@@ -341,7 +342,7 @@
 		<min>-1200</min>
 		<max>0</max>
 	</filter>
-	
+
 	<!-- Roll Axis -->
 	<filter>
 		<name>IT-CONTROLLER: Heading</name>
@@ -350,8 +351,14 @@
 			<expression>
 				<table>
 					<property>/velocities/airspeed-kt</property>
-					<entry><ind>140</ind><dep>1.6</dep></entry>
-					<entry><ind>360</ind><dep>2.6</dep></entry>
+					<entry>
+						<ind>140</ind>
+						<dep>1.6</dep>
+					</entry>
+					<entry>
+						<ind>360</ind>
+						<dep>2.6</dep>
+					</entry>
 				</table>
 			</expression>
 		</gain>
@@ -389,7 +396,7 @@
 		<min>/instrumentation/afds/settings/bank-min</min>
 		<max>/instrumentation/afds/settings/bank-max</max>
 	</filter>
-	
+
 	<filter>
 		<name>IT-CONTROLLER: LNAV</name>
 		<type>gain</type>
@@ -405,10 +412,10 @@
 						<property>/instrumentation/afds/ap-modes/roll-mode</property>
 						<value>LNAV</value>
 					</equals>
-                    <not-equals>
-                        <property>/instrumentation/afds/ap-modes/lnav-is-pattern</property>
-                        <value>1</value>
-                    </not-equals>
+					<not-equals>
+						<property>/instrumentation/afds/ap-modes/lnav-is-pattern</property>
+						<value>1</value>
+					</not-equals>
 				</and>
 			</condition>
 		</enable>
@@ -418,36 +425,36 @@
 		<min>/instrumentation/afds/settings/bank-min</min>
 		<max>/instrumentation/afds/settings/bank-max</max>
 	</filter>
-    
-    <filter>
-        <name>IT-CONTROLLER: LNAV Holding Pattern</name>
-        <debug>false</debug>
-        <type>gain</type>
-        <gain>1.0</gain>
-        <enable>
-            <condition>
-                <and>
-                    <or>
-                        <property>/instrumentation/afds/inputs/AP</property>
-                        <property>/instrumentation/afds/inputs/FD</property>
-                    </or>
-                    <equals>
-                        <property>/instrumentation/afds/ap-modes/roll-mode</property>
-                        <value>LNAV</value>
-                    </equals>
-                    <equals>
-                        <property>/instrumentation/afds/ap-modes/lnav-is-pattern</property>
-                        <value>1</value>
-                    </equals>
-                </and>
-            </condition>
-        </enable>
-        <input>/autopilot/internal/holding-pattern-roll</input>
-        <output>/autopilot/internal/target-roll-deg</output>
-        <min>-30</min>
-        <max>30</max>
-    </filter>
-	
+
+	<filter>
+		<name>IT-CONTROLLER: LNAV Holding Pattern</name>
+		<debug>false</debug>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<enable>
+			<condition>
+				<and>
+					<or>
+						<property>/instrumentation/afds/inputs/AP</property>
+						<property>/instrumentation/afds/inputs/FD</property>
+					</or>
+					<equals>
+						<property>/instrumentation/afds/ap-modes/roll-mode</property>
+						<value>LNAV</value>
+					</equals>
+					<equals>
+						<property>/instrumentation/afds/ap-modes/lnav-is-pattern</property>
+						<value>1</value>
+					</equals>
+				</and>
+			</condition>
+		</enable>
+		<input>/autopilot/internal/holding-pattern-roll</input>
+		<output>/autopilot/internal/target-roll-deg</output>
+		<min>-30</min>
+		<max>30</max>
+	</filter>
+
 	<filter>
 		<name>IT-CONTROLLER: VOR/LOC</name>
 		<type>gain</type>
@@ -455,8 +462,14 @@
 			<expression>
 				<table>
 					<property>/velocities/airspeed-kt</property>
-					<entry><ind>140</ind><dep>1.6</dep></entry>
-					<entry><ind>360</ind><dep>2.6</dep></entry>
+					<entry>
+						<ind>140</ind>
+						<dep>1.6</dep>
+					</entry>
+					<entry>
+						<ind>360</ind>
+						<dep>2.6</dep>
+					</entry>
 				</table>
 			</expression>
 		</gain>
@@ -480,7 +493,7 @@
 		<min>/instrumentation/afds/settings/bank-min</min>
 		<max>/instrumentation/afds/settings/bank-max</max>
 	</filter>
-	
+
 	<filter>
 		<name>IT-CONTROLLER: Rollout/Takeoff</name>
 		<type>gain</type>
@@ -508,7 +521,7 @@
 		<input>0</input>
 		<output>/autopilot/internal/target-roll-deg</output>
 	</filter>
-	
+
 	<filter>
 		<name>System Command: Roll Target Inactive Sync</name>
 		<type>gain</type>
@@ -516,8 +529,12 @@
 		<enable>
 			<condition>
 				<and>
-					<not><property>/instrumentation/afds/inputs/AP</property></not>
-					<not><property>/instrumentation/afds/inputs/FD</property></not>
+					<not>
+						<property>/instrumentation/afds/inputs/AP</property>
+					</not>
+					<not>
+						<property>/instrumentation/afds/inputs/FD</property>
+					</not>
 				</and>
 			</condition>
 		</enable>
@@ -526,7 +543,7 @@
 		<min>/instrumentation/afds/settings/bank-min</min>
 		<max>/instrumentation/afds/settings/bank-max</max>
 	</filter>
-	
+
 	<filter>
 		<name>System Command: Target Roll Filter</name>
 		<input>/autopilot/internal/target-roll-deg</input>
@@ -535,21 +552,27 @@
 		<max-rate-of-change>
 			<condition>
 				<and>
-					<not><property>/instrumentation/afds/inputs/AP</property></not>
-					<not><property>/instrumentation/afds/inputs/FD</property></not>
+					<not>
+						<property>/instrumentation/afds/inputs/AP</property>
+					</not>
+					<not>
+						<property>/instrumentation/afds/inputs/FD</property>
+					</not>
 				</and>
 			</condition>
 			<value>1000</value>
 		</max-rate-of-change>
 		<max-rate-of-change>
 			<condition>
-				<not><property>/instrumentation/afds/inputs/AP</property></not>
+				<not>
+					<property>/instrumentation/afds/inputs/AP</property>
+				</not>
 			</condition>
 			<value>15</value>
 		</max-rate-of-change>
 		<max-rate-of-change>6</max-rate-of-change>
 	</filter>
-	
+
 	<filter>
 		<name>System Command: Roll Difference</name>
 		<type>gain</type>
@@ -565,7 +588,7 @@
 		<min>-5</min>
 		<max>5</max>
 	</filter>
-	
+
 	<pid-controller>
 		<name>System Command: Aileron Air</name>
 		<enable>
@@ -598,13 +621,26 @@
 					<product>
 						<table>
 							<property>/velocities/airspeed-kt</property>
-							<entry><ind>140</ind><dep>0.12</dep></entry>
-							<entry><ind>360</ind><dep>0.04</dep></entry>
+							<entry>
+								<ind>140</ind>
+								<dep>0.12</dep>
+							</entry>
+							<entry>
+								<ind>360</ind>
+								<dep>0.04</dep>
+							</entry>
 						</table>
-						<table> <!-- Increase deflection if outer ailerons are locked -->
+						<table>
+							<!-- Increase deflection if outer ailerons are locked -->
 							<property>/fcs/logic/outer-aileron-locked</property>
-							<entry><ind>0</ind><dep>1.0</dep></entry>
-							<entry><ind>1</ind><dep>1.4</dep></entry>
+							<entry>
+								<ind>0</ind>
+								<dep>1.0</dep>
+							</entry>
+							<entry>
+								<ind>1</ind>
+								<dep>1.4</dep>
+							</entry>
 						</table>
 					</product>
 				</expression>
@@ -615,7 +651,7 @@
 			<u_max>1.0</u_max>
 		</config>
 	</pid-controller>
-	
+
 	<filter>
 		<name>System Command: Aileron Ground</name>
 		<type>gain</type>
@@ -629,7 +665,7 @@
 		<reference>0</reference>
 		<output>/autopilot/internal/aileron-rollout</output>
 	</filter>
-	
+
 	<filter>
 		<name>System Command: Aileron Inactive Sync</name>
 		<debug>false</debug>
@@ -637,13 +673,15 @@
 		<gain>1.0</gain>
 		<enable>
 			<condition>
-				<not><property>/instrumentation/afds/inputs/AP</property></not>
+				<not>
+					<property>/instrumentation/afds/inputs/AP</property>
+				</not>
 			</condition>
 		</enable>
 		<input>/controls/flight/aileron</input>
 		<output>/fcs/fbw/ap/roll-cmd</output>
 	</filter>
-	
+
 	<filter>
 		<name>System Command: Aileron Filter</name>
 		<type>noise-spike</type>
@@ -673,7 +711,7 @@
 		<output>/fcs/fbw/ap/roll-cmd</output>
 		<max-rate-of-change>1.2</max-rate-of-change>
 	</filter>
-	
+
 	<!-- Pitch Axis -->
 	<!-- Altitude Hold Logic, "tries" to behave like IT-AUTOFLIGHT -->
 	<logic>
@@ -707,7 +745,7 @@
 		</input>
 		<output>/autopilot/internal/alt-active</output>
 	</logic>
-	
+
 	<filter>
 		<name>Altitude Error Abs</name>
 		<type>gain</type>
@@ -724,7 +762,7 @@
 		</input>
 		<output>/autopilot/internal/alt-error-abs</output>
 	</filter>
-	
+
 	<filter>
 		<name>Altitude Capture Min</name>
 		<type>gain</type>
@@ -732,7 +770,9 @@
 		<input>
 			<condition>
 				<and>
-					<not><property>/autopilot/internal/alt-active</property></not>
+					<not>
+						<property>/autopilot/internal/alt-active</property>
+					</not>
 					<less-than>
 						<property>/autopilot/settings/actual-target-altitude-ft</property>
 						<property>/instrumentation/altimeter/indicated-altitude-ft</property>
@@ -758,7 +798,7 @@
 		<min>-6000</min>
 		<max>-50</max>
 	</filter>
-	
+
 	<filter>
 		<name>Altitude Capture Max</name>
 		<type>gain</type>
@@ -766,7 +806,9 @@
 		<input>
 			<condition>
 				<and>
-					<not><property>/autopilot/internal/alt-active</property></not>
+					<not>
+						<property>/autopilot/internal/alt-active</property>
+					</not>
 					<greater-than-equals>
 						<property>/autopilot/settings/actual-target-altitude-ft</property>
 						<property>/instrumentation/altimeter/indicated-altitude-ft</property>
@@ -792,7 +834,7 @@
 		<min>50</min>
 		<max>6000</max>
 	</filter>
-	
+
 	<filter>
 		<name>IT-CONTROLLER: Altitude Capture/Hold</name>
 		<type>gain</type>
@@ -810,7 +852,7 @@
 		<min>/autopilot/internal/min-vs</min>
 		<max>/autopilot/internal/max-vs</max>
 	</filter>
-	
+
 	<filter>
 		<name>Vertical Speed FPM Filter</name>
 		<type>noise-spike</type>
@@ -882,7 +924,7 @@
 		</max-rate-of-change>
 		<max-rate-of-change>10000</max-rate-of-change>
 	</filter>
-	
+
 	<logic>
 		<input>
 			<and>
@@ -918,7 +960,7 @@
 		</input>
 		<output>/autopilot/internal/flch-active</output>
 	</logic>
-	
+
 	<filter>
 		<name>Flch Throttle Mode</name>
 		<type>gain</type>
@@ -950,7 +992,7 @@
 		<input>0</input>
 		<output>/autopilot/internal/thr-mode</output>
 	</filter>
-	
+
 	<pid-controller>
 		<name>IT-CONTROLLER: Speed By Pitch</name>
 		<enable>
@@ -966,8 +1008,14 @@
 				<expression>
 					<table>
 						<property>/velocities/airspeed-kt</property>
-						<entry><ind>140</ind><dep>-390</dep></entry>
-						<entry><ind>360</ind><dep>-430</dep></entry>
+						<entry>
+							<ind>140</ind>
+							<dep>-390</dep>
+						</entry>
+						<entry>
+							<ind>360</ind>
+							<dep>-430</dep>
+						</entry>
 					</table>
 				</expression>
 			</Kp>
@@ -1055,20 +1103,22 @@
 			</u_max>
 		</config>
 	</pid-controller>
-	
+
 	<filter>
 		<name>Speed By Pitch Inactive Sync</name>
 		<type>gain</type>
 		<gain>1.0</gain>
 		<enable>
 			<condition>
-				<not><property>/autopilot/internal/flch-active</property></not>
+				<not>
+					<property>/autopilot/internal/flch-active</property>
+				</not>
 			</condition>
 		</enable>
 		<input>/autopilot/internal/vert-speed-fpm</input>
 		<output>/autopilot/internal/target-fpm-flch</output>
 	</filter>
-	
+
 	<logic>
 		<input>
 			<and>
@@ -1084,7 +1134,7 @@
 		</input>
 		<output>/autopilot/internal/fpa-active</output>
 	</logic>
-	
+
 	<filter>
 		<name>IT-CONTROLLER: FPA</name>
 		<type>gain</type>
@@ -1092,7 +1142,8 @@
 		<input>
 			<expression>
 				<sum>
-					<difference> <!-- Fix an issue with the calculation -->
+					<difference>
+						<!-- Fix an issue with the calculation -->
 						<property>/autopilot/internal/vert-speed-fpm</property>
 						<product>
 							<property>/velocities/vertical-speed-fps</property>
@@ -1129,7 +1180,7 @@
 			</expression>
 		</max>
 	</filter>
-	
+
 	<filter>
 		<name>FPA FPM Filter</name>
 		<type>noise-spike</type>
@@ -1171,7 +1222,7 @@
 		</max-rate-of-change>
 		<max-rate-of-change>10000</max-rate-of-change>
 	</filter>
-	
+
 	<filter>
 		<name>IT-CONTROLLER: Flare</name>
 		<type>gain</type>
@@ -1181,7 +1232,8 @@
 				<max>
 					<property>/autopilot/internal/nav1-rate-of-climb-fpm</property>
 					<sum>
-						<difference> <!-- Fix an issue with the calculation -->
+						<difference>
+							<!-- Fix an issue with the calculation -->
 							<property>/autopilot/internal/vert-speed-fpm</property>
 							<product>
 								<property>/velocities/vertical-speed-fps</property>
@@ -1193,11 +1245,26 @@
 								<deg2rad>
 									<table>
 										<property>/position/gear-agl-ft</property>
-										<entry><ind>50</ind><dep>-3.0</dep></entry>
-										<entry><ind>40</ind><dep>-1.8</dep></entry>
-										<entry><ind>30</ind><dep>-1.5</dep></entry>
-										<entry><ind>20</ind><dep>-1.2</dep></entry>
-										<entry><ind> 5</ind><dep>-0.7</dep></entry>
+										<entry>
+											<ind>50</ind>
+											<dep>-3.0</dep>
+										</entry>
+										<entry>
+											<ind>40</ind>
+											<dep>-1.8</dep>
+										</entry>
+										<entry>
+											<ind>30</ind>
+											<dep>-1.5</dep>
+										</entry>
+										<entry>
+											<ind>20</ind>
+											<dep>-1.2</dep>
+										</entry>
+										<entry>
+											<ind> 5</ind>
+											<dep>-0.7</dep>
+										</entry>
 									</table>
 								</deg2rad>
 							</sin>
@@ -1212,7 +1279,7 @@
 		<min>-1200</min>
 		<max>0</max>
 	</filter>
-	
+
 	<filter>
 		<name>Target FPM</name>
 		<type>gain</type>
@@ -1276,7 +1343,7 @@
 		</input>
 		<output>/autopilot/internal/target-common-fpm</output>
 	</filter>
-	
+
 	<pid-controller>
 		<name>IT-CONTROLLER: FPM Hold</name>
 		<enable>
@@ -1328,8 +1395,14 @@
 				<expression>
 					<table>
 						<property>/velocities/airspeed-kt</property>
-						<entry><ind>140</ind><dep>0.0029</dep></entry>
-						<entry><ind>360</ind><dep>0.0009</dep></entry>
+						<entry>
+							<ind>140</ind>
+							<dep>0.0029</dep>
+						</entry>
+						<entry>
+							<ind>360</ind>
+							<dep>0.0009</dep>
+						</entry>
 					</table>
 				</expression>
 			</Kp>
@@ -1417,7 +1490,9 @@
 		<gain>1.0</gain>
 		<enable>
 			<condition>
-				<not><property>/instrumentation/afds/inputs/AP</property></not>
+				<not>
+					<property>/instrumentation/afds/inputs/AP</property>
+				</not>
 			</condition>
 		</enable>
 		<input>/orientation/pitch-deg</input>
@@ -1425,7 +1500,7 @@
 		<min>-15</min>
 		<max>30</max>
 	</filter>
-	
+
 	<filter>
 		<name>System Command: Pitch Rate Target</name>
 		<type>gain</type>
@@ -1441,7 +1516,7 @@
 		<min>-1.5</min>
 		<max>1.5</max>
 	</filter>
-	
+
 	<!-- Yaw Axis -->
 	<pi-simple-controller>
 		<name>IT-CONTROLLER: Yaw VOR/LOC</name>
@@ -1495,7 +1570,7 @@
 		<min>-0.15</min>
 		<max>0.15</max>
 	</pi-simple-controller>
-	
+
 	<filter>
 		<name>System Command: Rudder</name>
 		<type>noise-spike</type>
@@ -1515,7 +1590,7 @@
 		<output>/fcs/fbw/ap/yaw-cmd</output>
 		<max-rate-of-change>1.2</max-rate-of-change>
 	</filter>
-	
+
 	<!-- Flight Director -->
 	<filter>
 		<name>FD Target Roll Filter</name>
@@ -1524,13 +1599,15 @@
 		<output>/autopilot/internal/target-roll-fd</output>
 		<max-rate-of-change>
 			<condition>
-				<not><property>/instrumentation/afds/inputs/FD</property></not>
+				<not>
+					<property>/instrumentation/afds/inputs/FD</property>
+				</not>
 			</condition>
 			<value>1000</value>
 		</max-rate-of-change>
 		<max-rate-of-change>15</max-rate-of-change>
 	</filter>
-	
+
 	<filter>
 		<name>FD Roll</name>
 		<type>gain</type>
@@ -1560,8 +1637,14 @@
 					</dif>
 					<table>
 						<property>/velocities/airspeed-kt</property>
-						<entry><ind>140</ind><dep>0.001848350</dep></entry>
-						<entry><ind>360</ind><dep>0.000924175</dep></entry>
+						<entry>
+							<ind>140</ind>
+							<dep>0.001848350</dep>
+						</entry>
+						<entry>
+							<ind>360</ind>
+							<dep>0.000924175</dep>
+						</entry>
 					</table>
 				</product>
 			</expression>

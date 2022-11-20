@@ -63,7 +63,7 @@ Syd Adams
         </condition>
     </animation>
 
-<!-- Active freq nav mode -->
+    <!-- Active freq nav mode -->
 
     <animation>
         <type>textranslate</type>
@@ -146,7 +146,7 @@ Syd Adams
         </axis>
     </animation>
 
-<!-- Standby freq-->
+    <!-- Standby freq-->
     <animation>
         <type>textranslate</type>
         <object-name>stby.001</object-name>
@@ -231,7 +231,7 @@ Syd Adams
         </axis>
     </animation>
 
-<!-- Hotspots -->
+    <!-- Hotspots -->
     <animation>
         <type>pick</type>
         <object-name>swp.btn</object-name>
@@ -614,18 +614,22 @@ Syd Adams
             </binding>
         </action>
     </animation>
-    
+
     <animation>
         <type>knob</type>
         <object-name>Tun2.knob</object-name>
         <property>instrumentation/rmu/unit[1]/standby-mhz</property>
         <center>
-            <x-m>0.007</x-m><y-m>0.032</y-m><z-m>-0.020</z-m>
+            <x-m>0.007</x-m>
+            <y-m>0.032</y-m>
+            <z-m>-0.020</z-m>
         </center>
         <axis>
-            <x>0</x><y>0</y><z>-1</z>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
         </axis>
-        
+
         <action>
             <binding>
                 <condition>
@@ -779,12 +783,16 @@ Syd Adams
         <object-name>Tun1.knob</object-name>
         <property>instrumentation/rmu/unit[1]/standby-mhz</property>
         <center>
-            <x-m>0.007</x-m><y-m>0.032</y-m><z-m>-0.020</z-m>
+            <x-m>0.007</x-m>
+            <y-m>0.032</y-m>
+            <z-m>-0.020</z-m>
         </center>
         <axis>
-            <x>0</x><y>0</y><z>-1</z>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
         </axis>
-        
+
         <action>
             <binding>
                 <condition>
@@ -932,5 +940,5 @@ Syd Adams
             </binding>
         </hovered>
     </animation>
-    
+
 </PropertyList>

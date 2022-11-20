@@ -78,9 +78,9 @@ Well, you could just press "s" for autostart and skip all this - but you're a re
 			<field-of-view>70</field-of-view>
 		</view>
 	</step>
-	
+
 	<step>
-		<message>Left engine. Blades look ok...</message>	
+		<message>Left engine. Blades look ok...</message>
 		<view>
 			<view-number>1</view-number>
 			<heading-offset-deg>235.6</heading-offset-deg>
@@ -91,9 +91,9 @@ Well, you could just press "s" for autostart and skip all this - but you're a re
 			<z-offset-m>-25.2381</z-offset-m>
 		</view>
 	</step>
-	
+
 	<step>
-		<message>Left main gear. Tyres OK. Brakes OK. Check.</message>	
+		<message>Left main gear. Tyres OK. Brakes OK. Check.</message>
 		<view>
 			<view-number>1</view-number>
 			<heading-offset-deg>308.6</heading-offset-deg>
@@ -104,9 +104,9 @@ Well, you could just press "s" for autostart and skip all this - but you're a re
 			<z-offset-m>-23.2381</z-offset-m>
 		</view>
 	</step>
-	
+
 	<step>
-		<message>Right main gear. Tyres as good as new. Check.</message>	
+		<message>Right main gear. Tyres as good as new. Check.</message>
 		<view>
 			<view-number>1</view-number>
 			<heading-offset-deg>28.5</heading-offset-deg>
@@ -119,7 +119,7 @@ Well, you could just press "s" for autostart and skip all this - but you're a re
 	</step>
 
 	<step>
-		<message>Right engine. No signs of leaking oil. Blades fine. Check.</message>	
+		<message>Right engine. No signs of leaking oil. Blades fine. Check.</message>
 		<view>
 			<view-number>1</view-number>
 			<heading-offset-deg>117.2</heading-offset-deg>
@@ -132,7 +132,7 @@ Well, you could just press "s" for autostart and skip all this - but you're a re
 	</step>
 
 	<step>
-		<message>Back to the cockpit now...</message>	
+		<message>Back to the cockpit now...</message>
 		<view>
 			<view-number>1</view-number>
 			<heading-offset-deg>359.9</heading-offset-deg>
@@ -252,7 +252,7 @@ Well, you could just press "s" for autostart and skip all this - but you're a re
 			<z-offset-m>-28.0381</z-offset-m>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Check: auxiliary power unit (APU) to START momently</message>
 		<exit>
@@ -301,7 +301,7 @@ Well, you could just press "s" for autostart and skip all this - but you're a re
 			<z-offset-m>-28.0381</z-offset-m>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Check: window heat ON</message>
 		<exit>
@@ -329,7 +329,7 @@ Well, you could just press "s" for autostart and skip all this - but you're a re
 			<z-offset-m>-28.0381</z-offset-m>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Check: hydraulic primary pumps ON</message>
 		<exit>
@@ -357,7 +357,7 @@ Well, you could just press "s" for autostart and skip all this - but you're a re
 			<z-offset-m>-28.0381</z-offset-m>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Check: hydraulic demand pumps AUTO</message>
 		<exit>
@@ -439,7 +439,7 @@ Well, you could just press "s" for autostart and skip all this - but you're a re
 			<field-of-view>70</field-of-view>
 		</view>
 	</step>
-	
+
 	<step>
 		<message>Check: GPWS self-test (press and hold for 5 seconds)</message>
 		<exit>
@@ -459,7 +459,6 @@ Well, you could just press "s" for autostart and skip all this - but you're a re
 		<message>Ok, preflight checklist complete! Continue with the "Pushback and Start-up" tutorial.</message>
 	</step>
 
-	<end>
-	</end>
+	<end></end>
 
 </PropertyList>

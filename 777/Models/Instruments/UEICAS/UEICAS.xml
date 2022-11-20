@@ -1,11 +1,11 @@
-    <!--
+<!--
 Syd Adams
 777-200 UEICAS
 -->
 
 <PropertyList>
 
- <path>UEICAS.ac</path>
+    <path>UEICAS.ac</path>
 
     <animation>
         <type>select</type>
@@ -444,8 +444,8 @@ Syd Adams
             <blue>0</blue>
         </specular>
     </animation>
-	
-	<animation>
+
+    <animation>
         <name>yellow2</name>
         <type>material</type>
         <object-name>advisory messages</object-name>
@@ -490,8 +490,8 @@ Syd Adams
             <height type="int">32</height>
         </font-resolution>
     </text>
-	
-	<text>
+
+    <text>
         <name>advisory messages</name>
         <offsets>
             <x-m>0.00212</x-m>
@@ -501,7 +501,7 @@ Syd Adams
         <alignment>left-top</alignment>
         <axis-alignment>yz-plane</axis-alignment>
         <type type="string">text-value</type>
-                <property>instrumentation/efis/eicas/msg/advisory</property>
+        <property>instrumentation/efis/eicas/msg/advisory</property>
         <font>helvetica_bold.txf</font>
         <character-size>0.007</character-size>
         <character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -521,7 +521,7 @@ Syd Adams
         <alignment>left-top</alignment>
         <axis-alignment>yz-plane</axis-alignment>
         <type type="string">text-value</type>
-                <property>instrumentation/efis/eicas/msg/caution</property>
+        <property>instrumentation/efis/eicas/msg/caution</property>
         <font>helvetica_bold.txf</font>
         <character-size>0.007</character-size>
         <character-aspect-ratio type="double">1.2</character-aspect-ratio>
