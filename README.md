@@ -15,7 +15,7 @@ thank you !
 
 1. Open Git Bash terminal and cd into the folder directory you would like to install your aircraft onto and make sure the aircraft folder directory is added in FlightGear's Add-ons menu
 2. Type in `git clone https://github.com/ijkannan/777-300-300ER-for-FlightGear.git`
-3. If you would like to update the aircraft after a new update is released, change directory (cd) into the aircraft folder `git pull`
+3. If you would like to update the aircraft after a new update is released, change directory (cd) into the aircraft folder and `git pull`
 
 ## Changelog
 
