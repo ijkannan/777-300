@@ -5,35 +5,35 @@
     <name>catering</name>
     <layout>vbox</layout>
     <pref-width>360</pref-width>
-    
+
     <group>
-    <layout>hbox</layout>
+        <layout>hbox</layout>
         <text>
             <label>Catering Galleys overview</label>
         </text>
-        
+
         <empty>
             <stretch>true</stretch>
         </empty>
-        
+
         <button>
             <halign>right</halign>
             <pref-width>16</pref-width>
             <pref-height>16</pref-height>
-            <legend/>
+            <legend />
             <key>Esc</key>
             <binding>
                 <command>dialog-close</command>
             </binding>
         </button>
-        
+
     </group>
 
     <hrule />
-    
+
     <group>
         <layout>table</layout>
-        
+
         <text>
             <row>0</row>
             <col>0</col>
@@ -42,7 +42,7 @@
             <label>Galley 1:</label>
             <halign>right</halign>
         </text>
-        
+
         <text>
             <row>1</row>
             <col>0</col>
@@ -51,7 +51,7 @@
             <label>Galley 2:</label>
             <halign>right</halign>
         </text>
-        
+
         <text>
             <row>2</row>
             <col>0</col>
@@ -60,7 +60,7 @@
             <label>Galley 3:</label>
             <halign>right</halign>
         </text>
-        
+
         <text>
             <row>3</row>
             <col>0</col>
@@ -69,7 +69,7 @@
             <label>Galley 4:</label>
             <halign>right</halign>
         </text>
-        
+
         <text>
             <row>4</row>
             <col>0</col>
@@ -78,7 +78,7 @@
             <label>Total:</label>
             <halign>right</halign>
         </text>
-        
+
         <text>
             <row>0</row>
             <col>1</col>
@@ -88,7 +88,7 @@
             <halign>right</halign>
             <live>true</live>
         </text>
-        
+
         <text>
             <row>1</row>
             <col>1</col>
@@ -98,7 +98,7 @@
             <halign>right</halign>
             <live>true</live>
         </text>
-        
+
         <text>
             <row>2</row>
             <col>1</col>
@@ -108,7 +108,7 @@
             <halign>right</halign>
             <live>true</live>
         </text>
-        
+
         <text>
             <row>3</row>
             <col>1</col>
@@ -118,7 +118,7 @@
             <halign>right</halign>
             <live>true</live>
         </text>
-        
+
         <text>
             <row>4</row>
             <col>1</col>
@@ -128,7 +128,7 @@
             <halign>right</halign>
             <live>true</live>
         </text>
-        
+
         <text>
             <row>0</row>
             <col>2</col>
@@ -137,7 +137,7 @@
             <label>Lbs.</label>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>1</row>
             <col>2</col>
@@ -146,7 +146,7 @@
             <label>Lbs.</label>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>2</row>
             <col>2</col>
@@ -155,7 +155,7 @@
             <label>Lbs.</label>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>3</row>
             <col>2</col>
@@ -164,7 +164,7 @@
             <label>Lbs.</label>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>4</row>
             <col>2</col>
@@ -173,7 +173,7 @@
             <label>Lbs.</label>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>0</row>
             <col>3</col>
@@ -183,7 +183,7 @@
             <halign>right</halign>
             <live>true</live>
         </text>
-        
+
         <text>
             <row>1</row>
             <col>3</col>
@@ -193,7 +193,7 @@
             <halign>right</halign>
             <live>true</live>
         </text>
-        
+
         <text>
             <row>2</row>
             <col>3</col>
@@ -203,7 +203,7 @@
             <halign>right</halign>
             <live>true</live>
         </text>
-        
+
         <text>
             <row>3</row>
             <col>3</col>
@@ -213,7 +213,7 @@
             <halign>right</halign>
             <live>true</live>
         </text>
-        
+
         <text>
             <row>4</row>
             <col>3</col>
@@ -223,7 +223,7 @@
             <halign>right</halign>
             <live>true</live>
         </text>
-        
+
         <text>
             <row>0</row>
             <col>4</col>
@@ -232,7 +232,7 @@
             <label>Trolleys</label>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>1</row>
             <col>4</col>
@@ -241,7 +241,7 @@
             <label>Trolleys</label>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>2</row>
             <col>4</col>
@@ -250,7 +250,7 @@
             <label>Trolleys</label>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>3</row>
             <col>4</col>
@@ -267,20 +267,20 @@
             <pref-height>12</pref-height>
             <label>Trolleys</label>
             <halign>left</halign>
-        </text>         
-    
-    </group>    
+        </text>
+
+    </group>
 
     <hrule />
 
     <group>
-    <layout>hbox</layout>
+        <layout>hbox</layout>
 
         <button>
             <legend>Close</legend>
             <default>true</default>
             <key>Esc</key>
-        <padding>5</padding>
+            <padding>5</padding>
             <binding>
                 <command>dialog-apply</command>
             </binding>

@@ -8,24 +8,27 @@ APR 2014
 
 <PropertyList>
 
-<!-- IDENT Lines -->
+	<!-- IDENT Lines -->
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.01</y-m>
-			<z-m>0.0714</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0714</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/IDENTline3-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -33,114 +36,129 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.01</y-m>
-			<z-m>0.0601</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0601</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/IDENTline4-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.076</y-m>
-			<z-m>0.0594</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0594</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/IDENTline4-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.005</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
+	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.02</y-m>
-			<z-m>0.0480</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0480</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/IDENTline5-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.064</y-m>
-			<z-m>0.0480</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0480</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/IDENTline5-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-		<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.019</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.019</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/IDENTline8-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.005</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -148,24 +166,27 @@ APR 2014
 		</font-resolution>
 	</text>
 
-<!-- DESCENT RATE CALCULATOR Lines -->
+	<!-- DESCENT RATE CALCULATOR Lines -->
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.0265</y-m>
-			<z-m>0.0546</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0546</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/DRC_l3</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.010</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -173,91 +194,103 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.0265</y-m>
-			<z-m>0.0301</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0301</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/DRC_l5</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.010</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.0265</y-m>
-			<z-m>0.0546</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0546</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/DRC_r3</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.010</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
+	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.0265</y-m>
-			<z-m>0.0301</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0301</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/DRC_r5</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.010</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.0265</y-m>
-			<z-m>0.0055</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0055</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/DRC_l7</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.010</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -265,45 +298,51 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.023</y-m>
-			<z-m>-0.0124</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.0124</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/DRC_r8</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.010</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
-	
-		<text><name>text</name>
+	</text>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.014</y-m>
-			<z-m>-0.0199</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.0199</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/DRC_r9</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.005</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -311,118 +350,133 @@ APR 2014
 		</font-resolution>
 	</text>
 
-		<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.040</y-m>
-			<z-m>-0.0199</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.0199</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/DRC_r10</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.005</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>		
+	</text>
 
-<!-- PILOT UTILITIES / SPEED and LENGHT CONVERSION Keyboard Lines -->
+	<!-- PILOT UTILITIES / SPEED and LENGHT CONVERSION Keyboard Lines -->
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.059</y-m>
-			<z-m>-0.0045</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.0045</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Input_Line</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.006</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.013</y-m>
-			<z-m>-0.0045</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.0045</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Output_Line</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.006</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
-	
-<!-- PILOT UTILITIES / WEIGHT and TEMPERATURE CONVERSION Keyboard Lines -->
+	</text>
 
-	<text><name>text</name>
+	<!-- PILOT UTILITIES / WEIGHT and TEMPERATURE CONVERSION Keyboard Lines -->
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.059</y-m>
-			<z-m>0.032</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.032</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Input_Line2</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.006</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.013</y-m>
-			<z-m>0.032</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.032</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Output_Line2</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.006</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -430,164 +484,185 @@ APR 2014
 		</font-resolution>
 	</text>
 
-<!-- PILOT UTILITIES / VOLUME CONVERSION Keyboard Lines -->
+	<!-- PILOT UTILITIES / VOLUME CONVERSION Keyboard Lines -->
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.059</y-m>
-			<z-m>0.0197</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0197</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Input_Line3</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.006</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.013</y-m>
-			<z-m>0.0197</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0197</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Output_Line3</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.006</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
-	
-<!-- PILOT UTILITIES / TIME ZONE CONVERSION Keyboard Lines -->
+	</text>
 
-	<text><name>text</name>
+	<!-- PILOT UTILITIES / TIME ZONE CONVERSION Keyboard Lines -->
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.005</y-m>
-			<z-m>0.0568</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0568</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Current_DT_Line</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.008</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.0235</y-m>
-			<z-m>0.0705</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0705</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Input_HH_Line</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.008</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.0067</y-m>
-			<z-m>0.0705</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0705</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Input_MM_Line</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.008</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
-	
-	<text><name>text</name>
+	</text>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.059</y-m>
-			<z-m>0.0397</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0397</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Input_Zulu_Line</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.008</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
+	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.059</y-m>
-			<z-m>0.0217</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0217</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Converted_ID_Line</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.010</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -595,45 +670,51 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.035</y-m>
-			<z-m>0.021</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.021</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Converted_Name_Line</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.0052</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
-	
-	<text><name>text</name>
+	</text>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.0125</y-m>
-			<z-m>0.0105</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0105</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/Output_TMZ_Line</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.008</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -641,47 +722,53 @@ APR 2014
 		</font-resolution>
 	</text>
 
-<!-- AIRPORT/CHART Keyboard Selection Lines -->
+	<!-- AIRPORT/CHART Keyboard Selection Lines -->
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.068</y-m>
-			<z-m>-0.0117</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.0117</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/CHART_Input_Line</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.008</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.019</y-m>
-			<z-m>0.0145</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0145</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>center-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/Keyboard/CHART_Output_Line</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.005</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -689,22 +776,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.0906</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0906</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/lineAPT_LOCATION</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.0045</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -712,22 +802,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.0866</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0866</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/lineAPT_NAME</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.0045</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -735,22 +828,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.044</y-m>
-			<z-m>0.0784</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0784</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/lineSTAR</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -758,22 +854,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.044</y-m>
-			<z-m>0.0674</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0674</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/lineIAP</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -781,22 +880,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.044</y-m>
-			<z-m>0.0565</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0565</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/lineSID</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -804,22 +906,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.044</y-m>
-			<z-m>0.0455</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0455</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/lineAPT</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -827,187 +932,211 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.0715</y-m>
-			<z-m>0.0960</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0960</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/lineAPT_PAGESHOW</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.030</y-m>
-			<z-m>0.078</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.078</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/lineCHART1-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
+	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.030</y-m>
-			<z-m>0.054</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.054</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/lineCHART2-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.030</y-m>
-			<z-m>0.030</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.030</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/lineCHART3-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
+	</text>
 
-<!-- INITIALIZE FLIGHT Lines -->
+	<!-- INITIALIZE FLIGHT Lines -->
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.020</y-m>
-			<z-m>0.0295</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0295</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/INITline4-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.020</y-m>
-			<z-m>0.0204</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.0204</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/INITline5-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-<!-- Left Side Lines-->
 
-	<text><name>text</name>
+	<!-- Left Side Lines-->
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.00</y-m>
-			<z-m>0.101</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.101</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>center-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line0-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.089</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.089</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line1-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1015,22 +1144,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.079</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.079</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line2-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1038,22 +1170,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.069</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.069</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line3-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1061,22 +1196,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.059</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.059</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line4-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1084,22 +1222,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.049</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.049</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line5-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1107,22 +1248,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.039</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.039</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line6-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1130,22 +1274,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.029</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.029</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line7-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1153,22 +1300,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.019</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.019</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line8-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1176,22 +1326,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>0.009</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.009</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line9-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1199,22 +1352,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>-0.001</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.001</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line10-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1222,22 +1378,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>-0.011</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.011</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line11-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1246,22 +1405,25 @@ APR 2014
 	</text>
 
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>-0.021</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.021</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line12-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1269,45 +1431,51 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>-0.031</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.031</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line13-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>-0.041</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.041</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line14-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1315,22 +1483,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>-0.051</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.051</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line15-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1338,45 +1509,51 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>-0.061</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.061</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line16-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>-0.071</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.071</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line17-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1384,22 +1561,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>-0.081</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.081</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line18-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1407,22 +1587,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>-0.07</y-m>
-			<z-m>-0.091</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.091</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>left-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line19-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1430,140 +1613,158 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.0</y-m>
-			<z-m>-0.101</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.101</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>center-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line20-l</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.004</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
+	</text>
 
 
-<!-- Right Side Lines -->
+	<!-- Right Side Lines -->
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>0.089</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.089</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line1-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>0.079</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.079</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line2-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
+	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>0.069</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.069</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line3-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>0.059</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.059</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line4-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
+	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>0.049</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.049</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line5-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1571,22 +1772,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>0.039</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.039</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line6-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1594,22 +1798,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>0.029</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.029</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line7-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1617,22 +1824,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>0.019</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.019</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line8-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1640,22 +1850,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>0.009</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>0.009</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line9-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1663,22 +1876,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>-0.001</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.001</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line10-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1686,22 +1902,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>-0.011</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.011</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line11-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1709,22 +1928,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>-0.021</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.021</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line12-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1732,90 +1954,102 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>-0.031</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.031</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line13-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>-0.041</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.041</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line14-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>	
+	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>-0.051</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.051</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line15-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	
-	<text><name>text</name>
+
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>-0.061</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.061</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line16-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1823,22 +2057,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>-0.071</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.071</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line17-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1846,22 +2083,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>-0.081</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.081</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line18-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1869,22 +2109,25 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>-0.091</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.091</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line19-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
@@ -1892,27 +2135,30 @@ APR 2014
 		</font-resolution>
 	</text>
 
-	<text><name>text</name>
+	<text>
+		<name>text</name>
 		<offsets>
 			<x-m>0.005</x-m>
 			<y-m>0.071</y-m>
-			<z-m>-0.101</z-m><heading-deg>90</heading-deg><roll-deg>90</roll-deg>
+			<z-m>-0.101</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>90</roll-deg>
 		</offsets>
 		<alignment>right-center</alignment>
 		<axis-alignment>xy-plane</axis-alignment>
 		<type type="string">text-value</type>
 		<format type="string">%s</format>
 		<property>instrumentation/efb/display/line20-r</property>
-  <truncate type="bool">false</truncate>
-  <font type="string">Helvetica.txf</font>
-  <draw-text type="bool">true</draw-text>
-  <draw-alignment type="bool">false</draw-alignment>
-  <draw-boundingbox type="bool">false</draw-boundingbox>
+		<truncate type="bool">false</truncate>
+		<font type="string">Helvetica.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
 		<character-size>0.007</character-size>
 		<font-resolution>
 			<width type="int">32</width>
 			<height type="int">32</height>
 		</font-resolution>
-	</text>		
+	</text>
 
 </PropertyList>

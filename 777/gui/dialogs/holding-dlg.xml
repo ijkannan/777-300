@@ -1,213 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
-	<name>holding_pattern</name>
-	<layout>vbox</layout>
-    <default-padding>1</default-padding>
-    <width>320</width>
-    <height>400</height>
-    <modal>false</modal>
-    <draggable>true</draggable>
-    <resizable>true</resizable>
+  <name>holding_pattern</name>
+  <layout>vbox</layout>
+  <default-padding>1</default-padding>
+  <width>320</width>
+  <height>400</height>
+  <modal>false</modal>
+  <draggable>true</draggable>
+  <resizable>true</resizable>
 
-	<text>
-		<label>Holding Pattern Setup</label>
-	</text>
-    
-    <text>
-        <label>Experimental! Use at your own risk!</label>
-    </text>
-    <text>
-        <label>Do not use time speed up</label>
-    </text>
+  <text>
+    <label>Holding Pattern Setup</label>
+  </text>
 
-	<hrule />
-		
-	<input>
-        <border>1</border>
-        <halign>center</halign>
-		<label>Holding At</label>
-		<property>holding/navaid</property>
-		<binding>
-			<command>dialog-apply</command>
-		</binding>
-		<live>1</live>
-	</input>
-	<input>
-        <border>1</border>
-        <halign>center</halign>
-		<label>Pattern Radial</label>
-		<property>holding/radial</property>
-		<binding>
-			<command>dialog-apply</command>
-		</binding>
-		<live>1</live>
-	</input>
-	<combo>
-        <border>1</border>
-        <halign>center</halign>
-		<label>Pattern</label>
-		<property>holding/pattern</property>
-		<value>right</value>
-		<value>left</value>
-		<binding>
-			<command>dialog-apply</command>
-		</binding>
-		<live>1</live>
-	</combo>
-	<input>
-        <border>1</border>
-        <halign>center</halign>
-		<label>Altitude Ft</label>
-		<property>holding/altitude</property>
-		<binding>
-			<command>dialog-apply</command>
-		</binding>
-		<live>1</live>
-	</input>
-	<input>
-        <border>1</border>
-        <halign>center</halign>
-		<label>Leg Time Mins</label>
-		<property>holding/leg</property>
-		<binding>
-			<command>dialog-apply</command>
-		</binding>
-		<live>1</live>
-	</input>
-    <group>
-          <layout>table</layout>
-          <halign>center</halign>
-		<radio>
-            <row>0</row>
-            <col>0</col>
-            <halign>left</halign>
-            <name>direct</name>
-            <property>/holding/direct</property>
-            <live>true</live>
-            <label>Direct</label>
-            <binding>
-              <command>property-assign</command>
-              <property>holding/direct</property>
-              <value>1</value>
-            </binding>
-            <binding>
-              <command>property-assign</command>
-              <property>holding/parallel</property>
-              <value>0</value>
-            </binding>
-          <binding>
-              <command>property-assign</command>
-              <property>holding/teardrop</property>
-              <value>0</value>
-            </binding>
-           </radio>
-         <radio>
-            <row>0</row>
-            <col>1</col>
-            <halign>center</halign>
-            <name>parallel</name>
-            <property>/holding/parallel</property>
-            <live>true</live>
-            <label>Parallel</label>
-            <binding>
-              <command>property-assign</command>
-              <property>holding/direct</property>
-              <value>0</value>
-            </binding>
-            <binding>
-              <command>property-assign</command>
-              <property>holding/parallel</property>
-              <value>1</value>
-            </binding>
-          <binding>
-              <command>property-assign</command>
-              <property>holding/teardrop</property>
-              <value>0</value>
-            </binding>
-           </radio>
-         <radio>
-            <row>0</row>
-            <col>2</col>
-            <halign>right</halign>
-            <name>teardrop</name>
-            <property>/holding/teardrop</property>
-            <live>true</live>
-            <label>TearDrop</label>
-            <binding>
-              <command>property-assign</command>
-              <property>holding/direct</property>
-              <value>0</value>
-            </binding>
-            <binding>
-              <command>property-assign</command>
-              <property>holding/parallel</property>
-              <value>0</value>
-            </binding>
-          <binding>
-              <command>property-assign</command>
-              <property>holding/teardrop</property>
-              <value>1</value>
-            </binding>
-          </radio>
-		  </group>
-	<input>
-        <border>1</border>
-        <halign>center</halign>
-		<label>TD Approach Dir</label>
-		<property>holding/radial-teardrop</property>
-		<binding>
-			<command>dialog-apply</command>
-		</binding>
-		<live>1</live>
-	</input>
-	<checkbox>
-        <border>1</border>
-		<label>Enable</label>
-        <halign>center</halign>
-		<property>holding/enable</property>
-		<binding>
-			<command>dialog-apply</command>
-		</binding>
-		<binding>
-			<command>nasal</command>
-			<script>holding_pattern.input();</script>
-		</binding>
-		<live>1</live>
-	</checkbox>
-	<checkbox>
-        <border>1</border>
-		<label>Return to Original Position</label>
-        <halign>center</halign>
-		<property>holding/return-orig-pos</property>
-		<binding>
-			<command>dialog-apply</command>
-		</binding>
-		<live>1</live>
-	</checkbox>
-	
-	<hrule />
-	
-    <text>
-        <label>Teardrop entry is not yet reliable.</label>
-    </text>
-    
-	<group>
-	<layout>hbox</layout>
+  <text>
+    <label>Experimental! Use at your own risk!</label>
+  </text>
+  <text>
+    <label>Do not use time speed up</label>
+  </text>
 
-		<button>
-			<legend>Close</legend>
-			<default>true</default>
-			<key>Esc</key>
-		<padding>5</padding>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<binding>
-				<command>dialog-close</command>
-			</binding>
-		</button>
-		
-	</group>
+  <hrule />
+
+  <input>
+    <border>1</border>
+    <halign>center</halign>
+    <label>Holding At</label>
+    <property>holding/navaid</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+    <live>1</live>
+  </input>
+  <input>
+    <border>1</border>
+    <halign>center</halign>
+    <label>Pattern Radial</label>
+    <property>holding/radial</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+    <live>1</live>
+  </input>
+  <combo>
+    <border>1</border>
+    <halign>center</halign>
+    <label>Pattern</label>
+    <property>holding/pattern</property>
+    <value>right</value>
+    <value>left</value>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+    <live>1</live>
+  </combo>
+  <input>
+    <border>1</border>
+    <halign>center</halign>
+    <label>Altitude Ft</label>
+    <property>holding/altitude</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+    <live>1</live>
+  </input>
+  <input>
+    <border>1</border>
+    <halign>center</halign>
+    <label>Leg Time Mins</label>
+    <property>holding/leg</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+    <live>1</live>
+  </input>
+  <group>
+    <layout>table</layout>
+    <halign>center</halign>
+    <radio>
+      <row>0</row>
+      <col>0</col>
+      <halign>left</halign>
+      <name>direct</name>
+      <property>/holding/direct</property>
+      <live>true</live>
+      <label>Direct</label>
+      <binding>
+        <command>property-assign</command>
+        <property>holding/direct</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>holding/parallel</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>holding/teardrop</property>
+        <value>0</value>
+      </binding>
+    </radio>
+    <radio>
+      <row>0</row>
+      <col>1</col>
+      <halign>center</halign>
+      <name>parallel</name>
+      <property>/holding/parallel</property>
+      <live>true</live>
+      <label>Parallel</label>
+      <binding>
+        <command>property-assign</command>
+        <property>holding/direct</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>holding/parallel</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>holding/teardrop</property>
+        <value>0</value>
+      </binding>
+    </radio>
+    <radio>
+      <row>0</row>
+      <col>2</col>
+      <halign>right</halign>
+      <name>teardrop</name>
+      <property>/holding/teardrop</property>
+      <live>true</live>
+      <label>TearDrop</label>
+      <binding>
+        <command>property-assign</command>
+        <property>holding/direct</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>holding/parallel</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>holding/teardrop</property>
+        <value>1</value>
+      </binding>
+    </radio>
+  </group>
+  <input>
+    <border>1</border>
+    <halign>center</halign>
+    <label>TD Approach Dir</label>
+    <property>holding/radial-teardrop</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+    <live>1</live>
+  </input>
+  <checkbox>
+    <border>1</border>
+    <label>Enable</label>
+    <halign>center</halign>
+    <property>holding/enable</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+    <binding>
+      <command>nasal</command>
+      <script>holding_pattern.input();</script>
+    </binding>
+    <live>1</live>
+  </checkbox>
+  <checkbox>
+    <border>1</border>
+    <label>Return to Original Position</label>
+    <halign>center</halign>
+    <property>holding/return-orig-pos</property>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+    <live>1</live>
+  </checkbox>
+
+  <hrule />
+
+  <text>
+    <label>Teardrop entry is not yet reliable.</label>
+  </text>
+
+  <group>
+    <layout>hbox</layout>
+
+    <button>
+      <legend>Close</legend>
+      <default>true</default>
+      <key>Esc</key>
+      <padding>5</padding>
+      <binding>
+        <command>dialog-apply</command>
+      </binding>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+
+  </group>
 
 </PropertyList>

@@ -6,7 +6,7 @@ Autopilot Control Panel
 
 <PropertyList>
 
-<path>APpanel.ac</path>
+    <path>APpanel.ac</path>
 
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
@@ -94,7 +94,7 @@ Autopilot Control Panel
             <property>instrumentation/afds/inputs/ias-mach-selected</property>
         </condition>
         <object-name>SPEED.knob</object-name>
-            <property>autopilot/settings/target-speed-mach</property>
+        <property>autopilot/settings/target-speed-mach</property>
         <factor>10000</factor>
         <center>
             <x-m>0.02545</x-m>
@@ -221,10 +221,10 @@ Autopilot Control Panel
                 <property>/sim/time/sun-angle-rad</property>
                 <value>1.70</value>
             </greater-than>
-             <greater-than>
+            <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+            </greater-than>
         </condition>
         <emission>
             <red>0.5</red>
@@ -303,11 +303,11 @@ Autopilot Control Panel
         <type>select</type>
         <object-name>AT_toggle</object-name>
         <condition>
-                <not-equals>
-                    <property>instrumentation/afds/ap-modes/speed-mode</property>
-                    <value></value>
-                </not-equals>
-       </condition>
+            <not-equals>
+                <property>instrumentation/afds/ap-modes/speed-mode</property>
+                <value></value>
+            </not-equals>
+        </condition>
     </animation>
 
     <animation>
@@ -351,22 +351,22 @@ Autopilot Control Panel
         <object-name>LOC_toggle</object-name>
         <condition>
             <and>
-            <or>
-                <equals>
-                    <property>instrumentation/afds/ap-modes/roll-mode</property>
-                    <value>LOC</value>
-                </equals>
-                <property>instrumentation/afds/inputs/loc-armed</property>
-            </or>
-            <not>
-            <or>
-                <equals>
-                    <property>instrumentation/afds/ap-modes/pitch-mode</property>
-                    <value>G/S</value>
-                </equals>
-                <property>instrumentation/afds/inputs/gs-armed</property>
-            </or>
-            </not>
+                <or>
+                    <equals>
+                        <property>instrumentation/afds/ap-modes/roll-mode</property>
+                        <value>LOC</value>
+                    </equals>
+                    <property>instrumentation/afds/inputs/loc-armed</property>
+                </or>
+                <not>
+                    <or>
+                        <equals>
+                            <property>instrumentation/afds/ap-modes/pitch-mode</property>
+                            <value>G/S</value>
+                        </equals>
+                        <property>instrumentation/afds/inputs/gs-armed</property>
+                    </or>
+                </not>
             </and>
         </condition>
     </animation>
@@ -402,9 +402,9 @@ Autopilot Control Panel
         </condition>
     </animation>
 
-<!-- LED displays-->
+    <!-- LED displays-->
 
-<!-- IAS/MACH -->
+    <!-- IAS/MACH -->
     <animation>
         <type>select</type>
         <object-name>ias.ind</object-name>
@@ -571,7 +571,7 @@ Autopilot Control Panel
     </animation>
 
 
-<!-- HDG/TRK -->
+    <!-- HDG/TRK -->
     <animation>
         <type>select</type>
         <object-name>hdg.ind</object-name>
@@ -680,7 +680,7 @@ Autopilot Control Panel
         </axis>
     </animation>
 
-<!-- VS/FPA -->
+    <!-- VS/FPA -->
     <animation>
         <type>select</type>
         <object-name>vs.ind</object-name>
@@ -723,9 +723,9 @@ Autopilot Control Panel
         <object-name>VS.ledminus</object-name>
         <condition>
             <and>
-               <not>
+                <not>
                     <property>instrumentation/afds/inputs/vs-fpa-selected</property>
-               </not>
+                </not>
                 <less-than>
                     <property>autopilot/settings/vertical-speed-fpm</property>
                     <value>0</value>
@@ -824,10 +824,10 @@ Autopilot Control Panel
             <property>instrumentation/afds/settings/fpa-display</property>
             <and>
                 <property>instrumentation/afds/inputs/vs-fpa-selected</property>
-            <less-than>
-                <property>autopilot/settings/flight-path-angle</property>
-                <value>0</value>
-            </less-than>
+                <less-than>
+                    <property>autopilot/settings/flight-path-angle</property>
+                    <value>0</value>
+                </less-than>
                 <equals>
                     <property>instrumentation/afds/ap-modes/pitch-mode</property>
                     <value>FPA</value>
@@ -864,7 +864,7 @@ Autopilot Control Panel
         </axis>
     </animation>
 
-<!-- Altitude -->
+    <!-- Altitude -->
 
     <animation>
         <type>select</type>
@@ -945,8 +945,7 @@ Autopilot Control Panel
     </animation>
 
 
-
-<!--
+    <!--
 
 ###########   HOTSPOTS ###########
 
@@ -958,14 +957,14 @@ Autopilot Control Panel
             <button>0</button>
             <repeatable>false</repeatable>
             <binding>
-              <condition>
-                 <greater-than-equals>
-                    <property>instrumentation/airspeed-indicator/indicated-mach</property>
-                    <value>0.40</value>
-                 </greater-than-equals>
-               </condition>
-               <command>property-toggle</command>
-               <property>instrumentation/afds/inputs/ias-mach-selected</property>
+                <condition>
+                    <greater-than-equals>
+                        <property>instrumentation/airspeed-indicator/indicated-mach</property>
+                        <value>0.40</value>
+                    </greater-than-equals>
+                </condition>
+                <command>property-toggle</command>
+                <property>instrumentation/afds/inputs/ias-mach-selected</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -1153,7 +1152,7 @@ Autopilot Control Panel
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
-           <binding>
+            <binding>
                 <command>nasal</command>
                 <script>controls.click(4);b777.afds.input(1,8);</script>
             </binding>
@@ -1205,7 +1204,7 @@ Autopilot Control Panel
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
-             <binding>
+            <binding>
                 <command>nasal</command>
                 <script>controls.click(4);b777.afds.input(3,0);</script>
             </binding>
@@ -1247,9 +1246,9 @@ Autopilot Control Panel
         </action>
     </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
-       <object-name>Pitchwheel.dec</object-name>
+        <object-name>Pitchwheel.dec</object-name>
         <action>
             <button>0</button> <!--  left button -->
             <repeatable>true</repeatable>
@@ -1292,21 +1291,21 @@ Autopilot Control Panel
     <animation>
         <type>pick</type>
         <object-name>Pitchwheel.inc</object-name>
-       <action>
+        <action>
             <button>0</button> <!--  left button -->
             <repeatable>true</repeatable>
             <binding>
-            <condition>
-                <equals>
-                    <property>instrumentation/afds/ap-modes/pitch-mode</property>
-                    <value>V/S</value>
-                </equals>
-            </condition>
-            <command>property-adjust</command>
-            <property>autopilot/settings/vertical-speed-fpm</property>
-            <step>100</step>
-            <min>-8000</min>
-            <max>6000</max>
+                <condition>
+                    <equals>
+                        <property>instrumentation/afds/ap-modes/pitch-mode</property>
+                        <value>V/S</value>
+                    </equals>
+                </condition>
+                <command>property-adjust</command>
+                <property>autopilot/settings/vertical-speed-fpm</property>
+                <step>100</step>
+                <min>-8000</min>
+                <max>6000</max>
             </binding>
             <binding>
                 <condition>
@@ -1331,9 +1330,9 @@ Autopilot Control Panel
         </action>
     </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
-       <object-name>Pitch_Wheel.knob</object-name>
+        <object-name>Pitch_Wheel.knob</object-name>
         <action>
             <button>4</button> <!--  scroll down - climb -->
             <repeatable>false</repeatable>
@@ -1375,22 +1374,22 @@ Autopilot Control Panel
 
     <animation>
         <type>pick</type>
-       <object-name>Pitch_Wheel.knob</object-name>
-       <action>
+        <object-name>Pitch_Wheel.knob</object-name>
+        <action>
             <button>3</button> <!--  scroll up descent -->
             <repeatable>false</repeatable>
             <binding>
-            <condition>
-                <equals>
-                    <property>instrumentation/afds/ap-modes/pitch-mode</property>
-                    <value>V/S</value>
-                </equals>
-            </condition>
-            <command>property-adjust</command>
-            <property>autopilot/settings/vertical-speed-fpm</property>
-            <step>-100</step>
-            <min>-8000</min>
-            <max>6000</max>
+                <condition>
+                    <equals>
+                        <property>instrumentation/afds/ap-modes/pitch-mode</property>
+                        <value>V/S</value>
+                    </equals>
+                </condition>
+                <command>property-adjust</command>
+                <property>autopilot/settings/vertical-speed-fpm</property>
+                <step>-100</step>
+                <min>-8000</min>
+                <max>6000</max>
             </binding>
             <binding>
                 <condition>
@@ -1417,7 +1416,7 @@ Autopilot Control Panel
 
     <!-- Continental B777 manual, Sec. 6.4, Page 32:
          MCP/SPD range is 100 - 399 KIAS, 0.40 - 0.95 MACH -->
-   <animation>
+    <animation>
         <type>pick</type>
         <object-name>SPD.dec</object-name>
         <object-name>SPD.inc</object-name>
@@ -1503,7 +1502,7 @@ Autopilot Control Panel
         </action>
     </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
         <object-name>SPD.dec</object-name>
         <object-name>SPD.inc</object-name>
@@ -1589,7 +1588,7 @@ Autopilot Control Panel
         </action>
     </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
         <object-name>SPEED.knob</object-name>
         <action>
@@ -1614,7 +1613,7 @@ Autopilot Control Panel
         </action>
     </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
         <object-name>SPEED.knob</object-name>
         <object-name>SPD.dec</object-name>
@@ -1701,7 +1700,7 @@ Autopilot Control Panel
         </action>
     </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
         <object-name>SPEED.knob</object-name>
         <object-name>SPD.dec</object-name>
@@ -1813,7 +1812,7 @@ Autopilot Control Panel
         </action>
     </animation>
 
-        <animation>
+    <animation>
         <type>pick</type>
         <object-name>HDG.inc</object-name>
         <object-name>HDG.dec</object-name>
@@ -2137,7 +2136,7 @@ Autopilot Control Panel
         </action>
     </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
         <object-name>ALT.knob</object-name>
         <object-name>ALT.inc</object-name>
@@ -2180,7 +2179,7 @@ Autopilot Control Panel
         </action>
     </animation>
 
-   <animation>
+    <animation>
         <type>pick</type>
         <object-name>ALT.inc</object-name>
         <object-name>ALT.dec</object-name>

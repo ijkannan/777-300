@@ -10,9 +10,9 @@
     </text>
 
     <hrule />
-     
+
     <group>
-    <layout>table</layout>
+        <layout>table</layout>
         <checkbox>
             <row>0</row>
             <col>0</col>
@@ -27,15 +27,15 @@
     </group>
 
     <hrule />
-    
+
     <group>
-    <layout>hbox</layout>
+        <layout>hbox</layout>
 
         <button>
             <legend>Close</legend>
             <default>true</default>
             <key>Esc</key>
-        <padding>5</padding>
+            <padding>5</padding>
             <binding>
                 <command>dialog-apply</command>
             </binding>
@@ -43,7 +43,7 @@
                 <command>dialog-close</command>
             </binding>
         </button>
-        
+
     </group>
 
 </PropertyList>

@@ -4,7 +4,7 @@
 
     <name>fuel_truck</name>
     <layout>vbox</layout>
-    
+
     <group>
 
         <layout>hbox</layout>
@@ -21,69 +21,69 @@
             <halign>right</halign>
             <pref-width>16</pref-width>
             <pref-height>16</pref-height>
-            <legend/>
+            <legend />
             <binding>
                 <command>dialog-close</command>
             </binding>
         </button>
 
     </group>
-    
+
     <hrule />
 
     <group>
-    <layout>vbox</layout>
-    
+        <layout>vbox</layout>
+
         <group>
-        <layout>table</layout>
-        
-        <text>
-            <label>Total Fuel Quantity:</label>
-            <halign>right</halign>
-            <padding>2</padding>
-            <row>0</row>
-            <col>0</col>
-        </text>
-        
-        <text>
-            <label>Request Fuel Extra (Lbs):</label>
-            <halign>right</halign>
-            <padding>1</padding>
-            <row>1</row>
-            <col>0</col>
-        </text>
-        
-        <text>
-            <label>Request Fuel Total (Lbs):</label>
-            <halign>right</halign>
-            <padding>1</padding>
-            <row>2</row>
-            <col>0</col>
-        </text>
-        
-        <text>
-            <row>0</row>
-            <col>1</col>
-            <halign>left</halign>
-            <padding>2</padding>
-            <property>consumables/fuel/total-fuel-lbs</property>
-            <live>true</live>
-            <format>%.1f Lbs</format>
-        </text>
-    
-        <input>
-            <row>1</row>
-            <col>1</col>
-            <halign>left</halign>
-            <padding>1</padding>
-            <property>services/fuel-truck/extra-lbs</property>
-            <live>true</live>
-            <binding>
-                <command>dialog-apply</command>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
+            <layout>table</layout>
+
+            <text>
+                <label>Total Fuel Quantity:</label>
+                <halign>right</halign>
+                <padding>2</padding>
+                <row>0</row>
+                <col>0</col>
+            </text>
+
+            <text>
+                <label>Request Fuel Extra (Lbs):</label>
+                <halign>right</halign>
+                <padding>1</padding>
+                <row>1</row>
+                <col>0</col>
+            </text>
+
+            <text>
+                <label>Request Fuel Total (Lbs):</label>
+                <halign>right</halign>
+                <padding>1</padding>
+                <row>2</row>
+                <col>0</col>
+            </text>
+
+            <text>
+                <row>0</row>
+                <col>1</col>
+                <halign>left</halign>
+                <padding>2</padding>
+                <property>consumables/fuel/total-fuel-lbs</property>
+                <live>true</live>
+                <format>%.1f Lbs</format>
+            </text>
+
+            <input>
+                <row>1</row>
+                <col>1</col>
+                <halign>left</halign>
+                <padding>1</padding>
+                <property>services/fuel-truck/extra-lbs</property>
+                <live>true</live>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <binding>
+                    <command>nasal</command>
+                    <script>
                     var TotalCapacity = getprop("consumables/fuel/tank/capacity-gal_us") + getprop("consumables/fuel/tank[1]/capacity-gal_us") + getprop("consumables/fuel/tank[2]/capacity-gal_us");
                     var density = getprop("consumables/fuel/tank/density-ppg");
                     setprop("services/fuel-truck/request-lbs", getprop("services/fuel-truck/extra-lbs") + getprop("consumables/fuel/total-fuel-lbs"));
@@ -92,22 +92,22 @@
                         setprop("services/fuel-truck/extra-lbs", getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/total-fuel-lbs"));
                     }
                 </script>
-            </binding>
-        </input>
-        
-        <input>
-            <row>2</row>
-            <col>1</col>
-            <halign>left</halign>
-            <padding>1</padding>
-            <property>services/fuel-truck/request-lbs</property>
-            <live>true</live>
-            <binding>
-                <command>dialog-apply</command>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
+                </binding>
+            </input>
+
+            <input>
+                <row>2</row>
+                <col>1</col>
+                <halign>left</halign>
+                <padding>1</padding>
+                <property>services/fuel-truck/request-lbs</property>
+                <live>true</live>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <binding>
+                    <command>nasal</command>
+                    <script>
                     var TotalCapacity = getprop("consumables/fuel/tank/capacity-gal_us") + getprop("consumables/fuel/tank[1]/capacity-gal_us") + getprop("consumables/fuel/tank[2]/capacity-gal_us");
                     var density = getprop("consumables/fuel/tank/density-ppg");
                     if (getprop("services/fuel-truck/request-lbs") / density > TotalCapacity) {
@@ -115,16 +115,16 @@
                     }
                     setprop("services/fuel-truck/extra-lbs", getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/total-fuel-lbs"));
                 </script>
-            </binding>
-        </input>
-        
+                </binding>
+            </input>
+
         </group>
-        
+
         <hrule />
-        
+
         <group>
-        <layout>vbox</layout>
-        
+            <layout>vbox</layout>
+
             <checkbox>
                 <label>Enable Fuel Truck</label>
                 <halign>left</halign>
@@ -134,7 +134,7 @@
                 </binding>
                 <live>true</live>
             </checkbox>
-            
+
             <checkbox>
                 <label>Connect pipe to Aircraft</label>
                 <halign>left</halign>
@@ -145,10 +145,10 @@
                 <live>true</live>
             </checkbox>
         </group>
-        
+
         <group>
-        <layout>hbox</layout>
-        
+            <layout>hbox</layout>
+
             <button>
                 <legend>Re-fuel</legend>
                 <padding>2</padding>
@@ -167,7 +167,7 @@
                     </script>
                 </binding>
             </button>
-            
+
             <button>
                 <legend>Drain Tanks</legend>
                 <padding>2</padding>
@@ -189,7 +189,7 @@
                     </script>
                 </binding>
             </button>
-        
+
             <button>
                 <legend>Stop</legend>
                 <padding>2</padding>
@@ -211,7 +211,7 @@
                     </script>
                 </binding>
             </button>
-            
+
             <button>
                 <legend>Instant</legend>
                 <padding>2</padding>
@@ -242,22 +242,24 @@
                     </script>
                 </binding>
             </button>
-            
+
         </group>
-        
+
         <text>
             <halign>left</halign>
             <property>services/fuel-truck/speed-text</property>
             <live>true</live>
         </text>
-    
+
     </group>
 
     <hrule />
-    
+
     <group>
-    <layout>table</layout>
-    <empty><stretch>true</stretch></empty>
+        <layout>table</layout>
+        <empty>
+            <stretch>true</stretch>
+        </empty>
         <!--text>
             <label>Left wing tank (Lbs):</label>
             <halign>right</halign>
@@ -320,7 +322,7 @@
                 <command>dialog-apply</command>
             </binding>
         </input-->
-        
+
         <slider>
             <row>0</row>
             <col>0</col>
@@ -335,16 +337,16 @@
                 <command>dialog-apply</command>
             </binding>
         </slider>
-        
+
         <text>
-            <label> </label>
+            <label></label>
             <halign>right</halign>
             <padding>2</padding>
             <pref-width>90</pref-width>
             <row>0</row>
             <col>1</col>
         </text>
-        
+
         <text>
             <property>consumables/fuel/tank/level-lbs</property>
             <halign>left</halign>
@@ -354,7 +356,7 @@
             <col>2</col>
             <live>true</live>
         </text>
-        
+
         <slider>
             <row>1</row>
             <col>0</col>
@@ -369,7 +371,7 @@
                 <command>dialog-apply</command>
             </binding>
         </slider>
-        
+
         <text>
             <property>consumables/fuel/tank[1]/level-lbs</property>
             <halign>left</halign>
@@ -379,7 +381,7 @@
             <col>2</col>
             <live>true</live>
         </text>
-        
+
         <slider>
             <row>2</row>
             <col>0</col>
@@ -394,7 +396,7 @@
                 <command>dialog-apply</command>
             </binding>
         </slider>
-        
+
         <text>
             <property>consumables/fuel/tank[2]/level-lbs</property>
             <halign>left</halign>
@@ -405,7 +407,7 @@
             <col>2</col>
             <live>true</live>
         </text>
-        
+
         <text>
             <label>Total:</label>
             <halign>right</halign>
@@ -413,7 +415,7 @@
             <row>3</row>
             <col>1</col>
         </text>
-        
+
         <text>
             <property>consumables/fuel/total-fuel-lbs</property>
             <halign>left</halign>
@@ -423,7 +425,7 @@
             <col>2</col>
             <live>true</live>
         </text>
-        
+
         <button>
             <legend>Balance fuel</legend>
             <row>1</row>
@@ -439,15 +441,14 @@
                 </script>
             </binding>
         </button>
-        
-        
-    
+
+
     </group>
-    
+
     <hrule />
-    
+
     <group>
-    
+
         <layout>table</layout>
         <text>
             <row>0</row>
@@ -455,7 +456,7 @@
             <label>Total payload weight:</label>
             <halign>right</halign>
         </text>
-        
+
         <text>
             <row>0</row>
             <col>1</col>
@@ -463,14 +464,14 @@
             <live>true</live>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>1</row>
             <col>0</col>
             <label>Maximum payload weight:</label>
             <halign>right</halign>
         </text>
-        
+
         <text>
             <row>1</row>
             <col>1</col>
@@ -478,14 +479,14 @@
             <live>true</live>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>2</row>
             <col>0</col>
             <label>Gross weight:</label>
             <halign>right</halign>
         </text>
-        
+
         <text>
             <row>2</row>
             <col>1</col>
@@ -493,39 +494,39 @@
             <live>true</live>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>3</row>
             <col>0</col>
             <label>Maximum takeoff weight:</label>
             <halign>right</halign>
         </text>
-        
+
         <text>
             <row>3</row>
             <col>1</col>
             <property>sim/max-takeoff-weight</property>
             <halign>left</halign>
         </text>
-        
+
         <text>
             <row>4</row>
             <col>0</col>
             <label>Maximum landing weight:</label>
             <halign>right</halign>
         </text>
-        
+
         <text>
             <row>4</row>
             <col>1</col>
             <property>sim/max-landing-weight</property>
             <halign>left</halign>
         </text>
-    
+
     </group>
-    
+
     <hrule />
-    
+
     <!-- For some reason the bindings in this part of the dialog are malfunctioning: selecting any control activates all the others. Disabled until solution found.
     group>
     <layout>vbox</layout>
@@ -622,15 +623,15 @@
     </group>
     
     <hrule /> -->
-    
+
     <group>
-    <layout>hbox</layout>
+        <layout>hbox</layout>
 
         <button>
             <legend>Close</legend>
             <default>true</default>
             <key>Esc</key>
-        <padding>5</padding>
+            <padding>5</padding>
             <binding>
                 <command>dialog-apply</command>
             </binding>
@@ -638,7 +639,7 @@
                 <command>dialog-close</command>
             </binding>
         </button>
-        
+
     </group>
 
 </PropertyList>

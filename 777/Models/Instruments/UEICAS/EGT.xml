@@ -176,54 +176,54 @@ Syd Adams
     <animation>
         <name>WHITE</name>
         <type>material</type>
-		<object-name>eng1-egt</object-name>
-		<object-name>eng2-egt</object-name>
-         	<emission>
-			<red>0.9</red>
-			<green>0.9</green>
-			<blue>0.9</blue>
-		</emission>
-		<ambient>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</ambient>
-		<diffuse>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</diffuse>
-		<specular>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</specular>
+        <object-name>eng1-egt</object-name>
+        <object-name>eng2-egt</object-name>
+        <emission>
+            <red>0.9</red>
+            <green>0.9</green>
+            <blue>0.9</blue>
+        </emission>
+        <ambient>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </ambient>
+        <diffuse>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </diffuse>
+        <specular>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </specular>
     </animation>
 
     <animation>
         <name>CYAN</name>
         <type>material</type>
-		<object-name>EGT</object-name>
-		<emission>
-			<red>0.0</red>
-			<green>0.9</green>
-			<blue>0.9</blue>
-		</emission>
-		<ambient>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</ambient>
-		<diffuse>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</diffuse>
-		<specular>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</specular>
+        <object-name>EGT</object-name>
+        <emission>
+            <red>0.0</red>
+            <green>0.9</green>
+            <blue>0.9</blue>
+        </emission>
+        <ambient>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </ambient>
+        <diffuse>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </diffuse>
+        <specular>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </specular>
     </animation>
 
     <!--animation>

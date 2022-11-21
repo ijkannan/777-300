@@ -10,11 +10,11 @@
  IDLE     4
  SPD      5
  -->
- 
+
 <!-- Tweaked by Josh Davidson (Octal450) for new autopilot -->
 
 <PropertyList>
-	
+
 	<logic>
 		<input>
 			<or>
@@ -24,12 +24,14 @@
 		</input>
 		<output>/autopilot/internal/athr-armed</output>
 	</logic>
-	
+
 	<logic>
 		<input>
 			<and>
 				<property>/autopilot/internal/athr-armed</property>
-				<not><property>autopilot/locks/takeoff-mode</property></not>
+				<not>
+					<property>autopilot/locks/takeoff-mode</property>
+				</not>
 				<or>
 					<equals>
 						<property>instrumentation/afds/inputs/autothrottle-index</property>
@@ -44,7 +46,7 @@
 		</input>
 		<output>/autopilot/internal/athr-static-active</output>
 	</logic>
-	
+
 	<logic>
 		<input>
 			<and>
@@ -57,7 +59,7 @@
 		</input>
 		<output>/autopilot/internal/athr-speed-active</output>
 	</logic>
-	
+
 	<filter>
 		<name>IAS speed limit</name>
 		<type>gain</type>
@@ -72,12 +74,30 @@
 			<expression>
 				<table>
 					<property>controls/flight/flaps</property>
-					<entry><ind>0.033</ind><dep>255</dep></entry>
-					<entry><ind>0.166</ind><dep>235</dep></entry>
-					<entry><ind>0.5</ind><dep>215</dep></entry>
-					<entry><ind>0.666</ind><dep>200</dep></entry>
-					<entry><ind>0.833</ind><dep>190</dep></entry>
-					<entry><ind>1.0</ind><dep>180</dep></entry>
+					<entry>
+						<ind>0.033</ind>
+						<dep>255</dep>
+					</entry>
+					<entry>
+						<ind>0.166</ind>
+						<dep>235</dep>
+					</entry>
+					<entry>
+						<ind>0.5</ind>
+						<dep>215</dep>
+					</entry>
+					<entry>
+						<ind>0.666</ind>
+						<dep>200</dep>
+					</entry>
+					<entry>
+						<ind>0.833</ind>
+						<dep>190</dep>
+					</entry>
+					<entry>
+						<ind>1.0</ind>
+						<dep>180</dep>
+					</entry>
 				</table>
 			</expression>
 		</input>
@@ -96,9 +116,18 @@
 			<expression>
 				<table>
 					<property>instrumentation/altimeter/indicated-altitude-ft</property>
-					<entry><ind>0</ind><dep>330</dep></entry> <!-- clean Vmo -->
-					<entry><ind>30000</ind><dep>330</dep></entry>
-					<entry><ind>43000</ind><dep>248</dep></entry>
+					<entry>
+						<ind>0</ind>
+						<dep>330</dep>
+					</entry> <!-- clean Vmo -->
+					<entry>
+						<ind>30000</ind>
+						<dep>330</dep>
+					</entry>
+					<entry>
+						<ind>43000</ind>
+						<dep>248</dep>
+					</entry>
 				</table>
 			</expression>
 		</input>
@@ -118,7 +147,7 @@
 		</input>
 		<output>instrumentation/afds/ias-target-kt</output>
 	</filter>
-	
+
 	<!-- Reworked Autothrottle by Josh Davidson (Octal450) -->
 	<filter>
 		<name>A/THR Knots Input Gain</name>
@@ -152,7 +181,7 @@
 			</expression>
 		</max>
 	</filter>
-	
+
 	<filter>
 		<name>A/THR Knots Input Filter</name>
 		<type>noise-spike</type>
@@ -181,7 +210,7 @@
 		</max-rate-of-change>
 		<max-rate-of-change>200</max-rate-of-change>
 	</filter>
-	
+
 	<filter>
 		<name>A/THR Mach Input Gain</name>
 		<type>gain</type>
@@ -214,7 +243,7 @@
 			</expression>
 		</max>
 	</filter>
-	
+
 	<filter>
 		<name>A/THR Mach Input Filter</name>
 		<type>noise-spike</type>
@@ -248,7 +277,7 @@
 		</max-rate-of-change>
 		<max-rate-of-change>2</max-rate-of-change>
 	</filter>
-	
+
 	<pid-controller>
 		<name>IT-CONTROLLER: Knots</name>
 		<enable>
@@ -268,7 +297,7 @@
 		<config>
 			<Kp>0.05</Kp>
 			<Ti>9.0</Ti>
-			<Td>0.00001</Td> 
+			<Td>0.00001</Td>
 			<u_min>
 				<condition>
 					<equals>
@@ -282,7 +311,7 @@
 			<u_max>/autopilot/settings/thrust-lmt</u_max>
 		</config>
 	</pid-controller>
-	
+
 	<pid-controller>
 		<name>IT-CONTROLLER: Mach</name>
 		<enable>
@@ -322,7 +351,7 @@
 			<u_max>/autopilot/settings/thrust-lmt</u_max>
 		</config>
 	</pid-controller>
-	
+
 	<filter>
 		<name>IT-CONTROLLER: Static Thrust</name>
 		<type>gain</type>
@@ -350,7 +379,7 @@
 		<input>/autopilot/settings/flight-idle</input>
 		<output>/autopilot/internal/throttle-cmd-pid</output>
 	</filter>
-	
+
 	<filter>
 		<name>System Command: Throttle Backdrive</name>
 		<type>gain</type>
@@ -358,10 +387,16 @@
 		<enable>
 			<condition>
 				<or>
-					<not><property>/autopilot/internal/athr-armed</property></not>
+					<not>
+						<property>/autopilot/internal/athr-armed</property>
+					</not>
 					<and>
-						<not><property>/autopilot/internal/athr-static-active</property></not>
-						<not><property>/autopilot/internal/athr-speed-active</property></not>
+						<not>
+							<property>/autopilot/internal/athr-static-active</property>
+						</not>
+						<not>
+							<property>/autopilot/internal/athr-speed-active</property>
+						</not>
 					</and>
 				</or>
 			</condition>
@@ -376,7 +411,7 @@
 		</input>
 		<output>/autopilot/internal/throttle-cmd-pid</output>
 	</filter>
-	
+
 	<filter>
 		<name>System Command: Throttle 1</name>
 		<type>noise-spike</type>
@@ -419,7 +454,8 @@
 							</equals>
 						</or>
 					</and>
-					<equals> <!-- Don't slow throttle in T/O or G/A -->
+					<equals>
+						<!-- Don't slow throttle in T/O or G/A -->
 						<property>/instrumentation/afds/ap-modes/pitch-mode</property>
 						<value>TO/GA</value>
 					</equals>
@@ -444,7 +480,7 @@
 		</max-rate-of-change>
 		<max-rate-of-change>0.3</max-rate-of-change>
 	</filter>
-	
+
 	<filter>
 		<name>System Command: Throttle 2</name>
 		<type>noise-spike</type>
@@ -487,7 +523,8 @@
 							</equals>
 						</or>
 					</and>
-					<equals> <!-- Don't slow throttle in T/O or G/A -->
+					<equals>
+						<!-- Don't slow throttle in T/O or G/A -->
 						<property>/instrumentation/afds/ap-modes/pitch-mode</property>
 						<value>TO/GA</value>
 					</equals>
@@ -512,7 +549,7 @@
 		</max-rate-of-change>
 		<max-rate-of-change>0.3</max-rate-of-change>
 	</filter>
-	
+
 	<filter>
 		<name>SERVO-DRIVER:throttle lever1</name>
 		<debug>false</debug>
@@ -525,7 +562,7 @@
 		<type>noise-spike</type>
 		<max-rate-of-change>1</max-rate-of-change>
 	</filter>
-	
+
 	<filter>
 		<name>SERVO-DRIVER:throttle lever2</name>
 		<debug>false</debug>

@@ -225,8 +225,8 @@ Syd Adams
             <height type="int">32</height>
         </font-resolution>
     </text>
-    
-   <text>
+
+    <text>
         <name>eng2-rev</name>
         <offsets>
             <x-m>0.001</x-m>
@@ -294,7 +294,7 @@ Syd Adams
         <type>material</type>
         <object-name>eng1-n1</object-name>
         <object-name>eng2-n1</object-name>
-            <emission>
+        <emission>
             <red>0.9</red>
             <green>0.9</green>
             <blue>0.9</blue>
@@ -368,7 +368,7 @@ Syd Adams
     </animation-->
 
     <!--REV/N1-lmt material-->
-    
+
     <animation>
         <name>GREEN1-rev</name>
         <type>material</type>
@@ -400,7 +400,7 @@ Syd Adams
             </equals>
         </condition>
     </animation>
-    
+
     <animation>
         <name>AMBER1</name>
         <type>material</type>
@@ -427,14 +427,14 @@ Syd Adams
         </specular>
         <condition>
             <and>
-            <less-than>
-                <property>surface-positions/reverser-norm[0]</property>
-                <value>1</value>
-            </less-than>
-            <greater-than>
-                <property>surface-positions/reverser-norm[0]</property>
-                <value>0</value>
-            </greater-than>
+                <less-than>
+                    <property>surface-positions/reverser-norm[0]</property>
+                    <value>1</value>
+                </less-than>
+                <greater-than>
+                    <property>surface-positions/reverser-norm[0]</property>
+                    <value>0</value>
+                </greater-than>
             </and>
         </condition>
     </animation>
@@ -470,18 +470,18 @@ Syd Adams
             </equals>
         </condition>
     </animation>
-    
+
     <animation>
         <type>translate</type>
         <object-name>eng1-lmt</object-name>
-            <property>controls/engines/engine[0]/reverser-act</property>
-            <factor>-0.001</factor>
-            <offset-m>0.001</offset-m>
-            <axis>
-                <x>1</x>
-                <y>0</y>
-                <z>0</z>
-            </axis>
+        <property>controls/engines/engine[0]/reverser-act</property>
+        <factor>-0.001</factor>
+        <offset-m>0.001</offset-m>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
         <condition>
             <equals>
                 <property>surface-positions/reverser-norm[0]</property>
@@ -489,18 +489,18 @@ Syd Adams
             </equals>
         </condition>
     </animation>
- 
+
     <animation>
         <type>translate</type>
         <object-name>eng1-rev</object-name>
-            <property>controls/engines/engine[0]/reverser-act</property>
-            <factor>0.001</factor>
-            <offset-m>-0.001</offset-m>
-            <axis>
-                <x>1</x>
-                <y>0</y>
-                <z>0</z>
-            </axis>
+        <property>controls/engines/engine[0]/reverser-act</property>
+        <factor>0.001</factor>
+        <offset-m>-0.001</offset-m>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
         <condition>
             <equals>
                 <property>surface-positions/reverser-norm[0]</property>
@@ -540,7 +540,7 @@ Syd Adams
             </equals>
         </condition>
     </animation>
-    
+
     <animation>
         <name>AMBER2</name>
         <type>material</type>
@@ -567,14 +567,14 @@ Syd Adams
         </specular>
         <condition>
             <and>
-            <less-than>
-                <property>surface-positions/reverser-norm[1]</property>
-                <value>1</value>
-            </less-than>
-            <greater-than>
-                <property>surface-positions/reverser-norm[1]</property>
-                <value>0</value>
-            </greater-than>
+                <less-than>
+                    <property>surface-positions/reverser-norm[1]</property>
+                    <value>1</value>
+                </less-than>
+                <greater-than>
+                    <property>surface-positions/reverser-norm[1]</property>
+                    <value>0</value>
+                </greater-than>
             </and>
         </condition>
     </animation>
@@ -610,18 +610,18 @@ Syd Adams
             </equals>
         </condition>
     </animation>
-    
+
     <animation>
         <type>translate</type>
         <object-name>eng2-lmt</object-name>
-            <property>controls/engines/engine[1]/reverser-act</property>
-            <factor>-0.001</factor>
-            <offset-m>0.001</offset-m>
-            <axis>
-                <x>1</x>
-                <y>0</y>
-                <z>0</z>
-            </axis>
+        <property>controls/engines/engine[1]/reverser-act</property>
+        <factor>-0.001</factor>
+        <offset-m>0.001</offset-m>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
         <condition>
             <equals>
                 <property>surface-positions/reverser-norm[1]</property>
@@ -629,18 +629,18 @@ Syd Adams
             </equals>
         </condition>
     </animation>
- 
+
     <animation>
         <type>translate</type>
         <object-name>eng2-rev</object-name>
-            <property>controls/engines/engine[1]/reverser-act</property>
-            <factor>0.001</factor>
-            <offset-m>-0.001</offset-m>
-            <axis>
-                <x>1</x>
-                <y>0</y>
-                <z>0</z>
-            </axis>
+        <property>controls/engines/engine[1]/reverser-act</property>
+        <factor>0.001</factor>
+        <offset-m>-0.001</offset-m>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
         <condition>
             <equals>
                 <property>surface-positions/reverser-norm[1]</property>

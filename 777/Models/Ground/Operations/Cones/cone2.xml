@@ -2,25 +2,25 @@
 
 <PropertyList>
 
-<path>Cone2.ac</path>
+    <path>Cone2.ac</path>
 
-<animation>
-    <type>select</type>
-    <object-name>Base</object-name>
-    <object-name>Cone</object-name>
-    <object-name>Base.001</object-name>
-    <object-name>Cone.001</object-name>
-    <object-name>Base.002</object-name>
-    <object-name>Cone.002</object-name>
-    <condition>
-        <equals>
-            <property type="bool">services/cones/cone2-enable</property>
-            <value>1</value>
-        </equals>
-    </condition>
-</animation>
+    <animation>
+        <type>select</type>
+        <object-name>Base</object-name>
+        <object-name>Cone</object-name>
+        <object-name>Base.001</object-name>
+        <object-name>Cone.001</object-name>
+        <object-name>Base.002</object-name>
+        <object-name>Cone.002</object-name>
+        <condition>
+            <equals>
+                <property type="bool">services/cones/cone2-enable</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
 
-<!--animation>
+    <!--animation>
     <type>material</type>
     <object-name>Base</object-name>
     <object-name>Cone</object-name>
@@ -41,42 +41,48 @@
     </emission>
 </animation-->
 
-<animation>
-    <type>translate</type>
-    <object-name>Base</object-name>
-    <object-name>Cone</object-name>
-    <object-name>Base.001</object-name>
-    <object-name>Cone.001</object-name>
-    <object-name>Base.002</object-name>
-    <object-name>Cone.002</object-name>
-    <property>gear/gear[2]/compression-norm</property>
-    <interpolation>
-        <entry><ind>0.12</ind><dep>-0.29</dep></entry>
-        <entry><ind>0.39</ind><dep>-0.08</dep></entry>
-    </interpolation>
-    <axis>
-        <x>0</x>
-        <y>0</y>
-        <z>1</z>
-    </axis>
-</animation>
-  
-<animation>
-    <type>pick</type>
-    <object-name>Base</object-name>
-    <object-name>Cone</object-name>
-    <object-name>Base.001</object-name>
-    <object-name>Cone.001</object-name>
-    <object-name>Base.002</object-name>
-    <object-name>Cone.002</object-name>
-    <action>
-        <button>0</button>
-        <binding>
-            <command>property-toggle</command>
-            <property>services/cones/cone2-enable</property>
-        </binding>
-    </action>
-</animation>
+    <animation>
+        <type>translate</type>
+        <object-name>Base</object-name>
+        <object-name>Cone</object-name>
+        <object-name>Base.001</object-name>
+        <object-name>Cone.001</object-name>
+        <object-name>Base.002</object-name>
+        <object-name>Cone.002</object-name>
+        <property>gear/gear[2]/compression-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0.12</ind>
+                <dep>-0.29</dep>
+            </entry>
+            <entry>
+                <ind>0.39</ind>
+                <dep>-0.08</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>Base</object-name>
+        <object-name>Cone</object-name>
+        <object-name>Base.001</object-name>
+        <object-name>Cone.001</object-name>
+        <object-name>Base.002</object-name>
+        <object-name>Cone.002</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/cones/cone2-enable</property>
+            </binding>
+        </action>
+    </animation>
 
 
 </PropertyList>

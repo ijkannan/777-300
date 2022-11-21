@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Copyright (c) 2022 Josh Davidson (Octal450) -->
 <!-- Modified for 777 by Isaak Dieleman (2021) -->
@@ -6,29 +6,29 @@
 <PropertyList>
 
 	<path>Catering_Loader_Truck_VolvoFM.ac</path>
-	
-    <!-- Visible -->
-    
-    <animation>
-        <type>select</type>
-        <condition>
+
+	<!-- Visible -->
+
+	<animation>
+		<type>select</type>
+		<condition>
 			<and>
 				<equals>
 					<property>services/catering/truck[0]/enabled</property>
 					<value>1</value>
 				</equals>
 				<less-than>
-						<property>velocities/groundspeed-kt</property>
+					<property>velocities/groundspeed-kt</property>
 					<value>1</value>
 				</less-than>
 			</and>
 		</condition>
-    </animation>
-    
-    
-    <!-- Named objects -->
-    
-    <animation>
+	</animation>
+
+
+	<!-- Named objects -->
+
+	<animation>
 		<name>cargo_box_all</name>
 		<object-name>cargo_box</object-name>
 		<object-name>warning_light_glass</object-name>
@@ -37,19 +37,19 @@
 		<object-name>arm_top</object-name>
 		<object-name>Lights_side</object-name>
 	</animation>
-	
+
 	<animation>
 		<name>pistons_left</name>
 		<object-name>piston_01_left</object-name>
 		<object-name>piston_02_left</object-name>
 	</animation>
-	
+
 	<animation>
 		<name>pistons_right</name>
 		<object-name>piston_01_right</object-name>
 		<object-name>piston_02_right</object-name>
 	</animation>
-	
+
 	<animation>
 		<name>Lights_all</name>
 		<object-name>Lights_front</object-name>
@@ -57,77 +57,116 @@
 		<object-name>Lights_side</object-name>
 		<object-name>warning_light_glass</object-name>
 	</animation>
-    
-    <animation>
-        <name>Wheels_back</name>
-        <object-name>Wheel_Back_Out</object-name>
-        <object-name>Wheel_Back_Inn</object-name>
-    </animation>
-    
-    <!-- compensate for aircraft gear compression -->
-    
+
+	<animation>
+		<name>Wheels_back</name>
+		<object-name>Wheel_Back_Out</object-name>
+		<object-name>Wheel_Back_Inn</object-name>
+	</animation>
+
+	<!-- compensate for aircraft gear compression -->
+
 	<animation>
 		<type>translate</type>
 		<property>gear/gear[0]/compression-m</property>
 		<offset-m>-0.058055</offset-m>
-        <factor>1.1</factor>
+		<factor>1.1</factor>
 		<axis>
 			<z>1</z>
 		</axis>
 	</animation>
-    
-        <!-- Truck move forward/back -->
-        
-    <animation>
-		<type>translate</type>
-		<property>services/catering/truck[0]/position-norm</property>
-        <factor>1</factor>
-        <interpolation>
-            <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry> <!-- 0mps -->
-            <entry><ind> 0.20 </ind><dep> 1.50 </dep></entry> <!-- 0.5mps -->
-            <entry><ind> 0.50 </ind><dep>10.00 </dep></entry> <!-- 1.8mps -->
-            <entry><ind> 0.888 </ind><dep>10.00 </dep></entry> <!-- 1.8mps in turn; radius = 10, 60° arcircle turn -->
-            <entry><ind> 1.00 </ind><dep>11.00 </dep></entry> <!-- 0.6mps -->
-        </interpolation>
-		<axis>
-            <x>1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-	</animation>
-    
-    <!-- Truck move sideways (compensation in turns) -->
 
-    <animation>
+	<!-- Truck move forward/back -->
+
+	<animation>
 		<type>translate</type>
 		<property>services/catering/truck[0]/position-norm</property>
-        <factor>1</factor>
-        <interpolation>
-            <entry><ind> 0.000 </ind><dep>  0.0</dep></entry>
-            <entry><ind> 0.500 </ind><dep>  0.0</dep></entry>
-            <entry><ind> 0.888 </ind><dep> 10.0</dep></entry>
-            <entry><ind> 1.000 </ind><dep> 10.0</dep></entry>
-        </interpolation>
+		<factor>1</factor>
+		<interpolation>
+			<entry>
+				<ind> 0.00 </ind>
+				<dep> 0.00 </dep>
+			</entry> <!-- 0mps -->
+			<entry>
+				<ind> 0.20 </ind>
+				<dep> 1.50 </dep>
+			</entry> <!-- 0.5mps -->
+			<entry>
+				<ind> 0.50 </ind>
+				<dep>10.00 </dep>
+			</entry> <!-- 1.8mps -->
+			<entry>
+				<ind> 0.888 </ind>
+				<dep>10.00 </dep>
+			</entry> <!-- 1.8mps in turn; radius = 10, 60° arcircle turn -->
+			<entry>
+				<ind> 1.00 </ind>
+				<dep>11.00 </dep>
+			</entry> <!-- 0.6mps -->
+		</interpolation>
 		<axis>
-            <x>0</x>
-            <y>-1</y>
-            <z>0</z>
-        </axis>
-	</animation> 
-    
-    <!-- Truck turn -->
-    
-    <animation>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<!-- Truck move sideways (compensation in turns) -->
+
+	<animation>
+		<type>translate</type>
+		<property>services/catering/truck[0]/position-norm</property>
+		<factor>1</factor>
+		<interpolation>
+			<entry>
+				<ind> 0.000 </ind>
+				<dep>  0.0</dep>
+			</entry>
+			<entry>
+				<ind> 0.500 </ind>
+				<dep>  0.0</dep>
+			</entry>
+			<entry>
+				<ind> 0.888 </ind>
+				<dep> 10.0</dep>
+			</entry>
+			<entry>
+				<ind> 1.000 </ind>
+				<dep> 10.0</dep>
+			</entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<!-- Truck turn -->
+
+	<animation>
 		<type>rotate</type>
 		<property>services/catering/truck[0]/position-norm</property>
-        <factor>1</factor>
-        <interpolation>
-            <entry><ind> 0.000 </ind><dep> 0.00 </dep></entry>
-            <entry><ind> 0.500 </ind><dep> 0.00 </dep></entry>
-            <entry><ind> 0.888 </ind><dep>60.00 </dep></entry> <!--in turn -->
-            <entry><ind> 1.000 </ind><dep>60.00 </dep></entry>
-        </interpolation>
-        <axis>
+		<factor>1</factor>
+		<interpolation>
+			<entry>
+				<ind> 0.000 </ind>
+				<dep> 0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.500 </ind>
+				<dep> 0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.888 </ind>
+				<dep>60.00 </dep>
+			</entry> <!--in turn -->
+			<entry>
+				<ind> 1.000 </ind>
+				<dep>60.00 </dep>
+			</entry>
+		</interpolation>
+		<axis>
 			<x1-m>  2.50000 </x1-m>
 			<y1-m> 13.89121 </y1-m>
 			<z1-m> -1.00000 </z1-m>
@@ -136,98 +175,107 @@
 			<z2-m>  1.00000 </z2-m>
 		</axis>
 	</animation>
-    
-        <!-- Front wheels steering -->
-    
-    <animation>
+
+	<!-- Front wheels steering -->
+
+	<animation>
 		<type>rotate</type>
 		<object-name>Wheel_Front_Left</object-name>
 		<property>services/catering/truck[0]/steering-deg</property>
-        <factor>1</factor>
-        <center>
-            <x-m>-3.18719</x-m>
-            <y-m>-1.00713</y-m>
-            <z-m> 0.55998</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>0</y>
-            <z>1</z>
-        </axis>
+		<factor>1</factor>
+		<center>
+			<x-m>-3.18719</x-m>
+			<y-m>-1.00713</y-m>
+			<z-m> 0.55998</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
 	</animation>
-    
-    <animation>
+
+	<animation>
 		<type>rotate</type>
 		<object-name>Wheel_Front_Right</object-name>
 		<property>services/catering/truck[0]/steering-deg</property>
-        <factor>1</factor>
+		<factor>1</factor>
 		<center>
-            <x-m>-3.18719</x-m>
-            <y-m> 1.00713</y-m>
-            <z-m> 0.55998</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>0</y>
-            <z>1</z>
-        </axis>
+			<x-m>-3.18719</x-m>
+			<y-m> 1.00713</y-m>
+			<z-m> 0.55998</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
 	</animation>
-	
-	    <!-- Wheels rotation -->
-    <animation>
+
+	<!-- Wheels rotation -->
+	<animation>
 		<type>spin</type>
 		<object-name>Wheel_Front_Left</object-name>
-        <object-name>Wheel_Front_Right</object-name>
+		<object-name>Wheel_Front_Right</object-name>
 		<expression>
-            <product>
-                <property>services/catering/truck[0]/rollspeed-mps</property>
-                <value>16.4376641</value>
-                <property>services/catering/truck[0]/direction</property>
-            </product>
-        </expression>
-        <axis>
-            <x>0</x>
-            <y>-1</y>
-            <z>0</z>
-        </axis>
-        <center>
-            <x-m>-3.18719</x-m>
-            <y-m> 0.00000</y-m>
-            <z-m> 0.55998</z-m>
-        </center>
+			<product>
+				<property>services/catering/truck[0]/rollspeed-mps</property>
+				<value>16.4376641</value>
+				<property>services/catering/truck[0]/direction</property>
+			</product>
+		</expression>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-3.18719</x-m>
+			<y-m> 0.00000</y-m>
+			<z-m> 0.55998</z-m>
+		</center>
 	</animation>
-    
-    <animation>
+
+	<animation>
 		<type>spin</type>
 		<object-name>Wheels_back</object-name>
 		<expression>
-            <product>
-                <property>services/catering/truck[0]/rollspeed-mps</property>
-                <value>16.4376641</value>
-                <property>services/catering/truck[0]/direction</property>
-            </product>
-        </expression>
-        <axis>
-            <x1-m> 2.50000</x1-m>
+			<product>
+				<property>services/catering/truck[0]/rollspeed-mps</property>
+				<value>16.4376641</value>
+				<property>services/catering/truck[0]/direction</property>
+			</product>
+		</expression>
+		<axis>
+			<x1-m> 2.50000</x1-m>
 			<y1-m> 1.00098</y1-m>
 			<z1-m> 0.55998</z1-m>
 			<x2-m> 2.50000</x2-m>
 			<y2-m>-1.00979</y2-m>
 			<z2-m> 0.55998</z2-m>
-        </axis>
+		</axis>
 	</animation>
-    
-    <!-- Pistons animation -->
+
+	<!-- Pistons animation -->
 	<animation>
 		<type>translate</type>
 		<object-name>pistons_left</object-name>
 		<property>services/catering/truck[0]/cargo/position-norm</property>
-			<factor>1</factor>
-			<interpolation>
-				<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
-				<entry><ind> 0.10 </ind><dep>-0.60 </dep></entry>
-				<entry><ind> 1.00 </ind><dep>-0.60 </dep></entry>
-			</interpolation>
+		<factor>1</factor>
+		<interpolation>
+			<entry>
+				<ind> 0.0 </ind>
+				<dep>  0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.10 </ind>
+				<dep>-0.60 </dep>
+			</entry>
+			<entry>
+				<ind> 1.00 </ind>
+				<dep>-0.60 </dep>
+			</entry>
+		</interpolation>
 		<axis>
 			<x1-m>  0.000 </x1-m>
 			<y1-m> -1.000 </y1-m>
@@ -237,17 +285,26 @@
 			<z2-m>  0.000 </z2-m>
 		</axis>
 	</animation>
-	
+
 	<animation>
 		<type>translate</type>
 		<object-name>pistons_right</object-name>
 		<property>services/catering/truck[0]/cargo/position-norm</property>
-			<factor>1</factor>
-			<interpolation>
-				<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
-				<entry><ind> 0.10 </ind><dep> 0.60 </dep></entry>
-				<entry><ind> 1.00 </ind><dep> 0.60 </dep></entry>
-			</interpolation>
+		<factor>1</factor>
+		<interpolation>
+			<entry>
+				<ind> 0.0 </ind>
+				<dep>  0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.10 </ind>
+				<dep> 0.60 </dep>
+			</entry>
+			<entry>
+				<ind> 1.00 </ind>
+				<dep> 0.60 </dep>
+			</entry>
+		</interpolation>
 		<axis>
 			<x1-m>  0.000 </x1-m>
 			<y1-m> -1.000 </y1-m>
@@ -257,19 +314,31 @@
 			<z2-m>  0.000 </z2-m>
 		</axis>
 	</animation>
-	
+
 	<animation>
 		<type>translate</type>
 		<object-name>piston_02_left</object-name>
 		<object-name>piston_02_right</object-name>
 		<property>services/catering/truck[0]/cargo/position-norm</property>
-			<factor>1</factor>
-			<interpolation>
-				<entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
-				<entry><ind> 0.10 </ind><dep> 0.00 </dep></entry>
-                <entry><ind> 0.20 </ind><dep>-0.50 </dep></entry>
-				<entry><ind> 1.00 </ind><dep>-0.50 </dep></entry>
-			</interpolation>
+		<factor>1</factor>
+		<interpolation>
+			<entry>
+				<ind> 0.0 </ind>
+				<dep>  0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.10 </ind>
+				<dep> 0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.20 </ind>
+				<dep>-0.50 </dep>
+			</entry>
+			<entry>
+				<ind> 1.00 </ind>
+				<dep>-0.50 </dep>
+			</entry>
+		</interpolation>
 		<axis>
 			<x1-m>  0.000 </x1-m>
 			<y1-m>  0.000 </y1-m>
@@ -279,19 +348,31 @@
 			<z2-m>  1.000 </z2-m>
 		</axis>
 	</animation>
-    
-    <!-- Truck move up when pistons on ground -->
-    
-    <animation>
+
+	<!-- Truck move up when pistons on ground -->
+
+	<animation>
 		<type>translate</type>
 		<property>services/catering/truck[0]/cargo/position-norm</property>
-			<factor>1</factor>
-			<interpolation>
-				<entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
-                <entry><ind> 0.18 </ind><dep> 0.00 </dep></entry>
-				<entry><ind> 0.20 </ind><dep> 0.05 </dep></entry>
-                <entry><ind> 1.00 </ind><dep> 0.05 </dep></entry>
-			</interpolation>
+		<factor>1</factor>
+		<interpolation>
+			<entry>
+				<ind> 0.00 </ind>
+				<dep> 0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.18 </ind>
+				<dep> 0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.20 </ind>
+				<dep> 0.05 </dep>
+			</entry>
+			<entry>
+				<ind> 1.00 </ind>
+				<dep> 0.05 </dep>
+			</entry>
+		</interpolation>
 		<axis>
 			<x1-m>  0.000 </x1-m>
 			<y1-m>  0.000 </y1-m>
@@ -307,12 +388,21 @@
 		<type>translate</type>
 		<object-name>cargo_box_all</object-name>
 		<property>services/catering/truck[0]/cargo/position-norm</property>
-        <factor>1</factor>
-        <interpolation>
-            <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
-            <entry><ind> 0.25 </ind><dep> 0.00 </dep></entry>
-            <entry><ind> 1.00 </ind><dep> 3.41 </dep></entry>
-        </interpolation>
+		<factor>1</factor>
+		<interpolation>
+			<entry>
+				<ind> 0.00 </ind>
+				<dep> 0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.25 </ind>
+				<dep> 0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 1.00 </ind>
+				<dep> 3.41 </dep>
+			</entry>
+		</interpolation>
 		<axis>
 			<x1-m>  0.000 </x1-m>
 			<y1-m>  0.000 </y1-m>
@@ -322,19 +412,31 @@
 			<z2-m>  1.000 </z2-m>
 		</axis>
 	</animation>
-	
+
 	<!-- Cargo Box platform move -->
 	<animation>
 		<type>translate</type>
 		<object-name>platform</object-name>
 		<property>services/catering/truck[0]/cargo/position-norm</property>
-			<factor>1</factor>
-			<interpolation>
-				<entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
-                <entry><ind> 0.25 </ind><dep> 0.00 </dep></entry>
-				<entry><ind> 0.63 </ind><dep>-1.75 </dep></entry>
-				<entry><ind> 1.00 </ind><dep>-1.75 </dep></entry>
-			</interpolation>
+		<factor>1</factor>
+		<interpolation>
+			<entry>
+				<ind> 0.00 </ind>
+				<dep> 0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.25 </ind>
+				<dep> 0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.63 </ind>
+				<dep>-1.75 </dep>
+			</entry>
+			<entry>
+				<ind> 1.00 </ind>
+				<dep>-1.75 </dep>
+			</entry>
+		</interpolation>
 		<axis>
 			<x1-m>  0.000 </x1-m>
 			<y1-m>  0.000 </y1-m>
@@ -350,12 +452,21 @@
 		<type>rotate</type>
 		<object-name>arm_top</object-name>
 		<property>services/catering/truck[0]/cargo/position-norm</property>
-			<factor>1</factor>
-			<interpolation>
-				<entry><ind> 0.00 </ind><dep>  0.00 </dep></entry>
-                <entry><ind> 0.25 </ind><dep>  0.00 </dep></entry>
-				<entry><ind> 1.00 </ind><dep> 27.84 </dep></entry>
-			</interpolation>
+		<factor>1</factor>
+		<interpolation>
+			<entry>
+				<ind> 0.00 </ind>
+				<dep>  0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.25 </ind>
+				<dep>  0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 1.00 </ind>
+				<dep> 27.84 </dep>
+			</entry>
+		</interpolation>
 		<axis>
 			<x1-m> -2.271 </x1-m>
 			<y1-m> -0.100 </y1-m>
@@ -365,19 +476,28 @@
 			<z2-m>  1.310 </z2-m>
 		</axis>
 	</animation>
-	
+
 	<!-- Lower arm rotate-->
 	<animation>
 		<type>rotate</type>
 		<object-name>arm_bottom</object-name>
-		
+
 		<property>services/catering/truck[0]/cargo/position-norm</property>
-			<factor>1</factor>
-			<interpolation>
-				<entry><ind> 0.00 </ind><dep>   0.00 </dep></entry>
-                <entry><ind> 0.25 </ind><dep>   0.00 </dep></entry>
-				<entry><ind> 1.00 </ind><dep> -27.84 </dep></entry>
-			</interpolation>
+		<factor>1</factor>
+		<interpolation>
+			<entry>
+				<ind> 0.00 </ind>
+				<dep>   0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 0.25 </ind>
+				<dep>   0.00 </dep>
+			</entry>
+			<entry>
+				<ind> 1.00 </ind>
+				<dep> -27.84 </dep>
+			</entry>
+		</interpolation>
 		<axis>
 			<x1-m> -2.271 </x1-m>
 			<y1-m> -0.100 </y1-m>
@@ -390,49 +510,49 @@
 
 	<!-- Lights night illumination -->
 	<animation>
-		<type>material</type> 
+		<type>material</type>
 		<object-name>Lights_all</object-name>
-			<condition>
-				<or>
-					<greater-than>
-						<property>sim/time/sun-angle-rad</property>
-						<value>1.45</value>
-					</greater-than>
-					<less-than>
-						<property>environment/visibility-m</property>
-						<value>4500.00</value>
-					</less-than>
-				</or>
-			</condition>
-		<emission>	
-			<red>0.7</red>	
-			<green>0.7</green>	
+		<condition>
+			<or>
+				<greater-than>
+					<property>sim/time/sun-angle-rad</property>
+					<value>1.45</value>
+				</greater-than>
+				<less-than>
+					<property>environment/visibility-m</property>
+					<value>4500.00</value>
+				</less-than>
+			</or>
+		</condition>
+		<emission>
+			<red>0.7</red>
+			<green>0.7</green>
 			<blue>0.5</blue>
 		</emission>
 	</animation>
-	
+
 	<!-- dont show the light model during day-->
 	<animation>
-		<type>select</type> 
+		<type>select</type>
 		<object-name>Lights_front</object-name>
 		<condition>
-            <or>
-                <greater-than>
-                    <property>sim/time/sun-angle-rad</property>
-                    <value>1.45</value>
-                </greater-than>
-                <less-than>
-                    <property>environment/visibility-m</property>
-                    <value>4500.00</value>
-                </less-than>
-            </or>
-        </condition>
+			<or>
+				<greater-than>
+					<property>sim/time/sun-angle-rad</property>
+					<value>1.45</value>
+				</greater-than>
+				<less-than>
+					<property>environment/visibility-m</property>
+					<value>4500.00</value>
+				</less-than>
+			</or>
+		</condition>
 	</animation>
-	
-<!-- warning light -->
+
+	<!-- warning light -->
 	<model>
-	<name>warning</name>
-	<path>warning-light.xml</path>
+		<name>warning</name>
+		<path>warning-light.xml</path>
 		<condition>
 			<greater-than>
 				<property>services/catering/truck[0]/cargo/position-norm</property>
@@ -446,70 +566,70 @@
 			<heading-deg>90</heading-deg>
 		</offsets>
 	</model>
-	
+
 	<animation>
-		<type>material</type> 
+		<type>material</type>
 		<object-name>warning_light_glass</object-name>
-			<condition>
+		<condition>
 			<greater-than>
 				<property>services/catering/truck[0]/cargo/position-norm</property>
 				<value>0.01</value>
 			</greater-than>
 		</condition>
-		<emission>	
-			<red>0.7</red>	
-			<green>0.7</green>	
+		<emission>
+			<red>0.7</red>
+			<green>0.7</green>
 			<blue>0.5</blue>
 		</emission>
 	</animation>
-    
-<!-- Bindings -->
 
-    <animation>
-        <type>pick</type>
-        <object-name>cargo_box_all</object-name>
-        <action>
-            <button>0</button>
-            <binding>
-                <command>property-toggle</command>
-                <property>services/catering/truck[0]/connect</property>
-            </binding>
-        </action>
-    </animation>
-    
-    <animation>
-        <type>pick</type>
-        <object-name>Wheel_Front_Left</object-name>
-        <object-name>Wheel_Front_Right</object-name>
-        <object-name>Wheels_back</object-name>
-        <object-name>Cube</object-name>
-        <object-name>Cube.003</object-name>
-        <object-name>Cube.004</object-name>
-        <object-name>Cube.006</object-name>
-        <object-name>Cube.007</object-name>
-        <object-name>Cube.008</object-name>
-        <object-name>Cube.016</object-name>
-        <object-name>Cube.019</object-name>
-        <object-name>Cube.028</object-name>
-        <object-name>Cube.057</object-name>
-        <object-name>Cylinder.004</object-name>
-        <object-name>Cylinder.005</object-name>
-        <object-name>Cylinder.006</object-name>
-        <object-name>Cylinder.009</object-name>
-        <action>
-            <button>0</button>
-            <binding>
-                <command>property-toggle</command>
-                <property>services/catering/truck[0]/enabled</property>
-            </binding>
-        </action>
-    </animation>
-	
-<!-- LOD -->
+	<!-- Bindings -->
+
+	<animation>
+		<type>pick</type>
+		<object-name>cargo_box_all</object-name>
+		<action>
+			<button>0</button>
+			<binding>
+				<command>property-toggle</command>
+				<property>services/catering/truck[0]/connect</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>Wheel_Front_Left</object-name>
+		<object-name>Wheel_Front_Right</object-name>
+		<object-name>Wheels_back</object-name>
+		<object-name>Cube</object-name>
+		<object-name>Cube.003</object-name>
+		<object-name>Cube.004</object-name>
+		<object-name>Cube.006</object-name>
+		<object-name>Cube.007</object-name>
+		<object-name>Cube.008</object-name>
+		<object-name>Cube.016</object-name>
+		<object-name>Cube.019</object-name>
+		<object-name>Cube.028</object-name>
+		<object-name>Cube.057</object-name>
+		<object-name>Cylinder.004</object-name>
+		<object-name>Cylinder.005</object-name>
+		<object-name>Cylinder.006</object-name>
+		<object-name>Cylinder.009</object-name>
+		<action>
+			<button>0</button>
+			<binding>
+				<command>property-toggle</command>
+				<property>services/catering/truck[0]/enabled</property>
+			</binding>
+		</action>
+	</animation>
+
+	<!-- LOD -->
 	<animation>
 		<type>range</type>
 		<min-m>0</min-m>
 		<max-m>2500</max-m>
 	</animation>
-	
+
 </PropertyList>

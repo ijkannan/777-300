@@ -1,74 +1,74 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
 	<path>dome_cone.ac</path>
-    
-    <!-- COMPOSITOR LIGHTS -->
-    
-    <light>
-      <name>DomeLight-Compositor</name>
-      <type>point</type>
-      <position>
-          <x-m>-1.16</x-m>
-          <y-m>0</y-m>
-          <z-m>0.9</z-m>
-      </position>
-      <ambient>
-        <r>1</r>
-        <g>1</g>
-        <b>1</b>
-        <a>1</a>
-      </ambient>
-      <diffuse>
-        <r>0.7</r>
-        <g>0.7</g>
-        <b>0.6</b>
-        <a>1</a>
-      </diffuse>
-      <specular>
-        <r>0.9529</r>
-        <g>0.851</g>
-        <b>0.0</b>
-        <a>1</a>
-      </specular>
-      <attenuation>
-		<c>0.3</c>
-		<l>2</l>
-		<q>5</q>
-      </attenuation>
-      <dim-factor>
-          <property>systems/electrical/domelight-int</property>
-  	  </dim-factor>
-     
-      <range-m>50</range-m>
-    </light>
+
+	<!-- COMPOSITOR LIGHTS -->
+
+	<light>
+		<name>DomeLight-Compositor</name>
+		<type>point</type>
+		<position>
+			<x-m>-1.16</x-m>
+			<y-m>0</y-m>
+			<z-m>0.9</z-m>
+		</position>
+		<ambient>
+			<r>1</r>
+			<g>1</g>
+			<b>1</b>
+			<a>1</a>
+		</ambient>
+		<diffuse>
+			<r>0.7</r>
+			<g>0.7</g>
+			<b>0.6</b>
+			<a>1</a>
+		</diffuse>
+		<specular>
+			<r>0.9529</r>
+			<g>0.851</g>
+			<b>0.0</b>
+			<a>1</a>
+		</specular>
+		<attenuation>
+			<c>0.3</c>
+			<l>2</l>
+			<q>5</q>
+		</attenuation>
+		<dim-factor>
+			<property>systems/electrical/domelight-int</property>
+		</dim-factor>
+
+		<range-m>50</range-m>
+	</light>
 	<animation>
 		<type>select</type>
 		<object-name>DomeLight-Compositor</object-name>
-        <condition>
+		<condition>
 			<and>
-    			<not>
-    			    <equals>
-    			        <property>systems/electrical/domelight-int</property>
-                        <value>0</value>
-    			    </equals>
-    			</not>
-                <equals>
-                    <property>/sim/current-view/internal</property>
-                    <value>1</value>
-                </equals>
-            </and>
-        </condition>
+				<not>
+					<equals>
+						<property>systems/electrical/domelight-int</property>
+						<value>0</value>
+					</equals>
+				</not>
+				<equals>
+					<property>/sim/current-view/internal</property>
+					<value>1</value>
+				</equals>
+			</and>
+		</condition>
 	</animation>
-    
-    
+
+
 	<animation>
 		<type>light</type>
 		<light-type>point</light-type>
 		<name>DomeLight</name>
 		<object-name>Cone</object-name>
-		<nopreview/>
+		<nopreview />
 		<position>
 			<x>0</x>
 			<y>0</y>
@@ -92,10 +92,10 @@
 			<b>0.0</b>
 			<a>1.0</a>
 		</specular>
-	<dim-factor>
-        <property>systems/electrical/domelight-int</property>
-	</dim-factor>
-  		<attenuation>
+		<dim-factor>
+			<property>systems/electrical/domelight-int</property>
+		</dim-factor>
+		<attenuation>
 			<c>0.3</c>
 			<l>2</l>
 			<q>5</q>
@@ -109,10 +109,10 @@
 	<animation>
 		<type>select</type>
 		<object-name>DomeLight</object-name>
-        <condition>
+		<condition>
 			<property>sim/rendering/rembrandt/enabled</property>
-        </condition>
+		</condition>
 	</animation>
-    
+
 
 </PropertyList>

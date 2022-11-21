@@ -9,7 +9,7 @@
     <!-- selected active flight recorder configuration for replay system -->
     <replay-config type="int">0</replay-config>
 
-<!--
+    <!--
     <config n="0" include="Aircraft/Generic/flightrecorder/generic-jet.xml"/>
  -->
 
@@ -19,7 +19,7 @@
         <!-- include generic stuff -->
         <signals include="Aircraft/Generic/flightrecorder/components/position.xml" />
         <signals include="Aircraft/Generic/flightrecorder/components/controls.xml" />
-        <signals include="Aircraft/Generic/flightrecorder/components/surfaces.xml"/>
+        <signals include="Aircraft/Generic/flightrecorder/components/surfaces.xml" />
         <signals include="Aircraft/Generic/flightrecorder/components/engine-jet.xml">
             <count type="int">2</count>
         </signals>
@@ -30,127 +30,166 @@
             <count type="int">3</count>
         </signals>
 
-        <signals>  <!-- now the custom properties -->
+        <signals>
+            <!-- now the custom properties -->
 
             <signals>
                 <!--  engine related signals -->
                 <count type="int">2</count>
                 <signal>
-                    <type>bool</type><property>controls/engines/engine[%i]/cutoff</property>
+                    <type>bool</type>
+                    <property>controls/engines/engine[%i]/cutoff</property>
                 </signal>
                 <signal>
-                    <type>bool</type><property>controls/electric/engine[%i]/generator</property>
+                    <type>bool</type>
+                    <property>controls/electric/engine[%i]/generator</property>
                 </signal>
                 <signal>
-                    <type>bool</type><property>controls/electric/engine[%i]/bus-tie</property>
+                    <type>bool</type>
+                    <property>controls/electric/engine[%i]/bus-tie</property>
                 </signal>
                 <signal>
-                    <type>bool</type><property>engines/engine[%i]/run</property>
+                    <type>bool</type>
+                    <property>engines/engine[%i]/run</property>
                 </signal>
                 <signal>
-                    <type>bool</type><property>controls/hydraulics/system[0]/LENG_switch</property>
+                    <type>bool</type>
+                    <property>controls/hydraulics/system[0]/LENG_switch</property>
                 </signal>
                 <signal>
-                    <type>bool</type><property>controls/hydraulics/system[2]/RENG_switch</property>
+                    <type>bool</type>
+                    <property>controls/hydraulics/system[2]/RENG_switch</property>
                 </signal>
                 <signal>
-                    <type>bool</type><property>controls/engines/engine[%i]/reverser</property>
+                    <type>bool</type>
+                    <property>controls/engines/engine[%i]/reverser</property>
                 </signal>
                 <signal>
-                    <type>int8</type><property>controls/engines/engine[%i]/reverser-act</property>
+                    <type>int8</type>
+                    <property>controls/engines/engine[%i]/reverser-act</property>
                 </signal>
             </signals>
 
             <signal>
-                <type>bool</type><property>controls/electric/APU-generator</property>
+                <type>bool</type>
+                <property>controls/electric/APU-generator</property>
             </signal>
             <signal>
-                <type>bool</type><property>systems/electrical/outputs/avionics</property>
+                <type>bool</type>
+                <property>systems/electrical/outputs/avionics</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/electric/battery-switch</property>
+                <type>bool</type>
+                <property>controls/electric/battery-switch</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/electric/inverter-switch</property>
+                <type>bool</type>
+                <property>controls/electric/inverter-switch</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/lighting/instruments-norm</property>
+                <type>bool</type>
+                <property>controls/lighting/instruments-norm</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/lighting/nav-lights</property>
+                <type>bool</type>
+                <property>controls/lighting/nav-lights</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/lighting/beacon</property>
+                <type>bool</type>
+                <property>controls/lighting/beacon</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/lighting/strobe</property>
+                <type>bool</type>
+                <property>controls/lighting/strobe</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/lighting/wing-lights</property>
+                <type>bool</type>
+                <property>controls/lighting/wing-lights</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/lighting/taxi-lights</property>
+                <type>bool</type>
+                <property>controls/lighting/taxi-lights</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/lighting/logo-lights</property>
+                <type>bool</type>
+                <property>controls/lighting/logo-lights</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/lighting/cabin-lights</property>
+                <type>bool</type>
+                <property>controls/lighting/cabin-lights</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/lighting/landing-light[0]</property>
+                <type>bool</type>
+                <property>controls/lighting/landing-light[0]</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/lighting/landing-light[1]</property>
+                <type>bool</type>
+                <property>controls/lighting/landing-light[1]</property>
             </signal>
             <signal>
-                <type>bool</type><property>controls/lighting/landing-light[2]</property>
+                <type>bool</type>
+                <property>controls/lighting/landing-light[2]</property>
             </signal>
             <signal>
-                <type>bool</type><property>instrumentation/afds/inputs/AP</property>
+                <type>bool</type>
+                <property>instrumentation/afds/inputs/AP</property>
             </signal>
             <signal>
-                <type>bool</type><property>instrumentation/afds/inputs/loc-armed</property>
+                <type>bool</type>
+                <property>instrumentation/afds/inputs/loc-armed</property>
             </signal>
             <signal>
-                <type>bool</type><property>instrumentation/afds/inputs/gs-armed</property>
+                <type>bool</type>
+                <property>instrumentation/afds/inputs/gs-armed</property>
             </signal>
             <signal>
-                <type>int8</type><property>instrumentation/afds/inputs/vertical-index</property>
+                <type>int8</type>
+                <property>instrumentation/afds/inputs/vertical-index</property>
             </signal>
             <signal>
-                <type>int8</type><property>instrumentation/afds/inputs/lateral-index</property>
+                <type>int8</type>
+                <property>instrumentation/afds/inputs/lateral-index</property>
             </signal>
             <signal>
-                <type>bool</type><property>instrumentation/afds/inputs/at-armed[0]</property>
+                <type>bool</type>
+                <property>instrumentation/afds/inputs/at-armed[0]</property>
             </signal>
             <signal>
-                <type>bool</type><property>instrumentation/afds/inputs/at-armed[1]</property>
+                <type>bool</type>
+                <property>instrumentation/afds/inputs/at-armed[1]</property>
             </signal>
             <signal>
-                <type>int8</type><property>controls/flight/speedbrake-lever</property>
+                <type>int8</type>
+                <property>controls/flight/speedbrake-lever</property>
             </signal>
             <signal>
-                <type>int8</type><property>autopilot/autobrake/step</property>
+                <type>int8</type>
+                <property>autopilot/autobrake/step</property>
             </signal>
             <signal>
-                <type>int8</type><property>instrumentation/afds/inputs/autothrottle-index</property>
+                <type>int8</type>
+                <property>instrumentation/afds/inputs/autothrottle-index</property>
             </signal>
             <signal>
-                <type>int16</type><property>autopilot/settings/target-speed-kt</property>
+                <type>int16</type>
+                <property>autopilot/settings/target-speed-kt</property>
             </signal>
             <signal>
-                <type>float</type><property>instrumentation/pfd/stallspeed-diff</property>
+                <type>float</type>
+                <property>instrumentation/pfd/stallspeed-diff</property>
             </signal>
             <signal>
-                <type>int</type><property>autopilot/settings/actual-target-altitude-ft</property>
+                <type>int</type>
+                <property>autopilot/settings/actual-target-altitude-ft</property>
             </signal>
             <signal>
-                <type>int16</type><property>autopilot/settings/heading-bug-deg</property>
+                <type>int16</type>
+                <property>autopilot/settings/heading-bug-deg</property>
             </signal>
 
             <signal>
-                <type>float</type><property>gear/brake-thermal-energy</property>
+                <type>float</type>
+                <property>gear/brake-thermal-energy</property>
             </signal>
             <signal>
                 <type>float</type>
@@ -174,10 +213,12 @@
             </signal>
 
             <signal>
-                <type>float</type><property>controls/gear/nosegear-steering-cmd</property>
+                <type>float</type>
+                <property>controls/gear/nosegear-steering-cmd</property>
             </signal>
             <signal>
-                <type>float</type><property>controls/gear/maingear-steering-cmd</property>
+                <type>float</type>
+                <property>controls/gear/maingear-steering-cmd</property>
             </signal>
 
             <signal>
@@ -185,7 +226,8 @@
                 <property>velocities/groundspeed-kt</property>
             </signal>
             <signal>
-                <type>float</type><property>position/gear-agl-ft</property>
+                <type>float</type>
+                <property>position/gear-agl-ft</property>
             </signal>
             <signal>
                 <type>float</type>

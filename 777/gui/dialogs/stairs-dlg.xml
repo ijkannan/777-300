@@ -8,9 +8,9 @@
 	<text>
 		<label>Select stairs paint scheme</label>
 	</text>
-	
+
 	<hrule />
-	
+
 	<combo>
 		<halign>left</halign>
 		<name>stairs_paint</name>
@@ -28,7 +28,7 @@
 			<object-name>stairs_paint</object-name>
 		</binding>
 	</combo>
-	
+
 	<button>
 		<legend>Toggle Stairs Covers</legend>
 		<binding>
@@ -36,17 +36,17 @@
 			<property>services/stairs/cover</property>
 		</binding>
 	</button>
-	
+
 	<hrule />
-	
+
 	<group>
-	<layout>hbox</layout>
+		<layout>hbox</layout>
 
 		<button>
 			<legend>Close</legend>
 			<default>true</default>
 			<key>Esc</key>
-		<padding>5</padding>
+			<padding>5</padding>
 			<binding>
 				<command>dialog-apply</command>
 			</binding>

@@ -12,7 +12,7 @@
         <object-name>Lettering_CK</object-name>
     </effect>
 
-        <animation>
+    <animation>
         <type>material</type>
         <object-name>Chrono.needle</object-name>
         <object-name>colon</object-name>
@@ -27,10 +27,10 @@
         <object-name>Mn.10</object-name>
         <object-name>Plane.001</object-name>
         <condition>
-             <greater-than>
+            <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+            </greater-than>
         </condition>
         <emission>
             <red>1.0</red>
@@ -40,18 +40,18 @@
         </emission>
     </animation>
 
-<animation>
+    <animation>
         <type>material</type>
         <object-name>Lettering_CK</object-name>
         <condition>
-             <greater-than>
+            <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
-             <greater-than>
+            </greater-than>
+            <greater-than>
                 <property>/sim/time/sun-angle-rad</property>
                 <value>1.70</value>
-             </greater-than>
+            </greater-than>
         </condition>
         <emission>
             <red>0.5</red>
@@ -83,9 +83,18 @@
         <object-name>ET.switch</object-name>
         <property>instrumentation/clock/et-knob</property>
         <interpolation>
-            <entry><ind>-1</ind><dep>-144</dep></entry>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>1</ind><dep>35</dep></entry>
+            <entry>
+                <ind>-1</ind>
+                <dep>-144</dep>
+            </entry>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>35</dep>
+            </entry>
         </interpolation>
         <center>
             <x-m>0</x-m>
@@ -104,10 +113,22 @@
         <object-name>SET.switch</object-name>
         <property>instrumentation/clock/set-knob</property>
         <interpolation>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>1</ind><dep>30</dep></entry>
-            <entry><ind>2</ind><dep>60</dep></entry>
-            <entry><ind>3</ind><dep>90</dep></entry>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>30</dep>
+            </entry>
+            <entry>
+                <ind>2</ind>
+                <dep>60</dep>
+            </entry>
+            <entry>
+                <ind>3</ind>
+                <dep>90</dep>
+            </entry>
         </interpolation>
         <center>
             <x-m>0</x-m>
@@ -126,9 +147,18 @@
         <object-name>UTC.switch</object-name>
         <property>instrumentation/clock/time-knob</property>
         <interpolation>
-            <entry><ind>-1</ind><dep>-135</dep></entry>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>1</ind><dep>35</dep></entry>
+            <entry>
+                <ind>-1</ind>
+                <dep>-135</dep>
+            </entry>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>35</dep>
+            </entry>
         </interpolation>
         <center>
             <x-m>0</x-m>
@@ -142,7 +172,7 @@
         </axis>
     </animation>
 
-<!-- Digital displays -->
+    <!-- Digital displays -->
 
     <animation>
         <type>textranslate</type>
@@ -261,14 +291,14 @@
         <object-name>Mn.01</object-name>
         <object-name>Mn.10</object-name>
         <condition>
-             <greater-than>
+            <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+            </greater-than>
         </condition>
     </animation>
 
-<!--  Hotspots -->
+    <!--  Hotspots -->
 
 
     <animation>
@@ -277,7 +307,7 @@
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
-             <binding>
+            <binding>
                 <command>property-toggle</command>
                 <property>instrumentation/clock/et-knob</property>
             </binding>
