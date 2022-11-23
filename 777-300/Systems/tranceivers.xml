@@ -33,7 +33,7 @@
 
     </group>
 
-    <hrule/>
+    <hrule />
 
     <group>
         <layout>hbox</layout>
@@ -68,14 +68,14 @@
 
     </group>
 
-    <hrule/>
+    <hrule />
 
 
-<!--         VHF L          -->
+    <!--         VHF L          -->
 
 
     <group>
-         <layout>table</layout>
+        <layout>table</layout>
 
         <text>
             <row>0</row>
@@ -171,7 +171,7 @@
             <binding>
                 <command>dialog-apply</command>
             </binding>
-			<binding>
+            <binding>
                 <condition>
                     <property>instrumentation/rmu/unit/vhf-l</property>
                 </condition>
@@ -179,7 +179,7 @@
                 <property>instrumentation/rmu/unit/standby-mhz</property>
                 <property>instrumentation/comm/frequencies/standby-mhz</property>
             </binding>
-			<binding>
+            <binding>
                 <condition>
                     <property>instrumentation/rmu/unit[1]/vhf-l</property>
                 </condition>
@@ -187,7 +187,7 @@
                 <property>instrumentation/rmu/unit[1]/standby-mhz</property>
                 <property>instrumentation/comm/frequencies/standby-mhz</property>
             </binding>
-			<binding>
+            <binding>
                 <condition>
                     <property>instrumentation/rmu/unit[2]/vhf-l</property>
                 </condition>
@@ -211,7 +211,7 @@
             </binding>
         </dial>
 
-<!--         VHF R          -->
+        <!--         VHF R          -->
 
         <text>
             <row>1</row>
@@ -306,7 +306,7 @@
             <binding>
                 <command>dialog-apply</command>
             </binding>
-			<binding>
+            <binding>
                 <condition>
                     <property>instrumentation/rmu/unit/vhf-r</property>
                 </condition>
@@ -314,7 +314,7 @@
                 <property>instrumentation/rmu/unit/standby-mhz</property>
                 <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
             </binding>
-			<binding>
+            <binding>
                 <condition>
                     <property>instrumentation/rmu/unit[1]/vhf-r</property>
                 </condition>
@@ -322,7 +322,7 @@
                 <property>instrumentation/rmu/unit[1]/standby-mhz</property>
                 <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
             </binding>
-			<binding>
+            <binding>
                 <condition>
                     <property>instrumentation/rmu/unit[2]/vhf-r</property>
                 </condition>
@@ -346,7 +346,7 @@
             </binding>
         </dial>
 
-<!--         VHF C          -->
+        <!--         VHF C          -->
 
         <text>
             <row>2</row>
@@ -441,7 +441,7 @@
             <binding>
                 <command>dialog-apply</command>
             </binding>
-			<binding>
+            <binding>
                 <condition>
                     <property>instrumentation/rmu/unit/vhf-c</property>
                 </condition>
@@ -449,7 +449,7 @@
                 <property>instrumentation/rmu/unit/standby-mhz</property>
                 <property>instrumentation/comm[2]/frequencies/standby-mhz</property>
             </binding>
-			<binding>
+            <binding>
                 <condition>
                     <property>instrumentation/rmu/unit[1]/vhf-c</property>
                 </condition>
@@ -457,7 +457,7 @@
                 <property>instrumentation/rmu/unit[1]/standby-mhz</property>
                 <property>instrumentation/comm[2]/frequencies/standby-mhz</property>
             </binding>
-			<binding>
+            <binding>
                 <condition>
                     <property>instrumentation/rmu/unit[2]/vhf-c</property>
                 </condition>
@@ -481,7 +481,7 @@
             </binding>
         </dial>
 
-<!--         NAV 1          -->
+        <!--         NAV 1          -->
 
         <text>
             <row>3</row>
@@ -517,7 +517,7 @@
             <binding>
                 <command>dialog-update</command>
             </binding>
-             <binding>
+            <binding>
                 <command>nasal</command>
                 <script>b777.Efis.set_radio_mode(2)</script>
             </binding>
@@ -564,7 +564,7 @@
             </binding>
         </input>
 
-<!--         NAV 2          -->
+        <!--         NAV 2          -->
 
         <text>
             <row>4</row>
@@ -600,7 +600,7 @@
             <binding>
                 <command>dialog-update</command>
             </binding>
-             <binding>
+            <binding>
                 <command>nasal</command>
                 <script>b777.Efis.set_radio_mode(3)</script>
             </binding>
@@ -647,7 +647,7 @@
             </binding>
         </input>
 
-<!--         ADF 1          -->
+        <!--         ADF 1          -->
 
         <text>
             <row>5</row>
@@ -718,7 +718,7 @@
             </binding>
         </checkbox>
 
-<!--         ADF 2          -->
+        <!--         ADF 2          -->
 
         <text>
             <row>6</row>
@@ -789,7 +789,7 @@
             </binding>
         </checkbox>
 
-<!--         Transponder (with SquawkGear/VATSIM)     -->
+        <!--         Transponder (with SquawkGear/VATSIM)     -->
         <text>
             <row>7</row>
             <col>0</col>
@@ -839,16 +839,15 @@
 
     </group>
 
-    <hrule/>
+    <hrule />
 
-  <button>
-    <legend>ATC Services in range</legend>
-    <binding>
-      <command>ATC-freq-search</command>
-    </binding>
-  </button>
+    <button>
+        <legend>ATC Services in range</legend>
+        <binding>
+            <command>ATC-freq-search</command>
+        </binding>
+    </button>
 
-    <group>
-    </group>
+    <group></group>
 
 </PropertyList>

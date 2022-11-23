@@ -60,7 +60,7 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
     </effect>
 -->
 
-<!-- New LightMap according to new Graphic addition -->
+    <!-- New LightMap according to new Graphic addition -->
 
     <animation>
         <type>material</type>
@@ -97,10 +97,10 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
                 <property>/sim/time/sun-angle-rad</property>
                 <value>1.70</value>
             </greater-than>
-             <greater-than>
+            <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+            </greater-than>
         </condition>
         <emission>
             <red>0.5</red>
@@ -109,7 +109,7 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
             <factor-prop>controls/lighting/panel-flood-intencity</factor-prop>
         </emission>
     </animation>
-<!-- END of New LightMap -->
+    <!-- END of New LightMap -->
 
 
     <model>
@@ -266,7 +266,7 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
         </offsets>
     </model>
 
-<!--  controls -->
+    <!--  controls -->
 
     <animation>
         <type>rotate</type>
@@ -349,7 +349,9 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
         <object-name>LHThrottle</object-name>
         <object-name>LHRevThrust.lever</object-name>
         <condition>
-            <not><property>controls/engines/engine/reverser-act</property></not>
+            <not>
+                <property>controls/engines/engine/reverser-act</property>
+            </not>
         </condition>
         <property>controls/engines/engine/throttle-lever</property>
         <factor>42.4</factor>
@@ -370,7 +372,9 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
         <object-name>RHThrottle</object-name>
         <object-name>RHRevThrust.lever</object-name>
         <condition>
-            <not><property>controls/engines/engine[1]/reverser-act</property></not>
+            <not>
+                <property>controls/engines/engine[1]/reverser-act</property>
+            </not>
         </condition>
         <property>controls/engines/engine[1]/throttle-lever</property>
         <factor>42.40</factor>
@@ -437,9 +441,18 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
         <object-name>SpdBrkLever</object-name>
         <property>controls/flight/speedbrake-lever</property>
         <interpolation>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>1</ind><dep>10.0</dep></entry>
-            <entry><ind>2</ind><dep>50.0</dep></entry>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>10.0</dep>
+            </entry>
+            <entry>
+                <ind>2</ind>
+                <dep>50.0</dep>
+            </entry>
         </interpolation>
         <center>
             <x-m>-0.1402</x-m>
@@ -530,11 +543,11 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
         </axis>
     </animation>
 
-<!-- OSG hotspots -->
+    <!-- OSG hotspots -->
 
-<animation>
+    <animation>
         <type>pick</type>
-       <object-name>Rudder.trim</object-name>
+        <object-name>Rudder.trim</object-name>
         <action>
             <button>0</button>
             <button>3</button>
@@ -542,7 +555,7 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
             <interval-sec>0.1</interval-sec>
             <binding>
                 <command>property-adjust</command>
-                 <property>controls/flight/rudder-trim</property>
+                <property>controls/flight/rudder-trim</property>
                 <step>0.01</step>
                 <min>-1.0</min>
                 <max>1</max>
@@ -559,7 +572,7 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
 
     <animation>
         <type>pick</type>
-       <object-name>Rudder.trim</object-name>
+        <object-name>Rudder.trim</object-name>
         <action>
             <button>1</button>
             <button>4</button>
@@ -567,7 +580,7 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
             <interval-sec>0.1</interval-sec>
             <binding>
                 <command>property-adjust</command>
-                 <property>controls/flight/rudder-trim</property>
+                <property>controls/flight/rudder-trim</property>
                 <step>-0.01</step>
                 <min>-1.0</min>
                 <max>1.0</max>
@@ -588,8 +601,8 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
         <action>
             <button>0</button>
             <binding>
-            <command>property-toggle</command>
-            <property>controls/gear/brake-parking</property>
+                <command>property-toggle</command>
+                <property>controls/gear/brake-parking</property>
             </binding>
         </action>
     </animation>
@@ -708,8 +721,14 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
         <object-name>StabTrim_R_Mark</object-name>
         <property>fcs/stabilizer/final-deg-ind</property>
         <interpolation>
-            <entry><ind>0</ind><dep>-0.0340</dep></entry>
-            <entry><ind>15</ind><dep>0.0396</dep></entry>
+            <entry>
+                <ind>0</ind>
+                <dep>-0.0340</dep>
+            </entry>
+            <entry>
+                <ind>15</ind>
+                <dep>0.0396</dep>
+            </entry>
         </interpolation>
         <axis>
             <x>1</x>
@@ -1053,7 +1072,7 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
             <y>1</y>
             <z>0</z>
         </axis>
-        </animation>
+    </animation>
 
     <animation>
         <type>pick</type>
@@ -1099,7 +1118,7 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-            <property>controls/switches/afa_switch_cover</property>
+                <property>controls/switches/afa_switch_cover</property>
             </binding>
             <binding>
                 <command>nasal</command>

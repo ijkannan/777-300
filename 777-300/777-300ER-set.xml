@@ -32,12 +32,12 @@
             </ramp>
             <map>
                 <default_exit>
-                    <x-offset-m type ="float">-25</x-offset-m>
-                    <y-offset-m type ="float">-13</y-offset-m>
+                    <x-offset-m type="float">-25</x-offset-m>
+                    <y-offset-m type="float">-13</y-offset-m>
                 </default_exit>
             </map>
         </model>
-        
+
         <view n="0">
             <config n="0">
                 <z-offset-m type="double">-28.0781</z-offset-m>
@@ -60,57 +60,57 @@
         </view>
         <view n="103">
             <config n="0">
-            <z-offset-m type="double">-12.347988889</z-offset-m>
+                <z-offset-m type="double">-12.347988889</z-offset-m>
             </config>
         </view>
         <view n="104">
             <config n="0">
-            <z-offset-m type="double">-26.7381</z-offset-m>
+                <z-offset-m type="double">-26.7381</z-offset-m>
             </config>
         </view>
         <view n="105">
             <config n="0">
-            <z-offset-m type="double">-26.90185</z-offset-m>
+                <z-offset-m type="double">-26.90185</z-offset-m>
             </config>
         </view>
         <view n="106">
             <config n="0">
-            <z-offset-m type="double">-26.9781</z-offset-m>
+                <z-offset-m type="double">-26.9781</z-offset-m>
             </config>
         </view>
         <view n="107">
             <config n="0">
-            <z-offset-m type="double">-27.55035</z-offset-m>
+                <z-offset-m type="double">-27.55035</z-offset-m>
             </config>
         </view>
         <view n="108">
             <config n="0">
-            <z-offset-m type="double">-27.55035</z-offset-m>
+                <z-offset-m type="double">-27.55035</z-offset-m>
             </config>
         </view>
         <view n="111">
             <config n="0">
-            <z-offset-m type="double">40</z-offset-m>
+                <z-offset-m type="double">40</z-offset-m>
             </config>
         </view>
         <view n="112">
             <config n="0">
-            <z-offset-m type="double">-27.8658777</z-offset-m>
+                <z-offset-m type="double">-27.8658777</z-offset-m>
             </config>
         </view>
         <view n="113">
             <config n="0">
-            <z-offset-m type="double">-27.8658777</z-offset-m>
+                <z-offset-m type="double">-27.8658777</z-offset-m>
             </config>
         </view>
         <view n="114">
             <config n="0">
-            <z-offset-m type="double">-27.54935</z-offset-m>
+                <z-offset-m type="double">-27.54935</z-offset-m>
             </config>
         </view>
         <view n="115">
             <config n="0">
-            <z-offset-m type="double">-27.54935</z-offset-m>
+                <z-offset-m type="double">-27.54935</z-offset-m>
             </config>
         </view>
 
@@ -131,12 +131,12 @@
         </menubar>
 
         <tutorials>
-            <tutorial include="Tutorials/300/777-cockpit-overview.xml"/>
-            <tutorial include="Tutorials/300/777-cockpit-pfd.xml"/>
-            <tutorial include="Tutorials/300/777-cockpit-autopilot.xml"/>
-            <tutorial include="Tutorials/300/777-preflight.xml"/>
-            <tutorial include="Tutorials/300/777-pushback-startup.xml"/>
-            <tutorial include="Tutorials/300/777-takeoff.xml"/>
+            <tutorial include="Tutorials/300/777-cockpit-overview.xml" />
+            <tutorial include="Tutorials/300/777-cockpit-pfd.xml" />
+            <tutorial include="Tutorials/300/777-cockpit-autopilot.xml" />
+            <tutorial include="Tutorials/300/777-preflight.xml" />
+            <tutorial include="Tutorials/300/777-pushback-startup.xml" />
+            <tutorial include="Tutorials/300/777-takeoff.xml" />
             <!-- <tutorial include="Tutorials/300/777-approach-landing.xml"/> -->
         </tutorials>
 
@@ -197,24 +197,24 @@
             <descent-profile-low-rate type="double">-0.00026738</descent-profile-low-rate>
         </constant>
     </autopilot>
-    
+
     <aircraft>
-     <jetway-pos>
-      <x-tra>-1.8</x-tra>
-      <y-rot>3.3</y-rot>
-      <z-rot>18.3</z-rot>
-      <hood-rot>-6</hood-rot>
-      <!--z-entrance-rotation>26</z-entrance-rotation-->
-     </jetway-pos>
-     <jetway2-pos>
-      <x-tra>2.8</x-tra>
-      <y-rot>8.0</y-rot>
-      <z-rot>48</z-rot>
-      <hood-rot>-5</hood-rot>
-      <!--z-entrance-rotation>49</z-entrance-rotation-->
-     </jetway2-pos>
+        <jetway-pos>
+            <x-tra>-1.8</x-tra>
+            <y-rot>3.3</y-rot>
+            <z-rot>18.3</z-rot>
+            <hood-rot>-6</hood-rot>
+            <!--z-entrance-rotation>26</z-entrance-rotation-->
+        </jetway-pos>
+        <jetway2-pos>
+            <x-tra>2.8</x-tra>
+            <y-rot>8.0</y-rot>
+            <z-rot>48</z-rot>
+            <hood-rot>-5</hood-rot>
+            <!--z-entrance-rotation>49</z-entrance-rotation-->
+        </jetway2-pos>
     </aircraft>
-    
+
     <services>
         <payload>
             <first-max-nr>22</first-max-nr>
@@ -226,32 +226,32 @@
             <max-trolley-nr type="double">95</max-trolley-nr>
         </catering>
     </services>
-    
+
     <yasim>
-        <empty-weight-lbs type = "float">366940</empty-weight-lbs>
-        <zero-fuel-weight-lbs type = "float">366940</zero-fuel-weight-lbs>
+        <empty-weight-lbs type="float">366940</empty-weight-lbs>
+        <zero-fuel-weight-lbs type="float">366940</zero-fuel-weight-lbs>
     </yasim>
 
-<systems>
-  <wingflexer include="Systems/wingflexer-params.xml"/>
-  <property-rule n="100">
-    <name>wing flexer property rule</name>
-    <path>Aircraft/Systems/wingflexer-params.xml</path>
-  </property-rule>
-</systems>
+    <systems>
+        <wingflexer include="Systems/wingflexer-params.xml" />
+        <property-rule n="100">
+            <name>wing flexer property rule</name>
+            <path>Aircraft/Systems/wingflexer-params.xml</path>
+        </property-rule>
+    </systems>
 
-<expression>
-                <product>
-                    <property>fdm/yasim/forces/f-z-lift</property>
-                    <value>-0.224809</value><!-- invert and convert from Newton to LBF -->
-                </product>
-</expression>
+    <expression>
+        <product>
+            <property>fdm/yasim/forces/f-z-lift</property>
+            <value>-0.224809</value> <!-- invert and convert from Newton to LBF -->
+        </product>
+    </expression>
 
-<animation>
-  <type>rotate</type>
-  <property>sim/systems/wingflexer/z-m</property>
-  <factor>10</factor>
-  <!-- ... -->
-</animation>
+    <animation>
+        <type>rotate</type>
+        <property>sim/systems/wingflexer/z-m</property>
+        <factor>10</factor>
+        <!-- ... -->
+    </animation>
 
 </PropertyList>

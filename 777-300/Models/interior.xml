@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
 <PropertyList>
-	
-	<!--model>
+
+    <!--model>
         <path>Aircraft/777-300/Models/KLMinterior.xml</path>
 		<offsets>
             <x-m>0</x-m>
@@ -17,5 +17,5 @@
     </condition>
 	</model-->
 
-	
+
 </PropertyList>

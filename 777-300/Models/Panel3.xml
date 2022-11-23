@@ -24,10 +24,10 @@
                 <property>/sim/time/sun-angle-rad</property>
                 <value>1.70</value>
             </greater-than>
-             <greater-than>
+            <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+            </greater-than>
         </condition>
         <emission>
             <red>0.5</red>
@@ -75,8 +75,8 @@
             <height type="int">64</height>
         </font-resolution>
     </text>
-     <text>
-         <name>ShipIDR</name>
+    <text>
+        <name>ShipIDR</name>
         <offsets>
             <x-m>0.003</x-m>
             <y-m>0.816</y-m>
@@ -113,14 +113,14 @@
             <height type="int">64</height>
         </font-resolution>
     </text>
-	
-     <animation>
-        <type>material</type><!--white-->
+
+    <animation>
+        <type>material</type> <!--white-->
         <object-name>ShipIDL</object-name>
         <object-name>ShipIDR</object-name>
         <object-name>CompanyIDL</object-name>
         <object-name>CompanyIDR</object-name>
-       <emission>
+        <emission>
             <red>0.1</red>
             <green>0.1</green>
             <blue>0.1</blue>
@@ -181,7 +181,7 @@
         <object-name>HDGREF_Switch</object-name>
         <object-name>HDGREF_AcryFace</object-name>
         <condition>
-                <property>systems/navigation/hdgref/cover</property>
+            <property>systems/navigation/hdgref/cover</property>
         </condition>
         <action>
             <button>0</button>

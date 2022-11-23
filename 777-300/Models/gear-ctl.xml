@@ -11,14 +11,14 @@
         <type>material</type>
         <object-name>Lettering_Gear</object-name>
         <condition>
-            <greater-than>   
+            <greater-than>
                 <property>/sim/time/sun-angle-rad</property>
                 <value>1.70</value>
             </greater-than>
-             <greater-than>
+            <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+            </greater-than>
         </condition>
         <emission>
             <red>0.5</red>
@@ -113,25 +113,25 @@
         </condition>
     </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>FLAP_OVRD_AcryFace</object-name>
-   <object-name>FLAP_OVRD_Switch</object-name>
-   <object-name>FLAP_OVRD_Shutter.Top</object-name>
-   <object-name>FLAP_OVRD_Shutter.Bottom</object-name>
-    <property>controls/switches/gpws/flap_ovrd_switch</property>
-   <factor>0.004</factor>
-   <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>FLAP_OVRD_AcryFace</object-name>
+        <object-name>FLAP_OVRD_Switch</object-name>
+        <object-name>FLAP_OVRD_Shutter.Top</object-name>
+        <object-name>FLAP_OVRD_Shutter.Bottom</object-name>
+        <property>controls/switches/gpws/flap_ovrd_switch</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>FLAP_OVRD_Shutter.Top</object-name>
-   <property>controls/switches/FOVRDSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>FLAP_OVRD_Shutter.Top</object-name>
+        <property>controls/switches/FOVRDSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0097</x-m>
@@ -143,12 +143,12 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>FLAP_OVRD_Shutter.Bottom</object-name>
-   <property>controls/switches/FOVRDSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>FLAP_OVRD_Shutter.Bottom</object-name>
+        <property>controls/switches/FOVRDSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0097</x-m>
@@ -160,27 +160,27 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
- 
- <animation>
-   <type>translate</type>
-   <object-name>GEAR_OVRD_AcryFace</object-name>
-   <object-name>GEAR_OVRD_Switch</object-name>
-   <object-name>GEAR_OVRD_Shutter.Top</object-name>
-   <object-name>GEAR_OVRD_Shutter.Bottom</object-name>
-    <property>controls/switches/gpws/gear_ovrd_switch</property>
-   <factor>0.004</factor>
-   <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-   </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>GEAR_OVRD_Shutter.Top</object-name>
-   <property>controls/switches/GOVRDSwitchTimer/position-norm</property>
+    <animation>
+        <type>translate</type>
+        <object-name>GEAR_OVRD_AcryFace</object-name>
+        <object-name>GEAR_OVRD_Switch</object-name>
+        <object-name>GEAR_OVRD_Shutter.Top</object-name>
+        <object-name>GEAR_OVRD_Shutter.Bottom</object-name>
+        <property>controls/switches/gpws/gear_ovrd_switch</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>GEAR_OVRD_Shutter.Top</object-name>
+        <property>controls/switches/GOVRDSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0097</x-m>
@@ -192,12 +192,12 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>GEAR_OVRD_Shutter.Bottom</object-name>
-   <property>controls/switches/GOVRDSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>GEAR_OVRD_Shutter.Bottom</object-name>
+        <property>controls/switches/GOVRDSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0097</x-m>
@@ -209,27 +209,27 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
- 
- <animation>
-   <type>translate</type>
-   <object-name>TERRAIN_OVRD_AcryFace</object-name>
-   <object-name>TERRAIN_OVRD_Switch</object-name>
-   <object-name>TERRAIN_OVRD_Shutter.Top</object-name>
-   <object-name>TERRAIN_OVRD_Shutter.Bottom</object-name>
-    <property>controls/switches/gpws/terrain_ovrd_switch</property>
-   <factor>0.004</factor>
-   <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-   </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>TERRAIN_OVRD_Shutter.Top</object-name>
-   <property>controls/switches/TOVRDSwitchTimer/position-norm</property>
+    <animation>
+        <type>translate</type>
+        <object-name>TERRAIN_OVRD_AcryFace</object-name>
+        <object-name>TERRAIN_OVRD_Switch</object-name>
+        <object-name>TERRAIN_OVRD_Shutter.Top</object-name>
+        <object-name>TERRAIN_OVRD_Shutter.Bottom</object-name>
+        <property>controls/switches/gpws/terrain_ovrd_switch</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>TERRAIN_OVRD_Shutter.Top</object-name>
+        <property>controls/switches/TOVRDSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0097</x-m>
@@ -241,12 +241,12 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>TERRAIN_OVRD_Shutter.Bottom</object-name>
-   <property>controls/switches/TOVRDSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>TERRAIN_OVRD_Shutter.Bottom</object-name>
+        <property>controls/switches/TOVRDSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0097</x-m>
@@ -258,8 +258,8 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
- 
+    </animation>
+
     <animation>
         <type>rotate</type>
         <object-name>BlockAltGr_Cover</object-name>
@@ -276,7 +276,7 @@
             <z>0</z>
         </axis>
     </animation>
-   <animation>
+    <animation>
         <type>rotate</type>
         <object-name>FLAP_OVRD_TranspCover</object-name>
         <property>controls/gear/FLAP_OVRD_TranspCover</property>
@@ -326,7 +326,7 @@
     </animation>
 
 
-<!-- OSG hotspots -->
+    <!-- OSG hotspots -->
 
     <!-- G/S INHIBIT button -->
     <animation>
@@ -346,12 +346,12 @@
                 </script>
             </binding>
             <mod-up>
-              <binding>
-                <command>nasal</command>
-                <script>
+                <binding>
+                    <command>nasal</command>
+                    <script>
                   b777.Gpws.release_selftest_button();
                 </script>
-              </binding>
+                </binding>
             </mod-up>
         </action>
     </animation>
@@ -557,7 +557,7 @@
                 <script>
                 controls.click(7);
             </script>
-            </binding>			
+            </binding>
         </action>
     </animation>
     <animation>
@@ -576,7 +576,7 @@
                 <script>
                 controls.click(2);
             </script>
-            </binding>			
+            </binding>
         </action>
     </animation>
     <animation>
@@ -595,7 +595,7 @@
                 <script>
                 controls.click(2);
             </script>
-            </binding>			
+            </binding>
         </action>
     </animation>
     <animation>
@@ -614,7 +614,7 @@
                 <script>
                 controls.click(2);
             </script>
-            </binding>			
+            </binding>
         </action>
     </animation>
 

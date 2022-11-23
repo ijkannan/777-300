@@ -3,7 +3,7 @@
 -->
 
 <PropertyList>
- 
+
     <path>L_MidSidePanel_Base.ac</path>
 
     <effect>
@@ -19,10 +19,10 @@
                 <property>/sim/time/sun-angle-rad</property>
                 <value>1.70</value>
             </greater-than>
-             <greater-than>
+            <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+            </greater-than>
         </condition>
         <emission>
             <red>0.5</red>
@@ -32,25 +32,25 @@
         </emission>
     </animation>
 
- <animation>
-   <type>translate</type>
-   <object-name>L_NAV_AcryFace</object-name>
-   <object-name>L_NAV_Switch</object-name>
-   <object-name>L_NAV_Shutter.Top</object-name>
-   <object-name>L_NAV_Shutter.Bottom</object-name>
-    <property>controls/switches/l_nav_switch</property>
-   <factor>0.004</factor>
-   <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-   </axis>
- </animation>
+    <animation>
+        <type>translate</type>
+        <object-name>L_NAV_AcryFace</object-name>
+        <object-name>L_NAV_Switch</object-name>
+        <object-name>L_NAV_Shutter.Top</object-name>
+        <object-name>L_NAV_Shutter.Bottom</object-name>
+        <property>controls/switches/l_nav_switch</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>L_NAV_Shutter.Top</object-name>
-   <property>controls/switches/LNAVSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>L_NAV_Shutter.Top</object-name>
+        <property>controls/switches/LNAVSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0123</x-m>
@@ -62,12 +62,12 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>L_NAV_Shutter.Bottom</object-name>
-   <property>controls/switches/LNAVSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>L_NAV_Shutter.Bottom</object-name>
+        <property>controls/switches/LNAVSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0123</x-m>
@@ -79,27 +79,27 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
- 
- <animation>
-   <type>translate</type>
-   <object-name>L_DISPL_AcryFace</object-name>
-   <object-name>L_DISPL_Switch</object-name>
-   <object-name>L_DISPL_Shutter.Top</object-name>
-   <object-name>L_DISPL_Shutter.Bottom</object-name>
-    <property>controls/switches/l_dspl_switch</property>
-   <factor>0.004</factor>
-   <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-   </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>L_DISPL_Shutter.Top</object-name>
-   <property>controls/switches/LDSPLSwitchTimer/position-norm</property>
+    <animation>
+        <type>translate</type>
+        <object-name>L_DISPL_AcryFace</object-name>
+        <object-name>L_DISPL_Switch</object-name>
+        <object-name>L_DISPL_Shutter.Top</object-name>
+        <object-name>L_DISPL_Shutter.Bottom</object-name>
+        <property>controls/switches/l_dspl_switch</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L_DISPL_Shutter.Top</object-name>
+        <property>controls/switches/LDSPLSwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0123</x-m>
@@ -111,12 +111,12 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>L_DISPL_Shutter.Bottom</object-name>
-   <property>controls/switches/LDSPLSwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>L_DISPL_Shutter.Bottom</object-name>
+        <property>controls/switches/LDSPLSwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0123</x-m>
@@ -128,27 +128,27 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
- 
- <animation>
-   <type>translate</type>
-   <object-name>L_AIRDATA_AcryFace</object-name>
-   <object-name>L_AIRDATA_Switch</object-name>
-   <object-name>L_AIRDATA_Shutter.Top</object-name>
-   <object-name>L_AIRDATA_Shutter.Bottom</object-name>
-    <property>controls/switches/l_airdata_switch</property>
-   <factor>0.004</factor>
-   <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-   </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>L_AIRDATA_Shutter.Top</object-name>
-   <property>controls/switches/LAIRDATASwitchTimer/position-norm</property>
+    <animation>
+        <type>translate</type>
+        <object-name>L_AIRDATA_AcryFace</object-name>
+        <object-name>L_AIRDATA_Switch</object-name>
+        <object-name>L_AIRDATA_Shutter.Top</object-name>
+        <object-name>L_AIRDATA_Shutter.Bottom</object-name>
+        <property>controls/switches/l_airdata_switch</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L_AIRDATA_Shutter.Top</object-name>
+        <property>controls/switches/LAIRDATASwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
             <x-m>0.0123</x-m>
@@ -160,12 +160,12 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
+    </animation>
 
- <animation>
-   <type>rotate</type>
-   <object-name>L_AIRDATA_Shutter.Bottom</object-name>
-   <property>controls/switches/LAIRDATASwitchTimer/position-norm</property>
+    <animation>
+        <type>rotate</type>
+        <object-name>L_AIRDATA_Shutter.Bottom</object-name>
+        <property>controls/switches/LAIRDATASwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
             <x-m>0.0123</x-m>
@@ -177,8 +177,8 @@
             <y>1</y>
             <z>0</z>
         </axis>
- </animation>
- 
+    </animation>
+
     <!-- LEFT NAV source switch -->
     <animation>
         <type>pick</type>
@@ -221,5 +221,5 @@
         </action>
     </animation>
 
-    
+
 </PropertyList>
