@@ -1,7 +1,7 @@
 # Boeing 777-300ER
 
 I hope this makes the 777 model a bit more realistic, we will further try and remodel the 777 according to your pull requests
-thank you !
+thank you!
 
 ![FlightGear 19_11_2022 6_39_39 PM](https://user-images.githubusercontent.com/103198166/202856375-cf2881bf-3f4f-44bd-97fe-305dd6e8081e.png)
 
@@ -20,7 +20,7 @@ thank you !
 ## Changelog
 
 - Changed the engine fan blades working innner slats and flight deck color, fan doesnt dissappear on higher throttles
-- I used the A350 resources from FG  in the 777-300 and 777-300ER. A very big thanks to the devs of the A350
+- I used the A350 resources from FG in the 777-300 and 777-300ER. A very big thanks to the devs of the A350
 - Remodeled the engine cowling and reverse thrust from scratch
 - Made changes to cockpit dashboard and color corrections
 - Made progress for realistic spoiler speed brakes
