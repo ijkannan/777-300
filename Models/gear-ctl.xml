@@ -135,7 +135,7 @@
         <factor>-92</factor>
         <center>
             <x-m>0.0097</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.098</z-m>
         </center>
         <axis>
@@ -152,7 +152,7 @@
         <factor>92</factor>
         <center>
             <x-m>0.0097</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.098</z-m>
         </center>
         <axis>
@@ -184,7 +184,7 @@
         <factor>-92</factor>
         <center>
             <x-m>0.0097</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.098</z-m>
         </center>
         <axis>
@@ -201,7 +201,7 @@
         <factor>92</factor>
         <center>
             <x-m>0.0097</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.098</z-m>
         </center>
         <axis>
@@ -233,7 +233,7 @@
         <factor>-92</factor>
         <center>
             <x-m>0.0097</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.045</z-m>
         </center>
         <axis>
@@ -250,7 +250,7 @@
         <factor>92</factor>
         <center>
             <x-m>0.0097</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.045</z-m>
         </center>
         <axis>

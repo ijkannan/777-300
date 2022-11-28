@@ -185,7 +185,7 @@ Syd Adams
         <offsets>
             <x-m>0.003</x-m>
             <y-m>-0.048</y-m>
-            <z-m>0</z-m>
+            
         </offsets>
         <alignment>center-center</alignment>
         <axis-alignment>yz-plane</axis-alignment>
@@ -205,7 +205,7 @@ Syd Adams
         <offsets>
             <x-m>0.003</x-m>
             <y-m>-0.083</y-m>
-            <z-m>0</z-m>
+            
         </offsets>
         <alignment>center-center</alignment>
         <axis-alignment>yz-plane</axis-alignment>
@@ -226,7 +226,7 @@ Syd Adams
         <offsets>
             <x-m>0.003</x-m>
             <y-m>-0.018</y-m>
-            <z-m>0</z-m>
+            
         </offsets>
         <alignment>center-center</alignment>
         <axis-alignment>yz-plane</axis-alignment>

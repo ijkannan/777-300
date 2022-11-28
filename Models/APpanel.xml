@@ -166,7 +166,7 @@ Autopilot Control Panel
         <property>instrumentation/afds/inputs/FD</property>
         <factor>-30.0</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>-0.207</y-m>
             <z-m>-0.020</z-m>
         </center>
@@ -183,7 +183,7 @@ Autopilot Control Panel
         <property>instrumentation/afds/inputs/at-armed</property>
         <factor>-30.0</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>-0.179</y-m>
             <z-m>0.025</z-m>
         </center>
@@ -200,7 +200,7 @@ Autopilot Control Panel
         <property>instrumentation/afds/inputs/at-armed[1]</property>
         <factor>-30.0</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>-0.179</y-m>
             <z-m>0.025</z-m>
         </center>

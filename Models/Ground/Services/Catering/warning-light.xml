@@ -18,9 +18,9 @@
 		<property>sim/time/elapsed-sec</property>
 		<factor>-270.0</factor>
 		<center>
-			<x-m>0</x-m>
-			<y-m>0</y-m>
-			<z-m>0</z-m>
+			
+			
+			
 		</center>
 		<axis>
 			<x>0</x>

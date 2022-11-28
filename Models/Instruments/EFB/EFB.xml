@@ -702,7 +702,7 @@ APR 2014
 		<name>text</name>
 		<offsets>
 			<x-m>-0.085</x-m>
-			<y-m>0</y-m>
+			
 			<z-m>-0.001</z-m>
 			<heading-deg>90</heading-deg>
 			<roll-deg>90</roll-deg>
@@ -728,7 +728,7 @@ APR 2014
 		<name>text</name>
 		<offsets>
 			<x-m>0.089</x-m>
-			<y-m>0</y-m>
+			
 			<z-m>-0.001</z-m>
 			<heading-deg>90</heading-deg>
 			<roll-deg>90</roll-deg>

@@ -12,9 +12,9 @@ Syd Adams
         <property>engines/engine[0]/n1-limit</property>
         <factor>2.085</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>-0.022</y-m>
-            <z-m>0</z-m>
+            
         </center>
         <axis>
             <x>-1</x>
@@ -29,9 +29,9 @@ Syd Adams
         <property>engines/engine[1]/n1-limit</property>
         <factor>2.085</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>0.022</y-m>
-            <z-m>0</z-m>
+            
         </center>
         <axis>
             <x>-1</x>
@@ -46,9 +46,9 @@ Syd Adams
         <property>engines/engine[0]/rpm</property>
         <factor>2.085</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>-0.022</y-m>
-            <z-m>0</z-m>
+            
         </center>
         <axis>
             <x>-1</x>
@@ -63,9 +63,9 @@ Syd Adams
         <property>engines/engine[0]/rpm</property>
         <factor>1.33</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>-0.022</y-m>
-            <z-m>0</z-m>
+            
         </center>
         <axis>
             <x>-1</x>
@@ -80,9 +80,9 @@ Syd Adams
         <property>engines/engine[0]/rpm</property>
         <factor>0.66</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>-0.022</y-m>
-            <z-m>0</z-m>
+            
         </center>
         <axis>
             <x>-1</x>
@@ -97,9 +97,9 @@ Syd Adams
         <property>engines/engine[1]/rpm</property>
         <factor>2.085</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>0.022</y-m>
-            <z-m>0</z-m>
+            
         </center>
         <axis>
             <x>-1</x>
@@ -114,9 +114,9 @@ Syd Adams
         <property>engines/engine[1]/rpm</property>
         <factor>1.33</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>0.022</y-m>
-            <z-m>0</z-m>
+            
         </center>
         <axis>
             <x>-1</x>
@@ -131,9 +131,9 @@ Syd Adams
         <property>engines/engine[1]/rpm</property>
         <factor>0.66</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>0.022</y-m>
-            <z-m>0</z-m>
+            
         </center>
         <axis>
             <x>-1</x>

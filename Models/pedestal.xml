@@ -759,7 +759,7 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
         <factor>-92</factor>
         <center>
             <x-m>-0.091</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.440</z-m>
         </center>
         <axis>
@@ -1064,7 +1064,7 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
         <factor>92</factor>
         <center>
             <x-m>-0.091</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.440</z-m>
         </center>
         <axis>
