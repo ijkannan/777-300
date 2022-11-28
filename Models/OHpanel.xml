@@ -216,7 +216,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.232</z-m>
         </center>
         <axis>
@@ -233,7 +233,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.232</z-m>
         </center>
         <axis>
@@ -277,7 +277,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.232</z-m>
         </center>
         <axis>
@@ -294,7 +294,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.232</z-m>
         </center>
         <axis>
@@ -338,7 +338,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.027</z-m>
         </center>
         <axis>
@@ -355,7 +355,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.027</z-m>
         </center>
         <axis>
@@ -399,7 +399,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.027</z-m>
         </center>
         <axis>
@@ -416,7 +416,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.027</z-m>
         </center>
         <axis>
@@ -460,7 +460,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -477,7 +477,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -521,7 +521,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -538,7 +538,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -582,7 +582,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.077</z-m>
         </center>
         <axis>
@@ -599,7 +599,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.077</z-m>
         </center>
         <axis>
@@ -643,7 +643,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.077</z-m>
         </center>
         <axis>
@@ -660,7 +660,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.077</z-m>
         </center>
         <axis>
@@ -704,7 +704,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.077</z-m>
         </center>
         <axis>
@@ -721,7 +721,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.077</z-m>
         </center>
         <axis>
@@ -765,7 +765,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.138</z-m>
         </center>
         <axis>
@@ -782,7 +782,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.138</z-m>
         </center>
         <axis>
@@ -826,7 +826,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.138</z-m>
         </center>
         <axis>
@@ -843,7 +843,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.138</z-m>
         </center>
         <axis>
@@ -887,7 +887,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.138</z-m>
         </center>
         <axis>
@@ -904,7 +904,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.138</z-m>
         </center>
         <axis>
@@ -1008,7 +1008,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.229</z-m>
         </center>
         <axis>
@@ -1025,7 +1025,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.229</z-m>
         </center>
         <axis>
@@ -1069,7 +1069,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.229</z-m>
         </center>
         <axis>
@@ -1086,7 +1086,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.229</z-m>
         </center>
         <axis>
@@ -1103,7 +1103,7 @@ Syd Adams
         <factor>-90</factor>
         <center>
             <x-m>0.015</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.191</z-m>
         </center>
         <axis>
@@ -1147,7 +1147,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.016</z-m>
         </center>
         <axis>
@@ -1164,7 +1164,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.016</z-m>
         </center>
         <axis>
@@ -1181,7 +1181,7 @@ Syd Adams
         <factor>-90</factor>
         <center>
             <x-m>0.015</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.114</z-m>
         </center>
         <axis>
@@ -1225,7 +1225,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.110</z-m>
         </center>
         <axis>
@@ -1242,7 +1242,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.110</z-m>
         </center>
         <axis>
@@ -1259,7 +1259,7 @@ Syd Adams
         <factor>-90</factor>
         <center>
             <x-m>0.015</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.114</z-m>
         </center>
         <axis>
@@ -1303,7 +1303,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.110</z-m>
         </center>
         <axis>
@@ -1320,7 +1320,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.110</z-m>
         </center>
         <axis>
@@ -1364,7 +1364,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.031</z-m>
         </center>
         <axis>
@@ -1381,7 +1381,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.031</z-m>
         </center>
         <axis>
@@ -1425,7 +1425,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.113</z-m>
         </center>
         <axis>
@@ -1442,7 +1442,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.113</z-m>
         </center>
         <axis>
@@ -1486,7 +1486,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.149</z-m>
         </center>
         <axis>
@@ -1503,7 +1503,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.149</z-m>
         </center>
         <axis>
@@ -1535,7 +1535,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.149</z-m>
         </center>
         <axis>
@@ -1552,7 +1552,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.149</z-m>
         </center>
         <axis>
@@ -1584,7 +1584,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.123</z-m>
         </center>
         <axis>
@@ -1601,7 +1601,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.123</z-m>
         </center>
         <axis>
@@ -1633,7 +1633,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.123</z-m>
         </center>
         <axis>
@@ -1650,7 +1650,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.123</z-m>
         </center>
         <axis>
@@ -2024,7 +2024,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -2041,7 +2041,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -2085,7 +2085,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -2102,7 +2102,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -2146,7 +2146,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -2163,7 +2163,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -2207,7 +2207,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -2224,7 +2224,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.015</z-m>
         </center>
         <axis>
@@ -2353,7 +2353,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.084</z-m>
         </center>
         <axis>
@@ -2370,7 +2370,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.084</z-m>
         </center>
         <axis>
@@ -2431,7 +2431,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.084</z-m>
         </center>
         <axis>
@@ -2448,7 +2448,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.084</z-m>
         </center>
         <axis>
@@ -2776,7 +2776,7 @@ Syd Adams
         <property>controls/engines/StartIgnition-knob[0]</property>
         <factor>45</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>0.04987</y-m>
             <z-m>0.02888</z-m>
         </center>
@@ -2793,7 +2793,7 @@ Syd Adams
         <property>controls/engines/StartIgnition-knob[1]</property>
         <factor>45</factor>
         <center>
-            <x-m>0</x-m>
+            
             <y-m>0.16740</y-m>
             <z-m>0.02888</z-m>
         </center>
@@ -2850,7 +2850,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.084</z-m>
         </center>
         <axis>
@@ -2867,7 +2867,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.084</z-m>
         </center>
         <axis>
@@ -3562,7 +3562,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.451</z-m>
         </center>
         <axis>
@@ -3579,7 +3579,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.451</z-m>
         </center>
         <axis>
@@ -3623,7 +3623,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.168</z-m>
         </center>
         <axis>
@@ -3640,7 +3640,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.168</z-m>
         </center>
         <axis>
@@ -3684,7 +3684,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.164</z-m>
         </center>
         <axis>
@@ -3701,7 +3701,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.164</z-m>
         </center>
         <axis>
@@ -3745,7 +3745,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.164</z-m>
         </center>
         <axis>
@@ -3762,7 +3762,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.164</z-m>
         </center>
         <axis>
@@ -3806,7 +3806,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.168</z-m>
         </center>
         <axis>
@@ -3823,7 +3823,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.168</z-m>
         </center>
         <axis>
@@ -3855,7 +3855,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.451</z-m>
         </center>
         <axis>
@@ -3872,7 +3872,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.451</z-m>
         </center>
         <axis>
@@ -3904,7 +3904,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.451</z-m>
         </center>
         <axis>
@@ -3921,7 +3921,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.451</z-m>
         </center>
         <axis>
@@ -3953,7 +3953,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.451</z-m>
         </center>
         <axis>
@@ -3970,7 +3970,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.451</z-m>
         </center>
         <axis>
@@ -4002,7 +4002,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.451</z-m>
         </center>
         <axis>
@@ -4019,7 +4019,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.451</z-m>
         </center>
         <axis>
@@ -4063,7 +4063,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.083</z-m>
         </center>
         <axis>
@@ -4080,7 +4080,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.083</z-m>
         </center>
         <axis>
@@ -4124,7 +4124,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.239</z-m>
         </center>
         <axis>
@@ -4141,7 +4141,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.239</z-m>
         </center>
         <axis>
@@ -4185,7 +4185,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.239</z-m>
         </center>
         <axis>
@@ -4202,7 +4202,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.239</z-m>
         </center>
         <axis>
@@ -4258,7 +4258,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.251</z-m>
         </center>
         <axis>
@@ -4275,7 +4275,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.251</z-m>
         </center>
         <axis>
@@ -4319,7 +4319,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.251</z-m>
         </center>
         <axis>
@@ -4336,7 +4336,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.251</z-m>
         </center>
         <axis>
@@ -4404,7 +4404,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.110</z-m>
         </center>
         <axis>
@@ -4421,7 +4421,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.110</z-m>
         </center>
         <axis>
@@ -4465,7 +4465,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.153</z-m>
         </center>
         <axis>
@@ -4482,7 +4482,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.153</z-m>
         </center>
         <axis>
@@ -4526,7 +4526,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.153</z-m>
         </center>
         <axis>
@@ -4543,7 +4543,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.153</z-m>
         </center>
         <axis>
@@ -4740,7 +4740,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.177</z-m>
         </center>
         <axis>
@@ -4757,7 +4757,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.177</z-m>
         </center>
         <axis>
@@ -4801,7 +4801,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.200</z-m>
         </center>
         <axis>
@@ -4818,7 +4818,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.200</z-m>
         </center>
         <axis>
@@ -4862,7 +4862,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.283</z-m>
         </center>
         <axis>
@@ -4879,7 +4879,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.283</z-m>
         </center>
         <axis>
@@ -4923,7 +4923,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.283</z-m>
         </center>
         <axis>
@@ -4940,7 +4940,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.283</z-m>
         </center>
         <axis>
@@ -4984,7 +4984,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.177</z-m>
         </center>
         <axis>
@@ -5001,7 +5001,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.177</z-m>
         </center>
         <axis>
@@ -5045,7 +5045,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.200</z-m>
         </center>
         <axis>
@@ -5062,7 +5062,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.200</z-m>
         </center>
         <axis>
@@ -5106,7 +5106,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.167</z-m>
         </center>
         <axis>
@@ -5123,7 +5123,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.167</z-m>
         </center>
         <axis>
@@ -5167,7 +5167,7 @@ Syd Adams
         <factor>-92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.217</z-m>
         </center>
         <axis>
@@ -5184,7 +5184,7 @@ Syd Adams
         <factor>92</factor>
         <center>
             <x-m>0.0134</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.217</z-m>
         </center>
         <axis>

@@ -372,9 +372,9 @@ Syd Adams
         <name>LandingLights</name>
         <path>Aircraft/777-300/Models/Lights/light-coneLR.xml</path>
         <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
+            
+            
+            
         </offsets>
     </model>
 
@@ -383,8 +383,8 @@ Syd Adams
         <path>Aircraft/777-300/Models/Lights/light-coneC.xml</path>
         <offsets>
             <x-m>-5</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
+            
+            
         </offsets>
     </model>
 
@@ -501,7 +501,7 @@ Syd Adams
         <factor>1</factor>
         <center>
             <x-m>35.9653</x-m>
-            <y-m>0</y-m>
+            
             <z-m>2.557</z-m>
         </center>
         <axis>
@@ -536,7 +536,7 @@ Syd Adams
         <factor>-1</factor>
         <center>
             <x-m>36.2293</x-m>
-            <y-m>0</y-m>
+            
             <z-m>1.245</z-m>
         </center>
         <axis>
@@ -943,7 +943,7 @@ Syd Adams
         <factor>37</factor>
         <center>
             <x-m>6.718</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-2.155</z-m>
         </center>
         <axis>
@@ -960,7 +960,7 @@ Syd Adams
         <factor>15</factor>
         <center>
             <x-m>7.670</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-1.203</z-m>
         </center>
         <axis>
@@ -977,7 +977,7 @@ Syd Adams
         <factor>15</factor>
         <center>
             <x-m>10.451</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.380</z-m>
         </center>
         <axis>
@@ -1031,9 +1031,9 @@ Syd Adams
         <object-name>windows</object-name>
         <object-name>Fuselage.001</object-name>
         <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
+            
+            
+            
         </offsets>
         <condition>
             <equals>
@@ -1047,9 +1047,9 @@ Syd Adams
         <type>select</type>
         <object-name>windowfus</object-name>
         <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
+            
+            
+            
         </offsets>
         <condition>
             <not-equals>
@@ -1538,7 +1538,7 @@ Syd Adams
         <object-name>CTRLND.flare</object-name>
         <center>
             <x-m>-24.8171</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-2.831</z-m>
         </center>
         <axis>
@@ -1680,7 +1680,7 @@ Syd Adams
         <factor>45</factor>
         <center>
             <x-m>-24.3721</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-3.550</z-m>
         </center>
         <axis>
@@ -1708,7 +1708,7 @@ Syd Adams
         <factor>90</factor>
         <center>
             <x-m>-23.9121</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-4.198</z-m>
         </center>
         <axis>
@@ -1777,7 +1777,7 @@ Syd Adams
         </axis>
         <center>
             <x-m>-24.3141</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-5.057</z-m>
         </center>
     </animation>
@@ -2808,7 +2808,7 @@ Syd Adams
         <name>tyre-smoke-n</name>
         <offsets>
             <x-m>-19.00</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-5.50</z-m>
         </offsets>
     </model>

@@ -62,7 +62,7 @@
 		<factor>-92</factor>
 		<center>
 			<x-m>0.0043</x-m>
-			<y-m>0</y-m>
+			
 			<z-m>-0.119</z-m>
 		</center>
 		<axis>
@@ -79,7 +79,7 @@
 		<factor>92</factor>
 		<center>
 			<x-m>0.0043</x-m>
-			<y-m>0</y-m>
+			
 			<z-m>-0.119</z-m>
 		</center>
 		<axis>

@@ -145,7 +145,7 @@
       <type>spot</type>
       <position>
           <x-m>-19.579</x-m>
-          <y-m>0</y-m>
+          
           <z-m>-2.831</z-m>
       </position>
       <direction>
@@ -207,7 +207,7 @@
       <type>spot</type>
       <position>
           <x-m>-19.579</x-m>
-          <y-m>0</y-m>
+          
           <z-m>-2.831</z-m>
       </position>
       <direction>
@@ -264,4 +264,3 @@
         </condition>
     </animation>
 </PropertyList>
-

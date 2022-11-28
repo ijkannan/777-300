@@ -274,7 +274,7 @@
         <path>Aircraft/777-300/Models/Lights/dome_cone.xml</path>
         <offsets>
             <x-m>-1.16</x-m>
-            <y-m>0</y-m>
+            
             <z-m>0.9</z-m>
             <pitch-deg>-50</pitch-deg>
         </offsets>
@@ -388,7 +388,7 @@
         <factor>15</factor>
         <center>
             <x-m>-1.596</x-m>
-            <y-m>0</y-m>
+            
             <z-m>-0.257</z-m>
         </center>
         <axis>
