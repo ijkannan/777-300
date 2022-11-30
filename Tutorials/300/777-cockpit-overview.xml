@@ -394,7 +394,7 @@ This tutorial quickly walks you through the features of the cockpit in general.
 		</view>
 		<marker>
 			<x-m>-1.3883999999999999</x-m>
-			<y-m>0.0</y-m>
+			
 			<z-m>0.0739</z-m>
 			<scale>15.4667</scale>
 		</marker>

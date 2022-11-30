@@ -111,9 +111,9 @@ Add under <nasal> of your set.xml:
    <z>FRONT-Z</z>
   </location>
   <direction>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
+   <x>1</x>
+   
+   
   </direction>
  </force>
 

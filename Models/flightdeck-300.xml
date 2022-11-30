@@ -74,7 +74,7 @@
         </condition>
         <offsets>
             <x-m>-1.288</x-m>
-            <y-m>0.0</y-m>
+            
             <z-m>-0.39</z-m>
         </offsets>
     </model>
@@ -89,7 +89,7 @@
         </condition>
         <offsets>
             <x-m>-1.288</x-m>
-            <y-m>0.0</y-m>
+            
             <z-m>-0.39</z-m>
         </offsets>
     </model>
@@ -131,7 +131,7 @@
         </condition>
         <offsets>
             <x-m>-1.22005</x-m>
-            <y-m>0.0</y-m>
+            
             <z-m>1.23491</z-m>
             <pitch-deg>64.843</pitch-deg>
         </offsets>
@@ -315,13 +315,13 @@
         <property>instrumentation/magnetic-compass/indicated-heading-deg</property>
         <center>
             <x-m>-1.770</x-m>
-            <y-m>0.0</y-m>
+            
             <z-m>0.919</z-m>
         </center>
         <axis>
-            <x>0.0</x>
-            <y>0.0</y>
-            <z>1.0</z>
+            
+            
+            <z>1</z>
         </axis>
     </animation>
 
@@ -645,8 +645,8 @@
         </center>
         <axis>
             <x>-1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
+            
+            
         </axis>
     </animation>
 
@@ -674,9 +674,9 @@
             <z-m>-0.0243</z-m>
         </center>
         <axis>
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0.0</z>
+            <x>1</x>
+            
+            
         </axis>
     </animation>
 

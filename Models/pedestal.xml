@@ -117,7 +117,7 @@ Sep 2013: Adjusted for the new Virtual Cokpit - I NEMO
         <path>Aircraft/777/Models/Instruments/MFD/MFD.xml</path>
         <offsets>
             <x-m>-0.429</x-m>
-            <y-m>0.0</y-m>
+            
             <z-m>0.55403</z-m>
             <pitch-deg>-56.59</pitch-deg>
         </offsets>
