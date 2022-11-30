@@ -645,7 +645,7 @@ Syd Adams
             <z-m>-1.0</z-m>
         </center>
         <axis>
-            <x>0.0</x>
+            
             <y>-0.992</y>
             <z>-0.130</z>
         </axis>
@@ -662,7 +662,7 @@ Syd Adams
             <z-m>-0.3</z-m>
         </center>
         <axis>
-            <x>0.0</x>
+            
             <y>-0.992</y>
             <z>-0.130</z>
         </axis>
@@ -687,7 +687,7 @@ Syd Adams
             </entry>
         </interpolation>
         <axis>
-            <x>1.0</x>
+            <x>1</x>
             <y>0</y>
             <z>0</z>
         </axis>
@@ -782,7 +782,7 @@ Syd Adams
             <z-m>-1.0</z-m>
         </center>
         <axis>
-            <x>0.0</x>
+            
             <y>0.992</y>
             <z>-0.130</z>
         </axis>
@@ -799,7 +799,7 @@ Syd Adams
             <z-m>-0.3</z-m>
         </center>
         <axis>
-            <x>0.0</x>
+            
             <y>0.992</y>
             <z>-0.130</z>
         </axis>
@@ -824,7 +824,7 @@ Syd Adams
             </entry>
         </interpolation>
         <axis>
-            <x>1.0</x>
+            <x>1</x>
             <y>0</y>
             <z>0</z>
         </axis>
@@ -950,8 +950,8 @@ Syd Adams
             <z-m>-2.155</z-m>
         </center>
         <axis>
-            <x>0.0</x>
-            <y>1.0</y>
+            
+            <y>1</y>
             <z>0</z>
         </axis>
     </animation>
@@ -967,8 +967,8 @@ Syd Adams
             <z-m>-1.203</z-m>
         </center>
         <axis>
-            <x>0.0</x>
-            <y>1.0</y>
+            
+            <y>1</y>
             <z>0</z>
         </axis>
     </animation>
@@ -984,8 +984,8 @@ Syd Adams
             <z-m>-0.380</z-m>
         </center>
         <axis>
-            <x>0.0</x>
-            <y>1.0</y>
+            
+            <y>1</y>
             <z>0</z>
         </axis>
     </animation>
@@ -996,8 +996,8 @@ Syd Adams
         <property>surface-positions/reverser-norm[0]</property>
         <factor>0.7</factor>
         <axis>
-            <x>1.0</x>
-            <y>0.0</y>
+            <x>1</x>
+            
             <z>0</z>
         </axis>
     </animation>
@@ -1008,8 +1008,8 @@ Syd Adams
         <property>surface-positions/reverser-norm[1]</property>
         <factor>0.7</factor>
         <axis>
-            <x>1.0</x>
-            <y>0.0</y>
+            <x>1</x>
+            
             <z>0</z>
         </axis>
     </animation>
@@ -1729,7 +1729,7 @@ Syd Adams
         <factor>70</factor>
         <center>
             <x-m>-24.5221</x-m>
-            <y-m>0.0</y-m>
+            
             <z-m>-2.347</z-m>
         </center>
         <axis>
@@ -1759,7 +1759,7 @@ Syd Adams
         </interpolation>
         <center>
             <x-m>-24.5221</x-m>
-            <y-m>0.0</y-m>
+            
             <z-m>-2.347</z-m>
         </center>
         <axis>
@@ -2873,7 +2873,7 @@ Syd Adams
         <path>Aircraft/777-300/Models/Autopush/Goldhofert.xml</path>
         <offsets>
             <x-m>-24.5181</x-m>
-            <y-m>0.0</y-m>
+            
             <z-m>-5.4</z-m>
         </offsets>
     </model>

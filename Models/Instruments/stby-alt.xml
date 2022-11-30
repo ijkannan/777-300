@@ -171,7 +171,7 @@
    <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>0.36</factor>
     <center>
-        <x-m>0.0</x-m>
+        
         
         <z-m>0.001</z-m>
     </center>

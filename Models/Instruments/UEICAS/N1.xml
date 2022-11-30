@@ -146,7 +146,7 @@ Syd Adams
         <name>N1</name>
         <offsets>
             <x-m>0.001</x-m>
-            <y-m>0.0</y-m>
+            
             <z-m>-0.014</z-m>
         </offsets>
         <alignment>center-center</alignment>
